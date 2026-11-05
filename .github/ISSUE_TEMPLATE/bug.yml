@@ -1,0 +1,23 @@
+name: Bug or evidence correction
+description: Report a reproducibility issue, incorrect claim, or tooling bug.
+title: "[Issue] "
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What went wrong?
+      description: Link the affected file, claim, or command. Describe expected and observed behavior.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Minimal reproduction or evidence
+      description: Use an original synthetic example or sanitized metadata. Omit credentials, gated benchmark questions, keys and full raw traces.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Versions and scope
+      description: If relevant, give the repository/model revision, runtime, Python version and hardware. Explain which results may be affected.

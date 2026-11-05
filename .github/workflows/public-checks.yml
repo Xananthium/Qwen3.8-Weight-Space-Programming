@@ -1,0 +1,32 @@
+name: Public checks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: public-checks-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  evidence:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: '3.12'
+      - name: Verify public artifact inventories and replay numerical summaries
+        run: python tools/check_public_release.py
+      - name: Verify selected excerpt hashes and document quotes
+        run: python tools/verify_selected_excerpts.py
+      - name: Check synthetic graders, stream handling and laboratory routes
+        run: python -B research_code/validate_cpu.py --conditions evidence/laboratory_conditions.json

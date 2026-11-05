@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Download and run Calmer Qwen
+    url: https://huggingface.co/Xananthium/Calmer-Qwen3.8-27B-4bit
+    about: Model files, representation details and launch instructions.

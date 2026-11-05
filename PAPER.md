@@ -95,6 +95,194 @@ On seed07, original emits 67 `wait` occurrences in 15,062 thinking words versus 
 
 Word repetition and character deterioration require different checks. The original constructed cutoff has frozen duplicate-8-gram fraction 0.941. Conversely, two early-layer HLE cutoffs have duplicate-8 values zero despite garbled suffixes ending in 656 and 22 exclamation marks. Screening every output and reviewing all cutoffs, unparsed suffixes, and flags covers 75 suffixes; 19 of 21 flags are ordinary Markdown separators. Half-dose inspected suffixes show no comparable character deterioration. This scoped observation neither certifies complete traces nor changes grades.
 
+### 5.1 Selected thinking blocks and answers
+
+These post-hoc excerpts expose the difference between stopping, wording and correctness. They are exact saved strings; editorial omissions are outside quotation blocks. Full-source hashes, offsets and case metadata are in the [public excerpt manifest](examples/selected_excerpts.json). The [six selected conversations](examples/SELECTED_CONVERSATIONS.md) include additional seed comparisons, a tool-action case, and an actual character-collapse suffix. Supplied priming is distinguished from newly generated thinking. No new model calls were made.
+
+#### Constructed loop: completion without disappearance of repetition
+
+Case `primed_gsm8k_train:2451`, seed `20261106`, medium reasoning and temperature 1.3. Both runs receive five copies of this priming sentence (one shown):
+
+````text
+Wait, I should check that again. The calculation seems right, but perhaps I missed something. Let me go back and verify the same steps before I give the answer.
+
+````
+
+
+Original generates 117 complete further copies, then a partial `Wait`, and cuts off at 4,096 tokens. First two and terminal excerpts:
+
+````text
+Wait, I should check that again. The calculation seems right, but perhaps I missed something. Let me go back and verify the same steps before I give the answer.
+Wait, I should check that again. The calculation seems right, but perhaps I missed something. Let me go back and verify the same steps before I give the answer.
+
+````
+
+[... 18,354 intervening source characters omitted ...]
+
+````text
+Wait, I should check that again. The calculation seems right, but perhaps I missed something. Let me go back and verify the same steps before I give the answer.
+Wait
+````
+
+
+Selected generates six further copies—all shown—then closes thinking:
+
+````text
+Wait, I should check that again. The calculation seems right, but perhaps I missed something. Let me go back and verify the same steps before I give the answer.
+Wait, I should check that again. The calculation seems right, but perhaps I missed something. Let me go back and verify the same steps before I give the answer.
+Wait, I should check that again. The calculation seems right, but perhaps I missed something. Let me go back and verify the same steps before I give the answer.
+Wait, I should check that again. The calculation seems right, but perhaps I missed something. Let me go back and verify the same steps before I give the answer.
+Wait, I should check that again. The calculation seems right, but perhaps I missed something. Let me go back and verify the same steps before I give the answer.
+Wait, I should check that again. The calculation seems right, but perhaps I missed something. Let me go back and verify the same steps before I give the answer.
+
+````
+
+````text
+</think>
+````
+
+
+[Final introduction and steps 1–2 omitted.]
+
+````text
+3. **How many towels can she wash per day?**
+7 towels per wash × 2 washes per day = 14 towels per day.
+
+4. **How many days to wash all 98 towels?**
+98 towels ÷ 14 towels per day = 7 days.
+
+It will take Sanya \boxed{7} days to wash all the bath towels.
+````
+
+
+It finishes correctly in 392 tokens. Yet `wait` density is 34.77 versus 34.48 occurrences per 1,000 thinking words: the local repetitive sentence remains. This is a stopping gain on a constructed example reused during discovery, not independent evidence of general agent-loop repair.
+
+#### Authored editor task: productive rechecking and a retained wrong literal
+
+Case `state_holdout_v1_04`, seed `20261106`, under the same sampler settings. **Actual user message, identical in both runs:**
+
+> A text editor starts with CABIN and the cursor immediately after N. Backspace removes the character immediately left of the cursor; Delete removes the character immediately right of it. Inserting a letter puts it at the cursor and advances the cursor past that letter. Perform these operations in order: Backspace once; move the cursor left two positions; Delete once; insert T; move left one position; insert R. What is the final text, and how many characters are left of the cursor?
+> Please reason step by step, and put your final answer within \boxed{}.
+
+
+**Original, after omitted earlier reasoning:**
+
+````text
+Wait, cursor at position 2 means between index 1 and index 2. The character immediately right is at index 2, which is 'B'.
+
+Hmm, let me reconsider. If text is "CABI", positions are:
+- Position 0: before C
+- Position 1: between C and A (after C)
+- Position 2: between A and B (after A)
+- Position 3: between B and I (after B)
+- Position 4: after I
+
+Cursor at position 2 means between A and B. Delete removes the character to the right, which is 'B' (index 2).
+
+Text becomes: "CAI", cursor stays at position 2.
+
+4. Insert T at position 2: C, A, T, I → "CATI", cursor at position 3.
+
+5. Move left one: cursor 3 → 2. Cursor at position 2 (between A and T).
+   Text: "CATI".
+
+6. Insert R at position 2: C, A, R, T, I → "CARTI", cursor at position 3.
+
+So final text is "CARTI" with 3 characters left of the cursor (C, A, R).
+
+
+````
+
+[... 2,130 intervening source characters omitted ...]
+
+````text
+## Final Result
+
+The text is: **C A R T I**
+
+Characters left of the cursor (positions 0–2): **C, A, R** = **3 characters**
+
+$$\boxed{3}$$
+````
+
+
+Rechecking repairs the indexing error. Its prose has the intended text, but the box omits the complete requested payload: strict unparsed, agent-reviewed intended correct.
+
+**Selected half dose, after omitted earlier reasoning:**
+
+````text
+Let me re-verify this carefully.
+
+Start: C-A-B-I-N, cursor after N (position 5)
+
+1. Backspace: delete char before cursor (N). Text: C-A-B-I. Cursor at position 4 (after I).
+
+2. Move left 2: Cursor goes to position 2. Position 2 is after "CA", before "BI".
+   C-A-|B-I
+
+3. Delete: delete char right of cursor (B). Text: C-A-I. Cursor still at position 2 (after "CA", before "I").
+   C-A-|I
+
+4. Insert T: T goes at cursor. Text: C-A-T-I. Cursor at position 3 (after "CAT", before "I").
+   C-A-T-|I
+
+5. Move left 1: Cursor at position 2 (after "CA", before "TI").
+   C-A-|T-I
+
+6. Insert R: R goes at cursor. Text: C-A-R-T-I. Cursor at position 3 (after "CAR", before "TI").
+   C-A-R-|T-I
+
+Final text: "CARIT"
+Characters left of cursor: C, A, R = 3
+
+That's the answer.
+
+````
+
+[... 905 intervening source characters omitted ...]
+
+````text
+## Final Result
+
+- **Final text:** `CARIT`
+- **Characters left of the cursor:** C, A, R → **3 characters**
+
+$$\boxed{CARIT,\ 3}$$
+````
+
+
+The late diagrams show one order, while the carried literal and final box give another. The selected output is wrong despite being slightly shorter: 1,711 versus 1,791 total tokens (1,381 versus 1,470 thinking-content tokens). Rechecking can be useful, and fewer recheck words do not ensure a valid final state.
+
+#### Tree-language comparison
+
+**Original seed07—noncontiguous thinking fragments:**
+
+````text
+Wait, I'm confusing myself. Let me be very precise.
+````
+
+[... 6,997 intervening source characters omitted ...]
+
+````text
+Wait no. Let me parse this more carefully.
+````
+
+
+**Selected seed07—noncontiguous thinking fragments:**
+
+````text
+Wait, that's not right either. Let me be more careful.
+````
+
+[... 4,881 intervening source characters omitted ...]
+
+````text
+This makes sense!
+````
+
+
+Original cuts off at 16,384 tokens; selected completes at 11,226 with a valid comparative certificate but false final-history prose. Problem-specific reasoning and answers are omitted. Both profiles cut off on seed05. These fragments illustrate persistent rechecking, not the elimination of a mental state or an across-seed proof-quality gain.
+
 ## 6. Correct choices, valid proofs, and seed failures
 
 Game `hle:673722c82bfc8ab579ed111f` illustrates the distinction. Original seed05 reaches a valid proof but is strict unparsed. Half dose seed05 completes a valid proof in 8,812 tokens. Original seed07 completes a valid proof in 6,598 tokens; half dose returns the correct choice in 4,605 but invalidly treats non-equilibrium as requiring both player types to deviate. Its general existence proof fails despite a valid checked small-instance construction. Early-layer succeeds with a valid proof on seed05, then returns an incorrect counterexample on seed07 in only 2,408 tokens.
@@ -139,6 +327,6 @@ Flanks do not share that simple pattern, and correct states can strongly activat
 
 The released merged GGUF materializes the intended updates in F32 for the three edited tensors, leaving other tensor payloads unchanged. Different kernels and rounding mean it is a distinct numerical artifact. Its native CPU load/decode smoke answers a simple 2+2 prompt; **it has not undergone the historical HLE/GSM evaluation**. Rebuilt sidecar runtimes also require fresh numerical validation. CPU algebra or a successful load is not token-equivalence evidence.
 
-Public evidence includes IDs, hashes, scores, scripts, and scalar diagnostics. The [curated research source](research_code/README.md) includes fitting and assembly methods, request construction, frozen graders, and inert laboratory route planning, with exact provenance and documented redactions. Its ported HLE grader reproduces all 205 existing actual HLE statuses; this is a grading replay, not new inference. Full HLE prompts, official answer labels, rationales, raw thinking traces, and reversible token arrays are excluded, following the [official dataset card's redistribution request](https://huggingface.co/datasets/cais/hle). Authorized users can follow [reconstruction instructions](evidence/RECONSTRUCTION.txt). Public-measurement replay reproduces 19 derived tables/figures byte for byte in the recorded CPU environment; it does not independently recompute features without private source access.
+Public evidence includes IDs, hashes, scores, scripts, and scalar diagnostics. The [curated research source](research_code/README.md) includes fitting and assembly methods, request construction, frozen graders, and inert laboratory route planning, with exact provenance and documented redactions. Its ported HLE grader reproduces all 205 existing actual HLE statuses; this is a grading replay, not new inference. The [selected conversation examples](examples/SELECTED_CONVERSATIONS.md) publish reviewed, limited verbatim model-output spans with source hashes and character offsets; authored diagnostic prompts are labeled separately. Full HLE prompts, official answer labels, reference rationales, complete raw thinking traces, and reversible token arrays remain excluded, following the [official dataset card's redistribution request](https://huggingface.co/datasets/cais/hle). Authorized users can follow [reconstruction instructions](evidence/RECONSTRUCTION.txt). Public-measurement replay reproduces 19 derived tables/figures byte for byte in the recorded CPU environment; it does not independently recompute features without private source access.
 
 Small, reused, adaptively exposed panels; two development seeds; quantized runtime specificity; imperfect lexical proxies; and agent-reviewed explanations limit inference. No significance, full-benchmark, universal circuit, mental-state, or general serving-speed claim is made. The scientific contribution is a reproducible intervention and an explicit account of where its proposed mechanism and behavior fail. Calmer-Qwen3.8-27B-4bit is released as an experimental option whose local completion gains require weighing against retained proof defects, new errors, and increased reasoning on other cases.

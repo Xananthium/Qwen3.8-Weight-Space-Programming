@@ -1,0 +1,881 @@
+{
+  "schema_version": 1,
+  "selection": "Six post-hoc, case-focused illustrations; not representative samples or additional evaluation runs.",
+  "source_base": "private_evidence/experiment",
+  "offset_convention": "Python Unicode str offsets [start,end), SHA256 of exact UTF8; no normalization.",
+  "phase_convention": "First generated </think> separates thinking and final. Supplied context uses output.prompt, never counts as generated thinking. Control spans quote real source markers only.",
+  "metrics_convention": "Whole-generation token counts and published metrics, not estimated excerpt token counts.",
+  "cases": [
+    {
+      "id": "constructed_loop_completion",
+      "title": "A constructed repetition loop finally stops",
+      "records": [
+        {
+          "id": "record1",
+          "source_relative_path": "serving_confirmation_20261105/control/loop_retention6.result.json",
+          "source_sha256": "129e5219787e11f355ec04b23ce2081c79d60461ad92c32de5db6c0d2b046fe4",
+          "output_id": "primed_gsm8k_train:2451",
+          "condition": "control",
+          "seed": 20261106,
+          "field": "prompt",
+          "source_text_sha256": "9f59ca464ecea69679c95740e82d76a6fd0d7a3668ba417cb04b7a75fdcda16e",
+          "metrics": {
+            "generation_tokens": 4096,
+            "thinking_content_tokens": 4096,
+            "final_content_tokens": 0,
+            "control_tokens": 0,
+            "strict_status": "cutoff",
+            "agent_reviewed_intended_correct": null,
+            "reviewed_final_proof_valid": null,
+            "budget_censored": true,
+            "thinking_words": 3394,
+            "thinking_wait_count": 118,
+            "thinking_wait_per_1000_words": 34.7672362993518
+          },
+          "spans": [
+            {
+              "id": "supplied_priming_sentence",
+              "start": 369,
+              "end": 530,
+              "text": "Wait, I should check that again. The calculation seems right, but perhaps I missed something. Let me go back and verify the same steps before I give the answer.\n",
+              "sha256": "e472656b19761dd1a966738391597100bf8467e65cd8a5d44cb440a5740bd624",
+              "phase": "prompt",
+              "role": "Two of five supplied priming sentences; not model-generated in this run"
+            }
+          ]
+        },
+        {
+          "id": "record2",
+          "source_relative_path": "serving_confirmation_20261105/halfdose/loop_retention6.result.json",
+          "source_sha256": "b4151021ca85e197c2e6c2dd5e04e8c15e2f015aab3ff124d464b075b8bb62b5",
+          "output_id": "primed_gsm8k_train:2451",
+          "condition": "halfdose",
+          "seed": 20261106,
+          "field": "prompt",
+          "source_text_sha256": "9f59ca464ecea69679c95740e82d76a6fd0d7a3668ba417cb04b7a75fdcda16e",
+          "metrics": {
+            "generation_tokens": 392,
+            "thinking_content_tokens": 210,
+            "final_content_tokens": 180,
+            "control_tokens": 2,
+            "strict_status": "correct",
+            "agent_reviewed_intended_correct": null,
+            "reviewed_final_proof_valid": null,
+            "budget_censored": false,
+            "thinking_words": 174,
+            "thinking_wait_count": 6,
+            "thinking_wait_per_1000_words": 34.48275862068966
+          },
+          "spans": [
+            {
+              "id": "supplied_priming_sentence",
+              "start": 369,
+              "end": 530,
+              "text": "Wait, I should check that again. The calculation seems right, but perhaps I missed something. Let me go back and verify the same steps before I give the answer.\n",
+              "sha256": "e472656b19761dd1a966738391597100bf8467e65cd8a5d44cb440a5740bd624",
+              "phase": "prompt",
+              "role": "Two of five supplied priming sentences; not model-generated in this run"
+            }
+          ]
+        },
+        {
+          "id": "record3",
+          "source_relative_path": "serving_confirmation_20261105/control/loop_retention6.result.json",
+          "source_sha256": "129e5219787e11f355ec04b23ce2081c79d60461ad92c32de5db6c0d2b046fe4",
+          "output_id": "primed_gsm8k_train:2451",
+          "condition": "control",
+          "seed": 20261106,
+          "field": "text",
+          "source_text_sha256": "4c469a2001871b4667a4480eba3fdfc46827ad3cef414d5e7808bd2e15556bda",
+          "metrics": {
+            "generation_tokens": 4096,
+            "thinking_content_tokens": 4096,
+            "final_content_tokens": 0,
+            "control_tokens": 0,
+            "strict_status": "cutoff",
+            "agent_reviewed_intended_correct": null,
+            "reviewed_final_proof_valid": null,
+            "budget_censored": true,
+            "thinking_words": 3394,
+            "thinking_wait_count": 118,
+            "thinking_wait_per_1000_words": 34.7672362993518
+          },
+          "spans": [
+            {
+              "id": "original_thinking_1",
+              "start": 0,
+              "end": 322,
+              "text": "Wait, I should check that again. The calculation seems right, but perhaps I missed something. Let me go back and verify the same steps before I give the answer.\nWait, I should check that again. The calculation seems right, but perhaps I missed something. Let me go back and verify the same steps before I give the answer.\n",
+              "sha256": "54ff42c71bebce0b500e639550542d9f3e8ed3819a4cc2f700682084da8c9d31",
+              "phase": "thinking",
+              "role": "Original"
+            },
+            {
+              "id": "original_thinking_2",
+              "start": 18676,
+              "end": 18841,
+              "text": "Wait, I should check that again. The calculation seems right, but perhaps I missed something. Let me go back and verify the same steps before I give the answer.\nWait",
+              "sha256": "c731d9949e31e61a551fe819d56abda43075feb9eba81b902d93283bb2656ce2",
+              "phase": "thinking",
+              "role": "Original"
+            }
+          ]
+        },
+        {
+          "id": "record4",
+          "source_relative_path": "serving_confirmation_20261105/halfdose/loop_retention6.result.json",
+          "source_sha256": "b4151021ca85e197c2e6c2dd5e04e8c15e2f015aab3ff124d464b075b8bb62b5",
+          "output_id": "primed_gsm8k_train:2451",
+          "condition": "halfdose",
+          "seed": 20261106,
+          "field": "text",
+          "source_text_sha256": "827dd227a38c8be78080d0722caf6d9b71ff110901d4acee9084d7a89e3495e4",
+          "metrics": {
+            "generation_tokens": 392,
+            "thinking_content_tokens": 210,
+            "final_content_tokens": 180,
+            "control_tokens": 2,
+            "strict_status": "correct",
+            "agent_reviewed_intended_correct": null,
+            "reviewed_final_proof_valid": null,
+            "budget_censored": false,
+            "thinking_words": 174,
+            "thinking_wait_count": 6,
+            "thinking_wait_per_1000_words": 34.48275862068966
+          },
+          "spans": [
+            {
+              "id": "selected_six_generated_repeats",
+              "start": 0,
+              "end": 966,
+              "text": "Wait, I should check that again. The calculation seems right, but perhaps I missed something. Let me go back and verify the same steps before I give the answer.\nWait, I should check that again. The calculation seems right, but perhaps I missed something. Let me go back and verify the same steps before I give the answer.\nWait, I should check that again. The calculation seems right, but perhaps I missed something. Let me go back and verify the same steps before I give the answer.\nWait, I should check that again. The calculation seems right, but perhaps I missed something. Let me go back and verify the same steps before I give the answer.\nWait, I should check that again. The calculation seems right, but perhaps I missed something. Let me go back and verify the same steps before I give the answer.\nWait, I should check that again. The calculation seems right, but perhaps I missed something. Let me go back and verify the same steps before I give the answer.\n",
+              "sha256": "bb3704babb1fd47939d35786f3fcf3ab8125f3f85c351cdf94365b78ebf756e6",
+              "phase": "thinking",
+              "role": "Selected half dose"
+            },
+            {
+              "id": "selected_actual_closing_marker",
+              "start": 966,
+              "end": 974,
+              "text": "</think>",
+              "sha256": "475ad64997bc531fda042238dad1fce2ee04a94130baa9977f0f6ff93bcf9f00",
+              "phase": "control",
+              "role": "Selected half dose"
+            },
+            {
+              "id": "selected_final_calculation",
+              "start": 1298,
+              "end": 1549,
+              "text": "3. **How many towels can she wash per day?**\n7 towels per wash × 2 washes per day = 14 towels per day.\n\n4. **How many days to wash all 98 towels?**\n98 towels ÷ 14 towels per day = 7 days.\n\nIt will take Sanya \\boxed{7} days to wash all the bath towels.",
+              "sha256": "1693268557c32c1bb8369da269dc660e1954802b59cf2822eeb3a940e528a4d2",
+              "phase": "final",
+              "role": "Selected half dose"
+            }
+          ]
+        }
+      ],
+      "selection_note": "Post-hoc illustration; constructed case reused during discovery, not an independent loop-repair test.",
+      "repeat_counts": {
+        "supplied_complete_per_condition": 5,
+        "control_generated_complete": 117,
+        "control_generated_trailing_partial": "Wait",
+        "halfdose_generated_complete": 6
+      }
+    },
+    {
+      "id": "authored_editor_regression",
+      "title": "Rechecking helps the original; a wrong state survives in the edit",
+      "records": [
+        {
+          "id": "record1",
+          "source_relative_path": "serving_confirmation_20261105/control/state_transfer4.result.json",
+          "source_sha256": "af1e9006725b87a62eb6dacb0f7384950abc89e76f71660b0492c6a5e696979f",
+          "output_id": "state_holdout_v1_04",
+          "condition": "control",
+          "seed": 20261106,
+          "field": "prompt",
+          "source_text_sha256": "59fd76d8d31525ec8e7c042a7665374fd929fb2435952813e505824ed12acecc",
+          "metrics": {
+            "generation_tokens": 1791,
+            "thinking_content_tokens": 1470,
+            "final_content_tokens": 319,
+            "control_tokens": 2,
+            "strict_status": "unparsed",
+            "agent_reviewed_intended_correct": true,
+            "reviewed_final_proof_valid": null,
+            "budget_censored": false,
+            "thinking_words": 848,
+            "thinking_wait_count": 6,
+            "thinking_wait_per_1000_words": 7.0754716981132075
+          },
+          "spans": [
+            {
+              "id": "authored_user_message",
+              "start": 17,
+              "end": 572,
+              "text": "A text editor starts with CABIN and the cursor immediately after N. Backspace removes the character immediately left of the cursor; Delete removes the character immediately right of it. Inserting a letter puts it at the cursor and advances the cursor past that letter. Perform these operations in order: Backspace once; move the cursor left two positions; Delete once; insert T; move left one position; insert R. What is the final text, and how many characters are left of the cursor?\nPlease reason step by step, and put your final answer within \\boxed{}.",
+              "sha256": "27162ae06120705fa81947d1ea10d881c5d0a4fc26d35ab55cf862c6fa181722",
+              "phase": "prompt",
+              "role": "Complete authored user message, including appended boxed-answer instruction"
+            }
+          ]
+        },
+        {
+          "id": "record2",
+          "source_relative_path": "serving_confirmation_20261105/halfdose/state_transfer4.result.json",
+          "source_sha256": "a1b2c213d777ec0b7462cd21f2614e53ee66968dc50ec3c51931e9cec1986e14",
+          "output_id": "state_holdout_v1_04",
+          "condition": "halfdose",
+          "seed": 20261106,
+          "field": "prompt",
+          "source_text_sha256": "59fd76d8d31525ec8e7c042a7665374fd929fb2435952813e505824ed12acecc",
+          "metrics": {
+            "generation_tokens": 1711,
+            "thinking_content_tokens": 1381,
+            "final_content_tokens": 328,
+            "control_tokens": 2,
+            "strict_status": "wrong",
+            "agent_reviewed_intended_correct": false,
+            "reviewed_final_proof_valid": null,
+            "budget_censored": false,
+            "thinking_words": 833,
+            "thinking_wait_count": 3,
+            "thinking_wait_per_1000_words": 3.6014405762304924
+          },
+          "spans": [
+            {
+              "id": "authored_user_message",
+              "start": 17,
+              "end": 572,
+              "text": "A text editor starts with CABIN and the cursor immediately after N. Backspace removes the character immediately left of the cursor; Delete removes the character immediately right of it. Inserting a letter puts it at the cursor and advances the cursor past that letter. Perform these operations in order: Backspace once; move the cursor left two positions; Delete once; insert T; move left one position; insert R. What is the final text, and how many characters are left of the cursor?\nPlease reason step by step, and put your final answer within \\boxed{}.",
+              "sha256": "27162ae06120705fa81947d1ea10d881c5d0a4fc26d35ab55cf862c6fa181722",
+              "phase": "prompt",
+              "role": "Complete authored user message, including appended boxed-answer instruction"
+            }
+          ]
+        },
+        {
+          "id": "record3",
+          "source_relative_path": "serving_confirmation_20261105/control/state_transfer4.result.json",
+          "source_sha256": "af1e9006725b87a62eb6dacb0f7384950abc89e76f71660b0492c6a5e696979f",
+          "output_id": "state_holdout_v1_04",
+          "condition": "control",
+          "seed": 20261106,
+          "field": "text",
+          "source_text_sha256": "ecd49a37fdff5627e42d224b1f7b657bcbab2ad54d3a2b7b4ab543b33907c3b2",
+          "metrics": {
+            "generation_tokens": 1791,
+            "thinking_content_tokens": 1470,
+            "final_content_tokens": 319,
+            "control_tokens": 2,
+            "strict_status": "unparsed",
+            "agent_reviewed_intended_correct": true,
+            "reviewed_final_proof_valid": null,
+            "budget_censored": false,
+            "thinking_words": 848,
+            "thinking_wait_count": 6,
+            "thinking_wait_per_1000_words": 7.0754716981132075
+          },
+          "spans": [
+            {
+              "id": "original_rechecking",
+              "start": 2480,
+              "end": 3300,
+              "text": "Wait, cursor at position 2 means between index 1 and index 2. The character immediately right is at index 2, which is 'B'.\n\nHmm, let me reconsider. If text is \"CABI\", positions are:\n- Position 0: before C\n- Position 1: between C and A (after C)\n- Position 2: between A and B (after A)\n- Position 3: between B and I (after B)\n- Position 4: after I\n\nCursor at position 2 means between A and B. Delete removes the character to the right, which is 'B' (index 2).\n\nText becomes: \"CAI\", cursor stays at position 2.\n\n4. Insert T at position 2: C, A, T, I → \"CATI\", cursor at position 3.\n\n5. Move left one: cursor 3 → 2. Cursor at position 2 (between A and T).\n   Text: \"CATI\".\n\n6. Insert R at position 2: C, A, R, T, I → \"CARTI\", cursor at position 3.\n\nSo final text is \"CARTI\" with 3 characters left of the cursor (C, A, R).\n\n",
+              "sha256": "2813c60cd1286a2d1e68bdcf534c0fdf7b3288f049fe257a37012b69be16aa3e",
+              "phase": "thinking",
+              "role": "Original"
+            },
+            {
+              "id": "original_final",
+              "start": 5430,
+              "end": 5567,
+              "text": "## Final Result\n\nThe text is: **C A R T I**\n\nCharacters left of the cursor (positions 0–2): **C, A, R** = **3 characters**\n\n$$\\boxed{3}$$",
+              "sha256": "6ea4adacd1f3e1bb9ee7a4109c08c5dc8d2dfa85ac2fd0677aa62beb455e1211",
+              "phase": "final",
+              "role": "Original"
+            }
+          ]
+        },
+        {
+          "id": "record4",
+          "source_relative_path": "serving_confirmation_20261105/halfdose/state_transfer4.result.json",
+          "source_sha256": "a1b2c213d777ec0b7462cd21f2614e53ee66968dc50ec3c51931e9cec1986e14",
+          "output_id": "state_holdout_v1_04",
+          "condition": "halfdose",
+          "seed": 20261106,
+          "field": "text",
+          "source_text_sha256": "41df0174c8ad64aa1b41922095cbf767c9753f2e9a3137145c1d82bdcc54fa14",
+          "metrics": {
+            "generation_tokens": 1711,
+            "thinking_content_tokens": 1381,
+            "final_content_tokens": 328,
+            "control_tokens": 2,
+            "strict_status": "wrong",
+            "agent_reviewed_intended_correct": false,
+            "reviewed_final_proof_valid": null,
+            "budget_censored": false,
+            "thinking_words": 833,
+            "thinking_wait_count": 3,
+            "thinking_wait_per_1000_words": 3.6014405762304924
+          },
+          "spans": [
+            {
+              "id": "selected_rechecking",
+              "start": 3605,
+              "end": 4370,
+              "text": "Let me re-verify this carefully.\n\nStart: C-A-B-I-N, cursor after N (position 5)\n\n1. Backspace: delete char before cursor (N). Text: C-A-B-I. Cursor at position 4 (after I).\n\n2. Move left 2: Cursor goes to position 2. Position 2 is after \"CA\", before \"BI\".\n   C-A-|B-I\n\n3. Delete: delete char right of cursor (B). Text: C-A-I. Cursor still at position 2 (after \"CA\", before \"I\").\n   C-A-|I\n\n4. Insert T: T goes at cursor. Text: C-A-T-I. Cursor at position 3 (after \"CAT\", before \"I\").\n   C-A-T-|I\n\n5. Move left 1: Cursor at position 2 (after \"CA\", before \"TI\").\n   C-A-|T-I\n\n6. Insert R: R goes at cursor. Text: C-A-R-T-I. Cursor at position 3 (after \"CAR\", before \"TI\").\n   C-A-R-|T-I\n\nFinal text: \"CARIT\"\nCharacters left of cursor: C, A, R = 3\n\nThat's the answer.\n",
+              "sha256": "7373e5f29247e7837ec31820076ab910d5a43ced62fadc74e9d80321b6d3a383",
+              "phase": "thinking",
+              "role": "Selected half dose"
+            },
+            {
+              "id": "selected_final",
+              "start": 5275,
+              "end": 5404,
+              "text": "## Final Result\n\n- **Final text:** `CARIT`\n- **Characters left of the cursor:** C, A, R → **3 characters**\n\n$$\\boxed{CARIT,\\ 3}$$",
+              "sha256": "84ec0195dfb3496cbc0428018784638fbef3c393d75193b57038df10373906ba",
+              "phase": "final",
+              "role": "Selected half dose"
+            }
+          ]
+        }
+      ],
+      "selection_note": "Authored prompt included in full; actual negative outcome, not a format-only regression."
+    },
+    {
+      "id": "authored_tool_retention",
+      "title": "A retained tool correction, not a newly repaired loop",
+      "records": [
+        {
+          "id": "record1",
+          "source_relative_path": "serving_confirmation_20261105/control/loop_retention6.result.json",
+          "source_sha256": "129e5219787e11f355ec04b23ce2081c79d60461ad92c32de5db6c0d2b046fe4",
+          "output_id": "tool_git",
+          "condition": "control",
+          "seed": 20261106,
+          "field": "prompt",
+          "source_text_sha256": "885eb5fe1e7baa4383948a9feefe7629db95015bf5c354f857825ca5816fbe20",
+          "metrics": {
+            "generation_tokens": 61,
+            "thinking_content_tokens": 27,
+            "final_content_tokens": 32,
+            "control_tokens": 2,
+            "strict_status": "correct",
+            "agent_reviewed_intended_correct": null,
+            "reviewed_final_proof_valid": null,
+            "budget_censored": false,
+            "thinking_words": 22,
+            "thinking_wait_count": 0,
+            "thinking_wait_per_1000_words": 0.0
+          },
+          "spans": [
+            {
+              "id": "user_request",
+              "start": 362,
+              "end": 393,
+              "text": "Inspect changes in the project.",
+              "sha256": "f18d6b48f8fa700367abec91470e81d05f6b7b56deef6a8409c7fa5e49bb9dcd",
+              "phase": "prompt",
+              "role": "Authored user request"
+            },
+            {
+              "id": "supplied_failed_command",
+              "start": 1154,
+              "end": 1162,
+              "text": "git diff",
+              "sha256": "246050b60c622e9e0a8d7429766902046711650786484d881e3cec4905a5444b",
+              "phase": "prompt",
+              "role": "Last of three supplied failed-action commands"
+            },
+            {
+              "id": "supplied_tool_feedback",
+              "start": 1244,
+              "end": 1366,
+              "text": "Exit 128. Not a git repository. Current directory: /tmp. The repository is /app/project; execute git -C /app/project diff.",
+              "sha256": "3b73eacb72a7b0757415ca53b3251f960233f6ae0734671e86945981f7b3749a",
+              "phase": "prompt",
+              "role": "Last of three supplied synthetic tool errors; not a live execution log"
+            }
+          ]
+        },
+        {
+          "id": "record2",
+          "source_relative_path": "serving_confirmation_20261105/halfdose/loop_retention6.result.json",
+          "source_sha256": "b4151021ca85e197c2e6c2dd5e04e8c15e2f015aab3ff124d464b075b8bb62b5",
+          "output_id": "tool_git",
+          "condition": "halfdose",
+          "seed": 20261106,
+          "field": "prompt",
+          "source_text_sha256": "885eb5fe1e7baa4383948a9feefe7629db95015bf5c354f857825ca5816fbe20",
+          "metrics": {
+            "generation_tokens": 61,
+            "thinking_content_tokens": 27,
+            "final_content_tokens": 32,
+            "control_tokens": 2,
+            "strict_status": "correct",
+            "agent_reviewed_intended_correct": null,
+            "reviewed_final_proof_valid": null,
+            "budget_censored": false,
+            "thinking_words": 22,
+            "thinking_wait_count": 0,
+            "thinking_wait_per_1000_words": 0.0
+          },
+          "spans": [
+            {
+              "id": "user_request",
+              "start": 362,
+              "end": 393,
+              "text": "Inspect changes in the project.",
+              "sha256": "f18d6b48f8fa700367abec91470e81d05f6b7b56deef6a8409c7fa5e49bb9dcd",
+              "phase": "prompt",
+              "role": "Authored user request"
+            },
+            {
+              "id": "supplied_failed_command",
+              "start": 1154,
+              "end": 1162,
+              "text": "git diff",
+              "sha256": "246050b60c622e9e0a8d7429766902046711650786484d881e3cec4905a5444b",
+              "phase": "prompt",
+              "role": "Last of three supplied failed-action commands"
+            },
+            {
+              "id": "supplied_tool_feedback",
+              "start": 1244,
+              "end": 1366,
+              "text": "Exit 128. Not a git repository. Current directory: /tmp. The repository is /app/project; execute git -C /app/project diff.",
+              "sha256": "3b73eacb72a7b0757415ca53b3251f960233f6ae0734671e86945981f7b3749a",
+              "phase": "prompt",
+              "role": "Last of three supplied synthetic tool errors; not a live execution log"
+            }
+          ]
+        },
+        {
+          "id": "record3",
+          "source_relative_path": "serving_confirmation_20261105/control/loop_retention6.result.json",
+          "source_sha256": "129e5219787e11f355ec04b23ce2081c79d60461ad92c32de5db6c0d2b046fe4",
+          "output_id": "tool_git",
+          "condition": "control",
+          "seed": 20261106,
+          "field": "text",
+          "source_text_sha256": "1e380dcee4f78c5dd4cd570d4235f4f233efee8ae0dcaae10b8c3ff017d064a8",
+          "metrics": {
+            "generation_tokens": 61,
+            "thinking_content_tokens": 27,
+            "final_content_tokens": 32,
+            "control_tokens": 2,
+            "strict_status": "correct",
+            "agent_reviewed_intended_correct": null,
+            "reviewed_final_proof_valid": null,
+            "budget_censored": false,
+            "thinking_words": 22,
+            "thinking_wait_count": 0,
+            "thinking_wait_per_1000_words": 0.0
+          },
+          "spans": [
+            {
+              "id": "original_thinking",
+              "start": 0,
+              "end": 113,
+              "text": "The current directory is /tmp and it's telling me the repo is /app/project. Let me run the command as suggested.\n",
+              "sha256": "f23339e55628a6cd0ac0c28f3c35c095eb779efa031c183619871cacc1fa10e6",
+              "phase": "thinking",
+              "role": "Original"
+            },
+            {
+              "id": "original_tool_call",
+              "start": 121,
+              "end": 234,
+              "text": "\n\n<tool_call>\n<function=shell>\n<parameter=command>\ngit -C /app/project diff\n</parameter>\n</function>\n</tool_call>",
+              "sha256": "24eff1939f5b4b83ee0330eac9c880f8ffbaa849a3357946c92c1881bc93c73c",
+              "phase": "final",
+              "role": "Original"
+            }
+          ]
+        },
+        {
+          "id": "record4",
+          "source_relative_path": "serving_confirmation_20261105/halfdose/loop_retention6.result.json",
+          "source_sha256": "b4151021ca85e197c2e6c2dd5e04e8c15e2f015aab3ff124d464b075b8bb62b5",
+          "output_id": "tool_git",
+          "condition": "halfdose",
+          "seed": 20261106,
+          "field": "text",
+          "source_text_sha256": "1e380dcee4f78c5dd4cd570d4235f4f233efee8ae0dcaae10b8c3ff017d064a8",
+          "metrics": {
+            "generation_tokens": 61,
+            "thinking_content_tokens": 27,
+            "final_content_tokens": 32,
+            "control_tokens": 2,
+            "strict_status": "correct",
+            "agent_reviewed_intended_correct": null,
+            "reviewed_final_proof_valid": null,
+            "budget_censored": false,
+            "thinking_words": 22,
+            "thinking_wait_count": 0,
+            "thinking_wait_per_1000_words": 0.0
+          },
+          "spans": [
+            {
+              "id": "selected_thinking",
+              "start": 0,
+              "end": 113,
+              "text": "The current directory is /tmp and it's telling me the repo is /app/project. Let me run the command as suggested.\n",
+              "sha256": "f23339e55628a6cd0ac0c28f3c35c095eb779efa031c183619871cacc1fa10e6",
+              "phase": "thinking",
+              "role": "Selected half dose"
+            },
+            {
+              "id": "selected_tool_call",
+              "start": 121,
+              "end": 234,
+              "text": "\n\n<tool_call>\n<function=shell>\n<parameter=command>\ngit -C /app/project diff\n</parameter>\n</function>\n</tool_call>",
+              "sha256": "24eff1939f5b4b83ee0330eac9c880f8ffbaa849a3357946c92c1881bc93c73c",
+              "phase": "final",
+              "role": "Selected half dose"
+            }
+          ]
+        }
+      ],
+      "selection_note": "Authored synthetic history and byte-identical outputs; no tools executed."
+    },
+    {
+      "id": "game_language_and_proof",
+      "title": "Similar rechecking language, different proof quality",
+      "records": [
+        {
+          "id": "record1",
+          "source_relative_path": "serving_confirmation_20261105/control/development7_seed07.result.json",
+          "source_sha256": "b5b9d377a50e90288a546f37bb64f1d5dc64a1591663d4bcb79ea0a6a9a6c739",
+          "output_id": "hle:673722c82bfc8ab579ed111f",
+          "condition": "control",
+          "seed": 20261107,
+          "field": "text",
+          "source_text_sha256": "4fe8f5d30f9d9786396a16585cba92316729ebe68b5c72935eebc23156f9c969",
+          "metrics": {
+            "generation_tokens": 6598,
+            "thinking_content_tokens": 5972,
+            "final_content_tokens": 624,
+            "control_tokens": 2,
+            "strict_status": "correct",
+            "agent_reviewed_intended_correct": true,
+            "reviewed_final_proof_valid": true,
+            "budget_censored": false,
+            "thinking_words": 3468,
+            "thinking_wait_count": 21,
+            "thinking_wait_per_1000_words": 6.055363321799308
+          },
+          "spans": [
+            {
+              "id": "game07_control_recheck",
+              "start": 15197,
+              "end": 15251,
+              "text": "Actually, I want to make sure I haven't made an error.",
+              "sha256": "1edcb29f3fb6d75ade67e097e36487d6ed56d34606b536e21cf55ec990d04f82",
+              "phase": "thinking",
+              "role": "Reviewed language fragment"
+            }
+          ],
+          "review_caveat": "Only selected language is quoted; source question, options, numerical argument and answer label are omitted. Strict correct with valid reviewed general proof; rechecking here is not evidence of harm."
+        },
+        {
+          "id": "record2",
+          "source_relative_path": "serving_confirmation_20261105/halfdose/development7_seed07.result.json",
+          "source_sha256": "89047f7fd7868f22d038b40f0b49854f1f131e206d954559534bbfabcc0656d5",
+          "output_id": "hle:673722c82bfc8ab579ed111f",
+          "condition": "halfdose",
+          "seed": 20261107,
+          "field": "text",
+          "source_text_sha256": "ea7f1b88cebad4b23270b50c20c0cb6c7143fc56f733b0a856966366bfea7b9d",
+          "metrics": {
+            "generation_tokens": 4605,
+            "thinking_content_tokens": 4022,
+            "final_content_tokens": 581,
+            "control_tokens": 2,
+            "strict_status": "correct",
+            "agent_reviewed_intended_correct": true,
+            "reviewed_final_proof_valid": false,
+            "budget_censored": false,
+            "thinking_words": 2478,
+            "thinking_wait_count": 10,
+            "thinking_wait_per_1000_words": 4.035512510088782
+          },
+          "spans": [
+            {
+              "id": "game07_half_recheck",
+              "start": 4461,
+              "end": 4494,
+              "text": "Wait, let me re-examine. We need:",
+              "sha256": "2c0fda4b5a41bb935fe7fcb28d6a505b0dbf444058716f5e59f3f9665ea3bb4b",
+              "phase": "thinking",
+              "role": "Reviewed language fragment"
+            },
+            {
+              "id": "game07_half_assertion",
+              "start": 10728,
+              "end": 10791,
+              "text": "This is the definition I used above. So my analysis is correct.",
+              "sha256": "396fe3f999105dbcaac5c864fdf75cecb00f046539cd4e2d815e97151e7c6844",
+              "phase": "thinking",
+              "role": "Reviewed language fragment"
+            }
+          ],
+          "review_caveat": "Only selected language is quoted; source question, options, numerical argument and answer label are omitted. Strict correct choice but invalid general-existence proof; the assertion of correctness is not a proof-quality result."
+        },
+        {
+          "id": "record3",
+          "source_relative_path": "serving_confirmation_20261105/control/development7.result.json",
+          "source_sha256": "733429d4d76732e82a01efb23f92d1481b35755c18264b2e1da00c005062bb5f",
+          "output_id": "hle:673722c82bfc8ab579ed111f",
+          "condition": "control",
+          "seed": 20261105,
+          "field": "text",
+          "source_text_sha256": "00ca5bb1c2567f961dbaa51e213fa4de0129a2cc70393be6b295f507ea95c90f",
+          "metrics": {
+            "generation_tokens": 4270,
+            "thinking_content_tokens": 3741,
+            "final_content_tokens": 527,
+            "control_tokens": 2,
+            "strict_status": "unparsed",
+            "agent_reviewed_intended_correct": true,
+            "reviewed_final_proof_valid": true,
+            "budget_censored": false,
+            "thinking_words": 2033,
+            "thinking_wait_count": 11,
+            "thinking_wait_per_1000_words": 5.410723069355632
+          },
+          "spans": [
+            {
+              "id": "game05_control_confusion",
+              "start": 7434,
+              "end": 7482,
+              "text": "Wait, I confused myself. Let me be very careful.",
+              "sha256": "77515f649ba9318e70eb0c76eca32b77b766cb121afaed7fecdabd04cf9a09c5",
+              "phase": "thinking",
+              "role": "Reviewed language fragment"
+            }
+          ],
+          "review_caveat": "Only selected language is quoted; source question, options, numerical argument and answer label are omitted. Valid reviewed proof/intended answer, but strict UNPARSED; selected halfdose is longer on this seed."
+        },
+        {
+          "id": "record4",
+          "source_relative_path": "serving_confirmation_20261105/halfdose/development7.result.json",
+          "source_sha256": "427a8fea247272ad4bf3f1b535652e3b65543987ee52e88210884f5fb7a045fa",
+          "output_id": "hle:673722c82bfc8ab579ed111f",
+          "condition": "halfdose",
+          "seed": 20261105,
+          "field": "text",
+          "source_text_sha256": "18f55100ddf6e102ca2dfe66e8dc5c07e5f47f86f0b26cc51b54e2cfff423b27",
+          "metrics": {
+            "generation_tokens": 8812,
+            "thinking_content_tokens": 8065,
+            "final_content_tokens": 745,
+            "control_tokens": 2,
+            "strict_status": "correct",
+            "agent_reviewed_intended_correct": true,
+            "reviewed_final_proof_valid": null,
+            "budget_censored": false,
+            "thinking_words": 4449,
+            "thinking_wait_count": 22,
+            "thinking_wait_per_1000_words": 4.944931445268599
+          },
+          "spans": [
+            {
+              "id": "game05_half_confusion",
+              "start": 6805,
+              "end": 6856,
+              "text": "Wait, I'm confusing myself. Let me be very careful.",
+              "sha256": "8729f2bf96d27cf68097c7522643e1952e3029695e4906c352a17481afb48fd0",
+              "phase": "thinking",
+              "role": "Reviewed language fragment"
+            }
+          ],
+          "review_caveat": "Only selected language is quoted; source question, options, numerical argument and answer label are omitted. Valid reviewed proof and strict correct choice, but 8,812 tokens versus 4,270 control; no general shortening."
+        }
+      ],
+      "selection_note": "Post-hoc formula-free reviewed language only; HLE question, options, solution and answer labels excluded."
+    },
+    {
+      "id": "tree_language_and_completion",
+      "title": "Rechecking persists when the tree attempt completes",
+      "records": [
+        {
+          "id": "record1",
+          "source_relative_path": "serving_confirmation_20261105/control/development7_seed07.result.json",
+          "source_sha256": "b5b9d377a50e90288a546f37bb64f1d5dc64a1591663d4bcb79ea0a6a9a6c739",
+          "output_id": "hle:66ef3de8b8a1ba6e0ba23498",
+          "condition": "control",
+          "seed": 20261107,
+          "field": "text",
+          "source_text_sha256": "4a5adb49656d290909b12b5bb2088d150884c36b87acdc797bf2be7fc8db1498",
+          "metrics": {
+            "generation_tokens": 16384,
+            "thinking_content_tokens": 16384,
+            "final_content_tokens": 0,
+            "control_tokens": 0,
+            "strict_status": "cutoff",
+            "agent_reviewed_intended_correct": null,
+            "reviewed_final_proof_valid": null,
+            "budget_censored": true,
+            "thinking_words": 7775,
+            "thinking_wait_count": 24,
+            "thinking_wait_per_1000_words": 3.0868167202572345
+          },
+          "spans": [
+            {
+              "id": "tree07_control_precise",
+              "start": 29337,
+              "end": 29388,
+              "text": "Wait, I'm confusing myself. Let me be very precise.",
+              "sha256": "cfbdff92500cebd4f36bae4638c0fc9a667771621e8abba30125c60b4f8cc4fe",
+              "phase": "thinking",
+              "role": "Reviewed language fragment"
+            },
+            {
+              "id": "tree07_control_late_recheck",
+              "start": 36385,
+              "end": 36427,
+              "text": "Wait no. Let me parse this more carefully.",
+              "sha256": "f6c8fb512efc6ab21942c61f27ec2a804bf788069100ab7e4003fb5eaa2832aa",
+              "phase": "thinking",
+              "role": "Reviewed language fragment"
+            }
+          ],
+          "review_caveat": "Only selected language is quoted; source question, options, numerical argument and answer label are omitted. Length cutoff with no final; valid intermediate achievements do not rescue completion."
+        },
+        {
+          "id": "record2",
+          "source_relative_path": "serving_confirmation_20261105/halfdose/development7_seed07.result.json",
+          "source_sha256": "89047f7fd7868f22d038b40f0b49854f1f131e206d954559534bbfabcc0656d5",
+          "output_id": "hle:66ef3de8b8a1ba6e0ba23498",
+          "condition": "halfdose",
+          "seed": 20261107,
+          "field": "text",
+          "source_text_sha256": "1c49b5126ae0d23cd6b4b377e85fb0fe08de52df43f6a5b91e295c38368500c6",
+          "metrics": {
+            "generation_tokens": 11226,
+            "thinking_content_tokens": 10603,
+            "final_content_tokens": 621,
+            "control_tokens": 2,
+            "strict_status": "correct",
+            "agent_reviewed_intended_correct": true,
+            "reviewed_final_proof_valid": false,
+            "budget_censored": false,
+            "thinking_words": 4920,
+            "thinking_wait_count": 16,
+            "thinking_wait_per_1000_words": 3.252032520325203
+          },
+          "spans": [
+            {
+              "id": "tree07_half_recheck",
+              "start": 18012,
+              "end": 18066,
+              "text": "Wait, that's not right either. Let me be more careful.",
+              "sha256": "b55b1797a58e692c68e934e196676e6d0464125a4729ca114b83add143ec7009",
+              "phase": "thinking",
+              "role": "Reviewed language fragment"
+            },
+            {
+              "id": "tree07_half_commitment",
+              "start": 22947,
+              "end": 22964,
+              "text": "This makes sense!",
+              "sha256": "8648d9271f99f2c61b634e4340a6ce5e1afa0ec160ee03efe3000586426c3cf1",
+              "phase": "thinking",
+              "role": "Reviewed language fragment"
+            }
+          ],
+          "review_caveat": "Only selected language is quoted; source question, options, numerical argument and answer label are omitted. Strict correct choice and comparative count certificate, but false final evolutionary-history prose; no full-proof certification."
+        }
+      ],
+      "selection_note": "Post-hoc formula-free reviewed language only; HLE question, options, solution and answer labels excluded."
+    },
+    {
+      "id": "character_failure_inset",
+      "title": "Character deterioration is distinct from word repetition",
+      "records": [
+        {
+          "id": "record1",
+          "source_relative_path": "serving_confirmation_20261105/early15/hle_reserve_next8.result.json",
+          "source_sha256": "ad55be434b32691d9f19a6c2f00534e7c2faad37f96b0c372f3e85db5acf713c",
+          "output_id": "hle:673735aa61f20f11eb1097d2",
+          "condition": "early15",
+          "seed": 20261106,
+          "field": "text",
+          "source_text_sha256": "21e74404b1e673bc984d565b63c47176eee8faaffc51cd3658f0bc345eabd4c4",
+          "metrics": {
+            "generation_tokens": 16384,
+            "thinking_content_tokens": 16384,
+            "final_content_tokens": 0,
+            "control_tokens": 0,
+            "strict_status": "cutoff",
+            "agent_reviewed_intended_correct": false,
+            "reviewed_final_proof_valid": null,
+            "budget_censored": true,
+            "thinking_words": 8291,
+            "thinking_wait_count": 33,
+            "thinking_wait_per_1000_words": 3.9802195151368953
+          },
+          "spans": [
+            {
+              "id": "damage_early15_terminal80",
+              "start": 48831,
+              "end": 48911,
+              "text": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+              "sha256": "bb97362bfafec933780874ef2528ea296cc739a27b7f5c0010d26a724563d59e",
+              "phase": "thinking",
+              "role": "Reviewed language fragment"
+            }
+          ],
+          "review_caveat": "Only selected language is quoted; source question, options, numerical argument and answer label are omitted. Length cutoff; terminal character collapse. Frozen word duplicate8 is 0 despite the visible punctuation run."
+        },
+        {
+          "id": "record2",
+          "source_relative_path": "serving_confirmation_20261105/halfdose/hle_reserve_next8.result.json",
+          "source_sha256": "d6c6668640963b6773e0f50027ed3b83ba26da8299679964fc568fa010f4ec43",
+          "output_id": "hle:673735aa61f20f11eb1097d2",
+          "condition": "halfdose",
+          "seed": 20261106,
+          "field": "text",
+          "source_text_sha256": "aad144c97d2c7ea07a74facc3f4d37f4c6b28b66f893e63619bde5f7313d8fa4",
+          "metrics": {
+            "generation_tokens": 13577,
+            "thinking_content_tokens": 13003,
+            "final_content_tokens": 572,
+            "control_tokens": 2,
+            "strict_status": "correct",
+            "agent_reviewed_intended_correct": true,
+            "reviewed_final_proof_valid": null,
+            "budget_censored": false,
+            "thinking_words": 6760,
+            "thinking_wait_count": 41,
+            "thinking_wait_per_1000_words": 6.06508875739645
+          },
+          "spans": [
+            {
+              "id": "damage_half_readable_thinking_tail",
+              "start": 39289,
+              "end": 39321,
+              "text": "Wait, actually one more thought.",
+              "sha256": "3313124103422380e0f30adb323788d4638222dc8e7a300f1f3c666dd5f802f6",
+              "phase": "thinking",
+              "role": "Reviewed language fragment"
+            },
+            {
+              "id": "damage_half_literal_final_suffix",
+              "start": 41502,
+              "end": 41517,
+              "text": "Confidence: 72%",
+              "sha256": "dbac06d8174c9a1ed6c8893fabe91f2a4834865675547f19c7f9fabbe5b556f8",
+              "phase": "final",
+              "role": "Reviewed language fragment"
+            }
+          ],
+          "review_caveat": "Only selected language is quoted; source question, options, numerical argument and answer label are omitted. Strict correct choice but unjustified arithmetic/rounding in the final explanation. Readable text is not correctness of the derivation."
+        }
+      ],
+      "selection_note": "Post-hoc formula-free reviewed language only; HLE question, options, solution and answer labels excluded."
+    }
+  ]
+}

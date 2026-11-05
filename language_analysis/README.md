@@ -44,7 +44,7 @@ This mode rederives aggregates and plots; it does not independently recompute to
 | `public/figures/` | PNG and SVG figures |
 | `internal_pending_rights/audit_manifest.json` | Private source paths and selected generated suffixes; ignored by Git |
 
-No public export includes a full HLE prompt, gold rationale, raw generation, raw token-ID array, or absolute input path. Trace suffixes and absolute paths are staged only in the ignored `internal_pending_rights/` directory. Review redistribution rights before deliberately adding that directory. A `.gitignore` is a packaging safeguard, not a rights determination. No upstream publication is performed by this code.
+This numerical generator exports no raw text. Separately curated, reviewed limited excerpts are published in [selected conversations](../examples/SELECTED_CONVERSATIONS.md), with exact source offsets and hashes. Full HLE prompts, official keys/reference rationales, complete generations, token arrays, absolute input paths, and pending-review material remain private. The ignored `internal_pending_rights/` directory is not a public export. A `.gitignore` is a packaging safeguard, not a rights determination. No upstream publication is performed by this code.
 
 ## Definitions and interpretation
 

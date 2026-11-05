@@ -1,0 +1,28 @@
+name: Experiment or replication
+description: Propose or report a focused experiment, including negative results.
+title: "[Experiment] "
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Research question
+      description: What claim would this test? What result would count against it?
+    validations:
+      required: true
+  - type: textarea
+    id: comparison
+    attributes:
+      label: Proposed comparison
+      description: Give the control, edit/runtime, task source, seeds, sampler, reasoning effort and output budget. Identify reused versus held-out cases.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Results or planned measurements
+      description: Include correctness, completion, token use and retention where relevant. Report losses and cutoffs too; do not paste gated questions, keys or complete traces.
+  - type: textarea
+    id: help
+    attributes:
+      label: Help needed
+      description: Task design, review, analysis, hardware, or runtime expertise?
