@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "Please cite this experimental report and its pinned repository revision."
+title: "Qwen3.8 Weight-Space Programming: Fixed Sparse Edits, Reasoning Trajectories, and Their Limits"
+type: software
+authors:
+  - name: Xananthium
+date-released: 2026-11-05
+license: Apache-2.0
+repository-code: "https://github.com/Xananthium/Qwen3.8-Weight-Space-Programming"
+url: "https://huggingface.co/Xananthium/Calmer-Qwen3.8-27B-4bit"
+abstract: "AI-assisted experimental report, reproducible tooling and evidence for fixed sparse weight edits to a mixed-precision Qwen checkpoint. Includes successful and unsuccessful conditions, language analysis and limits on benchmark interpretation."

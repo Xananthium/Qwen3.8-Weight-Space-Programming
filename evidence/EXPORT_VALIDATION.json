@@ -1,0 +1,12 @@
+{
+  "actual_groups": 55,
+  "actual_generate_outputs": 405,
+  "smoke_outputs": 20,
+  "lab_conditions": 14,
+  "lab_outputs": 98,
+  "reserve_reviewed": 160,
+  "planar_reviewed": 5,
+  "prompts_answers_rationales_token_arrays_copied": false,
+  "absolute_paths_or_credential_patterns_found": false,
+  "note": "Whitelist exports only; key labels, raw outputs and reversible token arrays excluded. Not a rights guarantee for unreviewed future additions."
+}

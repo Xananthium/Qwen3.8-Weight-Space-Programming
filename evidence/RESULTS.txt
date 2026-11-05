@@ -1,0 +1,40 @@
+Calmer-Qwen3.8 weight-space experiment: public results
+
+Actual compiled/TQ4/DFlash stack; medium;temperature1.3;seed20261106;HLE max16384.
+Fixed32 text-only MCQ diagnostic subset; strict and intended choices separate.
+Condition | HLE strict | HLE intended | cutoff | tokens | GSM strict | state strict | constructed completed | prescribed tool actions
+control | 3/32 | 3/32 | 5 | 172533 | 24/24 | 3/4 | 1/2 | 4/4
+primary_half_flanks | 2/32 | 2/32 | 3 | 165101 | 24/24 | 3/4 | 2/2 | 2/4
+secondary_joint64 | 1/32 | 2/32 | 5 | 193636 | 24/24 | 4/4 | 2/2 | 4/4
+halfdose_a1p5 | 4/32 | 4/32 | 4 | 194671 | 23/24 | 3/4 | 2/2 | 4/4
+early15 | 4/32 | 4/32 | 6 | 185941 | 24/24 | 3/4 | 2/2 | 1/4
+
+All edited conditions repair0/10 frozen completed control misses. All32 retained.
+All four intended state answers are correct for control/primary/secondary/early15; their strict packaging differences stay separate. Halfdose has a real state error. Primary prescribed-tool strict2/4 becomes3/4 in separate command-equivalence review; its unnecessary detour remains.
+
+Separate eager laboratory group: same7 development cases, seed20261105, max12288; never pooled with actual serving.
+Condition | strict | intended | cutoff | unparsed | tokens
+original | 5/7 | 5/7 | 1 | 0 | 28600
+half_flanks | 5/7 | 6/7 | 0 | 1 | 27110
+four_layer | 5/7 | 5/7 | 0 | 0 | 25630
+six_layer | 3/7 | 3/7 | 2 | 0 | 33146
+window16 | 4/7 | 4/7 | 1 | 0 | 28889
+block10_x3 | 4/7 | 4/7 | 1 | 0 | 28007
+upper_each_twice | 4/7 | 4/7 | 1 | 1 | 38224
+upper_cycle_twice | 3/7 | 3/7 | 1 | 1 | 31596
+known15 | 5/7 | 5/7 | 1 | 0 | 30320
+upper_cycle_halfdose | 4/7 | 4/7 | 1 | 0 | 29273
+quarter15_half | 3/7 | 3/7 | 1 | 0 | 25922
+single_halfdose | 3/7 | 3/7 | 1 | 0 | 21277
+repeat33_half | 4/7 | 4/7 | 1 | 0 | 34624
+good_nullspace_joint64 | 5/7 | 5/7 | 0 | 0 | 25751
+
+This folder includes all55 actual stage groups (405 generated case records and20 smoke cases), all14 lab arms (98 cases), every fixed32 per-case status and flip, frozen10 IDs, separate planar results, development rubric/proof metrics, loop/task summaries, and scalar mechanism tables/plots. No condition in these fixed cohorts is hidden. Additional historical trial/capture results are source-hash inventoried separately.
+
+Selected halfdose effective strengths49/50/51=0.25/1.5/0.25; original64-block route once. Local reserve4/32 versus3/32 and GSM23/24 versus24/24 is an exposed experimental tradeoff, not a full-benchmark or general-upgrade claim. HLE output tokens rise about13%; constructed-continuation tokens fall about75%. Same-count early15 has different flips and material loop/degeneration defects. See SCIENTIFIC_LIMITS.txt for proof defects, uncertainty and selection timing.
+
+Raw benchmark text, official answer labels, reference rationales and reversible token arrays are not rehosted. This is an intentionally reduced public evidence layer; exact historical reasoning review requires appropriately handled retained raw files. See RIGHTS_AND_ATTRIBUTION.txt and RECONSTRUCTION.txt. The artifact inventory and per-output hashes preserve provenance but cannot by themselves reproduce stochastic outputs.
+
+Main data files: actual_reserve32_summary.csv; actual_case_metrics.csv; actual_groups.json; actual_task_strict_summary.csv; development_quality_metrics.csv; loop_retention_summary.csv; smoke_metrics.csv; actual_planar_summary.csv; reserve32_transitions.json; frozen10_cohort.json; laboratory14_summary.csv; laboratory_case_metrics.csv; laboratory_conditions.json; mechanisms/; artifact_inventory.json.
+
+Primary scientific references are recorded in PRIMARY_SOURCES.json; all external claimed gains concern different checkpoints/tasks. Attribution/licensing is component-specific.

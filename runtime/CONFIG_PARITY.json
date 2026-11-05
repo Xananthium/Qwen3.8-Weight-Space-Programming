@@ -1,0 +1,28 @@
+{
+  "recorded_at_utc": "2026-11-05T16:41:11.553836+00:00",
+  "matches_selected_serving_computation_arguments": true,
+  "allowed_packaging_changes": [
+    "public served-model alias",
+    "configurable host/port",
+    "machine-local cache path",
+    "relocated asset paths with exact pinned hashes"
+  ],
+  "normalized_argument_sha256": "2c918987191116798d8a593b9c468743982802b64b33ab0ef31777787dc1ccdd",
+  "asset_verification_scope": "Full source pins checked by real CLI CPU preflight; this comparison normalizes only alias/listener/cache and uses the same source assets. No paths are serialized here.",
+  "unchanged": [
+    "original64",
+    "TP2",
+    "BF16",
+    "TQ4 KV",
+    "DFlash7 and draft settings",
+    "200000 context",
+    "maxseq16",
+    "batch4096",
+    "KV offload80GiB",
+    "compiled FULL_DECODE_ONLY/capture sizes",
+    "medium/temperature1.3 defaults",
+    "image5/video0",
+    "HF tokenizer/template/config bytes"
+  ],
+  "GPU_runs": 0
+}

@@ -1,0 +1,8 @@
+{
+  "checked_at_utc": "2026-11-05T16:59:58.759832+00:00",
+  "private_absolute_path_findings": [],
+  "credential_pattern_findings": [],
+  "compiled_binaries_or_bytecode": [],
+  "environment_systemd_cache_artifacts_distributed": false,
+  "scope": "All distributable file bytes scanned; local-only CPU logs/state are outside this directory."
+}

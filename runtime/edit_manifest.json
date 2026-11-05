@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "model_name": "Calmer-Qwen3.8-27B-4bit",
+  "representation": "packed GGUF plus fixed FP32 rank-one down_proj corrections",
+  "alpha": 1.5,
+  "layers": [
+    49,
+    50,
+    51
+  ],
+  "effective_layer_strengths": {
+    "49": 0.25,
+    "50": 1.5,
+    "51": 0.25
+  },
+  "tensor_parallel_size": 2,
+  "dimensions": {
+    "input_size": 17408,
+    "output_size": 5120
+  },
+  "required_anchor": {
+    "layer": 50,
+    "alpha": 1.5,
+    "u_sha256": "fb162201abf6929b6ba1fffc01a4d12b4659dd5b3e689becf139bc2e7d9163e2",
+    "coeff_sha256": "9fe01aa46be0ac32006fe98ca5f8e453c1c27ac9f31e0848dd1af13bb433a62f"
+  },
+  "base_model": {
+    "filename": "base_model.gguf",
+    "sha256": "ba36dc3c2b2ff5e0aa5d71092a8894546996a6a119ae391803dda07cdc08516d",
+    "size": 17923393664,
+    "source_repository": "HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF",
+    "source_revision": "993a5971fda8f30dd1b7eb2654792ba4415c7460"
+  },
+  "candidate": {
+    "filename": "calmer_delta.npz",
+    "sha256": "ebb80ab4f906b7c7fbc61e95dd285b1e27b82b35e3e68982e575ccbfe80f8b51"
+  },
+  "mmproj": {
+    "sha256": "5681b690bcb8eb10cd28d62d078cb4e01521a3ea4880a3fc7d54de72de2dd142"
+  },
+  "draft": {
+    "repository": "syvai/Qwen3.8-27B-DFlash2-W4A16",
+    "revision": "4d30ec736ffc6b8688dc2ae2b502d9b48bdec279",
+    "weights_sha256": "ec26996e6a0745ab5edb857117220ce1e219ad524f71e6e149b703804947d8e7",
+    "config_sha256": "61d6276fe8d76295232cb02d26cbb0d29c25565911f50441e779c88c9220c556"
+  },
+  "numerical_scope": "Core correction arithmetic/source and edit vectors match tested serving representation. Portable startup paths/hooks and clean rebuilt CUDA binaries require fresh runtime validation; no cross-machine logit identity claim."
+}

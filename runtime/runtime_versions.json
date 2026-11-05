@@ -1,0 +1,24 @@
+{
+  "python_major_minor": [
+    3,
+    12
+  ],
+  "torch_runtime_version": "2.13.0+cu130",
+  "torch_cuda_version": "13.0",
+  "vllm_commit": "5df63a720",
+  "distributions": {
+    "vllm": "0.32.0",
+    "torch": "2.13.0",
+    "numpy": "2.3.5",
+    "transformers": "5.16.1",
+    "triton": "3.7.1",
+    "gguf": "0.19.0",
+    "compressed-tensors": "0.17.0",
+    "safetensors": "0.8.0",
+    "huggingface-hub": "1.33.0",
+    "tokenizers": "0.23.3",
+    "flashinfer-python": "0.7.0.post1",
+    "pillow": "12.3.0",
+    "nvidia-cuda-runtime": "13.0.96"
+  }
+}

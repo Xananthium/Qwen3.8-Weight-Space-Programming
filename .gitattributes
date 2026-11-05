@@ -1,0 +1,7 @@
+# Preserve exact bytes: published manifests and frozen-source hashes depend on them.
+* -text
+runtime/vendor/** linguist-vendored
+runtime/overrides/** linguist-vendored
+evidence/source_notices/** linguist-vendored
+evidence/*.csv linguist-generated
+language_analysis/public/** linguist-generated

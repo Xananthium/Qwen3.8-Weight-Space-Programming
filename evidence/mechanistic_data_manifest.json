@@ -1,0 +1,38 @@
+[
+  {
+    "file": "mechanisms/depth_summary.csv",
+    "sha256": "2a1f98fecd2d1271444250e568080cceea14f162ef50067c858d7d1f426cbfa6"
+  },
+  {
+    "file": "mechanisms/early_causal_profiles.csv",
+    "sha256": "10abe24f01577419056522157157ef3e90b87f1fff028c74fb2914bb2a1c98d8"
+  },
+  {
+    "file": "mechanisms/flank_attribution_analysis.csv",
+    "sha256": "bac18c37a50c7e04a627736452e21969a1880b0c9bee7090e5c7994ab9e7e177"
+  },
+  {
+    "file": "mechanisms/depth_profile.png",
+    "sha256": "24cc13e9c469dcb756351ff4c4717690c427705120fb26a12a066613e76eff8c"
+  },
+  {
+    "file": "mechanisms/depth_profile.pdf",
+    "sha256": "aaf6b3fb637425d59bb5746e607f591b1dc60488ad16b65eba15319fe52b9c4d"
+  },
+  {
+    "file": "mechanisms/early15_causal_transport.png",
+    "sha256": "a56d4deecdb4578ec84e4aa8be55ccadb50f9ba1d1a8ee446b53cedac2d4b705"
+  },
+  {
+    "file": "mechanisms/early15_causal_transport.pdf",
+    "sha256": "ee05d5c789585e4f91ea26f1e6aaf24f32a779f1693f5339331239fea15db1e8"
+  },
+  {
+    "file": "mechanisms/natural_capture_pair_comparisons.csv",
+    "sha256": "4c447e3a1a2f2fe51e178f5f17c7c5853db7ee56d3acd686a4e34737a6977ff7"
+  },
+  {
+    "file": "mechanisms/natural_capture_states.csv",
+    "sha256": "4a81c2410b7be8daedabe70f233923ee7cdaa295a7461f0346c48ed45af5f3ff"
+  }
+]

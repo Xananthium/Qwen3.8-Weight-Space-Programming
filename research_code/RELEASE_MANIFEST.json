@@ -1,0 +1,116 @@
+{
+  "status": "curated_public_source_inventory",
+  "scope": "Method inspection and authorized replay; no upstream upload by this agent.",
+  "files": [
+    {
+      "file": ".gitignore",
+      "bytes": 108,
+      "sha256": "52a03862b24b183bc9907a4dbb96761c3c0521278b87b6b7d8b174fd82585c4a"
+    },
+    {
+      "file": "README.md",
+      "bytes": 10468,
+      "sha256": "f119047c5af3eed471607656626f1cf44faf59e84dd26341588034f5c2f01e86"
+    },
+    {
+      "file": "SOURCE_PROVENANCE.json",
+      "bytes": 17243,
+      "sha256": "b63e6f5ed74705e9aadb57bba1d8bf95deb093b6d756a2039e453e39c2573810"
+    },
+    {
+      "file": "VALIDATION.json",
+      "bytes": 1414,
+      "sha256": "fe62c7ef93c5df6d35907ab2cb0238301cb0b3453dad1d8d7ae421a623e59e6d"
+    },
+    {
+      "file": "api_batch_eval.py",
+      "bytes": 12967,
+      "sha256": "843f9bb1c1844d9843b87d5a1d69edae070604c9b881e1b6d6eee9c388422c90"
+    },
+    {
+      "file": "assemble_upper_edit.py",
+      "bytes": 2763,
+      "sha256": "df0d923add7cffc41b011721e06accc72629c4c399d6d0eb692ed2b9297f2432"
+    },
+    {
+      "file": "fit_sparse_contrasts.py",
+      "bytes": 5205,
+      "sha256": "e65f8e10e918e050de86f072f63a523637430ca374d07127b19e341578cba085"
+    },
+    {
+      "file": "graph_certificate.py",
+      "bytes": 3534,
+      "sha256": "e39b94c6b9e37ee07cab9ec1d299bebd66b57c3c5f6368e3e0baf0b83f80ad2c"
+    },
+    {
+      "file": "hle_continuation.py",
+      "bytes": 3991,
+      "sha256": "ade5548bf8da5a890b6c38d47e8f0e8fec6c84ca48f52d6542db02e54fcffe5d"
+    },
+    {
+      "file": "hle_score.py",
+      "bytes": 4748,
+      "sha256": "c1bc4e635df7c5376ac26c4b4c3bf94707488291d67b1e45e2a582c526ddb3ca"
+    },
+    {
+      "file": "lab_routing.py",
+      "bytes": 3946,
+      "sha256": "342eac9c9e37ecf2aebab1e16840c0de312f2ac6283fd42cc2ba63fe4866b643"
+    },
+    {
+      "file": "make_constructed_probes.py",
+      "bytes": 2235,
+      "sha256": "7a4d240f5cb18410ad5d51b28c9882017c46bf9b730ea5b20c2cddd532d646f4"
+    },
+    {
+      "file": "requirements.txt",
+      "bytes": 59,
+      "sha256": "3c1cc11e075a956583e3a852d962b23eb26c1a319208d91722f9ad5e81863c7e"
+    },
+    {
+      "file": "run_suite.py",
+      "bytes": 1982,
+      "sha256": "949f289b6a87be2efd0a792dacbc8d9be38dde4d70a5653e580529df424aeeac"
+    },
+    {
+      "file": "score_math_tool.py",
+      "bytes": 5196,
+      "sha256": "02c809ea2ba78236f5b231c1985180bd30427d16040e39e0a87ac460956d1a36"
+    },
+    {
+      "file": "score_state_transfer.py",
+      "bytes": 12025,
+      "sha256": "93f51fe0ff52911ce1b99fce2037ec1ce53b61ccb097681c00f95b66e119a6bb"
+    },
+    {
+      "file": "templates/constructed_input_hashes.json",
+      "bytes": 757,
+      "sha256": "84e4c2123a26f73a404fc9dcb020038ddb27d2f240a5f82b71ede1aca5ce6732"
+    },
+    {
+      "file": "templates/constructed_probes.redacted.json",
+      "bytes": 2515,
+      "sha256": "2599836790ad3a6f9226a07a357df828ffece56e2aa6c7fb35968217ad16a881"
+    },
+    {
+      "file": "templates/frozen_job.template.json",
+      "bytes": 105,
+      "sha256": "2e47566c3ea4e4da5fa803fa7846b792bff30a9741d296e9446d2e418103d127"
+    },
+    {
+      "file": "templates/neighbor_capture_map.redacted.json",
+      "bytes": 2539,
+      "sha256": "df3c2cd3861d3d39a60f3e23c8849e17fbd1a2846578c6cdcd939645d368af47"
+    },
+    {
+      "file": "templates/suite_plan.template.json",
+      "bytes": 1185,
+      "sha256": "2b1e6925c1bbf06ff3c279d4a7d93280f4172869bd360edb0082395d103f6ed3"
+    },
+    {
+      "file": "validate_cpu.py",
+      "bytes": 5335,
+      "sha256": "a72a422f193430959cde0466d38806d7a67a0e4cb32aaa7b86bcea9365f11ff1"
+    }
+  ]
+}

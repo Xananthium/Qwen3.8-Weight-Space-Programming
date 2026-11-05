@@ -1,0 +1,83 @@
+{
+  "success": true,
+  "scope": "CPU source/basis arithmetic/binding/portable-manifest checks only",
+  "core_and_integration_match_selected_source": true,
+  "candidate_sha256": "ebb80ab4f906b7c7fbc61e95dd285b1e27b82b35e3e68982e575ccbfe80f8b51",
+  "alpha": 1.5,
+  "checks": [
+    {
+      "layer": 49,
+      "rank": 0,
+      "basis_oracle_bitwise_equal": true,
+      "TP_slice_correct": true,
+      "nonpersistent_FP32_buffers": true
+    },
+    {
+      "layer": 49,
+      "rank": 1,
+      "basis_oracle_bitwise_equal": true,
+      "TP_slice_correct": true,
+      "nonpersistent_FP32_buffers": true
+    },
+    {
+      "layer": 50,
+      "rank": 0,
+      "basis_oracle_bitwise_equal": true,
+      "TP_slice_correct": true,
+      "nonpersistent_FP32_buffers": true
+    },
+    {
+      "layer": 50,
+      "rank": 1,
+      "basis_oracle_bitwise_equal": true,
+      "TP_slice_correct": true,
+      "nonpersistent_FP32_buffers": true
+    },
+    {
+      "layer": 51,
+      "rank": 0,
+      "basis_oracle_bitwise_equal": true,
+      "TP_slice_correct": true,
+      "nonpersistent_FP32_buffers": true
+    },
+    {
+      "layer": 51,
+      "rank": 1,
+      "basis_oracle_bitwise_equal": true,
+      "TP_slice_correct": true,
+      "nonpersistent_FP32_buffers": true
+    }
+  ],
+  "path_relocation_and_cache_isolation": true,
+  "bad_base_sidecar_and_TP_rejected": true,
+  "CUDA_initialized": false,
+  "GPU_model_or_inference_runs": 0,
+  "not_claimed": "CUDA rebuilt kernel identity, compiled/eager equivalence, or cross-machine sampled-token equality",
+  "recorded_at_utc": "2026-11-05T16:41:08.407772+00:00",
+  "pinned_CUDA_source_archive_closure_complete": true,
+  "real_plugin_EngineConfig_CPU_check": {
+    "plugin_imported": true,
+    "full_EngineConfig_CPU": true,
+    "LLM_or_EngineCore_constructed": false,
+    "CUDA_initialized": false,
+    "CUDA_extension_available": false,
+    "runtime_ready": false,
+    "candidate_sha256": "ebb80ab4f906b7c7fbc61e95dd285b1e27b82b35e3e68982e575ccbfe80f8b51",
+    "layers": [
+      49,
+      50,
+      51
+    ],
+    "alpha": 1.5,
+    "CUDA_extension_sha256": null,
+    "matches_tested_CUDA_binary": false,
+    "rebuilt_runtime_numerics_validated_by_this_check": false
+  },
+  "public_check_sources_sha256": {
+    "cpu_checks.py": "20558168454385f3266187a6d6e3babd10dea60e7a0b3092c582b5dd282b5236",
+    "prepare_runtime.py": "dbb5f858bd0e9c71c1c9b24398781959f2c84f9c4e75bc8db125fb521a45e0bf",
+    "portable_runtime.py": "4ab0911a7983f7c4e8a57c76487d62b622ae89e1eb51821560e8f26e03e1dc3f",
+    "launch_exact.py": "984435e4817263a41ffa32f8eb7b991d36a7ffdafe385bf6287d35aafe7a5cae",
+    "overlay/sitecustomize.py": "34379a313458095fbb99bd8f0042595465547882e37704f60e1be34716f80d16"
+  }
+}

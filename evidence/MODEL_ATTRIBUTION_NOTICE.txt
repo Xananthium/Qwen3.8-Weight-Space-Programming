@@ -1,0 +1,13 @@
+Calmer-Qwen3.8-27B-4bit: derivative experimental model
+
+Base attribution: Qwen / Alibaba Cloud, Qwen3.8-27B.
+Immediate quantized source: HauhauCS, Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF, revision993a5971fda8f30dd1b7eb2654792ba4415c7460.
+Both source model cards declare Apache-2.0. Preserve applicable upstream notices and the supplied Apache license. No official endorsement is implied.
+
+Modification notice: this experiment introduces fixed rank-one deltas to decoder MLP down-projections at zero-based layers49,50,51. The selected effective strengths are0.25,1.5,0.25, implemented in the validated serving runtime using fixed NPZ coefficients with global alpha1.5. Each original block executes once. The map is fixed; its injected magnitude depends on the token activation. The original GGUF was not overwritten during evaluation.
+
+Source file SHA256: ba36dc3c2b2ff5e0aa5d71092a8894546996a6a119ae391803dda07cdc08516d.
+Selected NPZ SHA256: ebb80ab4f906b7c7fbc61e95dd285b1e27b82b35e3e68982e575ccbfe80f8b51.
+This notice is not a checksum or validation certificate for a newly baked/requantized GGUF. Any published derivative file must have its own hash and prominent changed-file notice, with its exact numeric/runtime validation status stated separately. Upstream signed authenticity manifests do not attest our changed weights.
+
+The '4bit' name refers to the upstream mixed-precision quantization family. It is not a claim that every tensor is4-bit: edited down-projection tensors in the source were Q5_K. Local results belong to the exact evaluated runtime and small exposed panels, not a full HLE/GSM8K benchmark or a validated general upgrade.

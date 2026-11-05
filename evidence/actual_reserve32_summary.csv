@@ -1,0 +1,6 @@
+condition,n,strict_correct,strict_wrong,strict_cutoff,strict_unparsed,intended_correct,intended_wrong,intended_cutoff,output_tokens,elapsed_s
+control,32,3,22,5,2,3,24,5,172533,690.2941823005676
+primary_half_flanks,32,2,27,3,0,2,27,3,165101,656.4331293106079
+secondary_joint64,32,1,23,5,3,2,25,5,193636,699.7627060413361
+halfdose_a1p5,32,4,22,4,2,4,24,4,194671,712.1693732738495
+early15,32,4,20,6,2,4,22,6,185941,755.7483456134796

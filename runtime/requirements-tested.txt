@@ -1,0 +1,15 @@
+# Observed Python 3.12 runtime. vLLM file hashes/commit are also checked.
+vllm==0.32.0
+# Installed distribution metadata is2.13.0; imported build is2.13.0+cu130.
+torch==2.13.0
+numpy==2.3.5
+transformers==5.16.1
+triton==3.7.1
+gguf==0.19.0
+compressed-tensors==0.17.0
+safetensors==0.8.0
+huggingface-hub==1.33.0
+tokenizers==0.23.3
+flashinfer-python==0.7.0.post1
+Pillow==12.3.0
+nvidia-cuda-runtime==13.0.96

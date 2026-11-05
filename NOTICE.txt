@@ -1,0 +1,19 @@
+Qwen3.8-Weight-Space-Programming
+Copyright 2026 Xananthium
+
+Original project documentation, publication tooling and experimental edits
+are provided under the Apache License, Version 2.0. Preparation used AI
+assistance. This notice does not relicense third-party source or benchmark
+data and does not imply endorsement by upstream authors.
+
+The model derivative credits Qwen/Alibaba Cloud and HauhauCS. Model identities,
+changed tensors and numerical representations are described in the model card,
+PAPER.md and evidence/MODEL_ATTRIBUTION_NOTICE.txt. Source model license and
+card copies are retained under evidence/source_notices.
+
+The runtime contains third-party components. Their applicable notices and
+licenses are retained under runtime/NOTICE.txt and runtime/LICENSES/.
+Research publications are cited in PAPER.md and evidence/PRIMARY_SOURCES.json.
+
+Public benchmark-derived measurements are observations, not a redistribution
+of the source benchmark. Dataset access is not granted by this repository.

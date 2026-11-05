@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "vllm_version": "0.32.0",
+  "vllm_commit": "5df63a720",
+  "files": [
+    {
+      "module": "vllm.model_executor.layers.mamba.ops.causal_conv1d",
+      "relative_path": "vllm/model_executor/layers/mamba/ops/causal_conv1d.py",
+      "original_sha256": "cb16cc9250c4195c09d6d83b43bba607c2d749b621d8d135a920443d1577265f",
+      "patched_sha256": "06758d24404127b894b0e330fe482bd77ed980727a9fa42ab73ff372aa59c1c9"
+    },
+    {
+      "module": "vllm.model_executor.layers.mamba.ops.mamba_ssm",
+      "relative_path": "vllm/model_executor/layers/mamba/ops/mamba_ssm.py",
+      "original_sha256": "6e765aa767e621cbb79635cf1e9a18e1501e76048685b5e36a75c3ca933cc608",
+      "patched_sha256": "f1a0b8362846430b578304f690926e09484220045d6a2823d6faf246e337fa03"
+    },
+    {
+      "module": "vllm.third_party.flash_linear_attention.ops.fused_recurrent",
+      "relative_path": "vllm/third_party/flash_linear_attention/ops/fused_recurrent.py",
+      "original_sha256": "fe6f1311014809040497aa0a623e7fa97f4b3457cdc7ee1f1f8aed21f326f755",
+      "patched_sha256": "085fa04ef2cabd9604bda3ac5bfc567480bc59a890b78cb9886561285db35036"
+    },
+    {
+      "module": "vllm.third_party.flash_linear_attention.ops.fused_sigmoid_gating",
+      "relative_path": "vllm/third_party/flash_linear_attention/ops/fused_sigmoid_gating.py",
+      "original_sha256": "000ab8996af9788fdb8843a6a3b91833e7a14c8acc0e1ea073a536330f64cb6f",
+      "patched_sha256": "c45f746199067fb3981ca0e9c136a8109a12666d44a39ea5daae03d19c4be132"
+    },
+    {
+      "module": "vllm.v1.spec_decode.llm_base_proposer",
+      "relative_path": "vllm/v1/spec_decode/llm_base_proposer.py",
+      "original_sha256": "8df7969c47e177dd8940303680f65ac8a71f316af5108977316281887b91769b",
+      "patched_sha256": "92c6287c1efeda6e0453982571df7b5a567923bfc09397458dc3839f86db6cc3"
+    },
+    {
+      "module": "vllm.model_executor.layers.attention.attention",
+      "relative_path": "vllm/model_executor/layers/attention/attention.py",
+      "original_sha256": "bde77677fd0e95ea09c6a580dfaf09b57741e8183e00cb106e2d1cc64d8e03f2",
+      "patched_sha256": "1880b249957a8b3505d508a77bce7020f6a17d080b59c74b167e20b5234307fa"
+    },
+    {
+      "module": "vllm.v1.attention.ops.turboquant_soa.triton_turboquant_unified_attention",
+      "relative_path": "vllm/v1/attention/ops/turboquant_soa/triton_turboquant_unified_attention.py",
+      "original_sha256": "103ae7cf290748c34253f7caab39aacfc8b8d35caf37e863d4217a81143dfe39",
+      "patched_sha256": "87d748e0f10073e2adf9801fdf3a68568551dba6da2f4eb0396231bebf71a6a3"
+    }
+  ]
+}

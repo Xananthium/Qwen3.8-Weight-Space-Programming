@@ -1,0 +1,22 @@
+Reconstruction and audit plan
+
+The CSV/JSON exports are whitelist-derived observations from five actual-serving conditions and fourteen eager-lab conditions. The two runtime/budget cohorts must not be pooled. actual_groups.json records55 completed stage results:405 generate outputs plus20 smoke cases. artifact_inventory.json records source-byte hashes without copying protected benchmark content or private configuration. Hashes use SHA256; token-array/record hashes use sorted JSON keys, compact separators, ensure_ascii=False, UTF-8. Text hashes use exact UTF-8 bytes. Official answer labels and raw prompt/output arrays are intentionally absent.
+
+1. Obtain authorized HLE access using your own account at the official dataset page. Review current conditions directly; publication of this project does not grant access. Log in using hf auth login; never put a token in a public command transcript or repository.
+
+2. From the research repository root, download the pinned dataset into a private sibling directory outside the public repository:
+   hf download cais/hle data/test-00000-of-00001.parquet --type dataset --revision 5a81a4c7271a2a2a312b9a690f0c2fde837e4c29 --local-dir ../private_hle_source
+
+3. Install pyarrow in a separate local environment and run:
+   python evidence/verify_hle_records.py --parquet ../private_hle_source/data/test-00000-of-00001.parquet
+   This checks the complete parquet hash and exact question bytes for all37 HLE IDs used across actual reserve/development/planar cases. It does not print the questions or keys.
+
+4. For exact prompt/record verification, supply the frozen local tokenizer/template directory with --tokenizer-dir. It must contain the exact chat_template.jinja and tokenizer/config files from the published runtime provenance. The script checks the canonical full record hash, including privately retrieved keys/rationales. Optional --private-output writes reconstructed records outside the public evidence folder with mode0600. No network, model generation, upload or queue action occurs in this verifier.
+
+5. Recreate each request from its ordered IDs, sampler, seed and output budget in actual_groups.json. Preserve the production-derived compiled/TQ4/DFlash/TP2 stack and profile-isolated compilation caches described in the main project methods. Profiles/requests alone do not prove which weights a live server loaded: independently verify process/startup bindings and both-rank compiled dataflow. The quantized exported artifact and FP32 sidecar may differ numerically; follow the model card's artifact-specific validation statement.
+
+6. Existing graders, strict statuses and separate intended/proof reviews remain distinct. Reproduce scoring with the unchanged source versions and authorized benchmark records. Per-output historical text and token arrays are privately retained and source-hashed; a request for them needs appropriate dataset/content handling. The public metadata alone cannot let a reader independently inspect all historical reasoning. A new run gives new evidence, not guaranteed bit-identical reconstruction of the historical samples.
+
+7. Keep the frozen ten completed control misses and all32 reserve denominators. Preserve original order, every cutoff/unparsed output, adaptive selection timing, early15 loop-gate deviation and the unrun seed08 group. Do not relabel this exposed diagnostic study a blind final benchmark.
+
+For other raw scientific arrays/captures, use artifact_inventory.json to locate and verify an authorized local copy. Captured activations and replay prefix IDs can encode benchmark content; this package does not assume they are independently safe for unrestricted rehosting. Natural-prefix captures are fresh-prefill replays, not online decode activations. Their four pairs derive from only two underlying HLE questions and were not used for new fitting.

@@ -1,0 +1,107 @@
+{
+  "method": "Regenerated derived data/figures using public measurements only in the same recorded CPU environment. This replays aggregates/plots, not private token/text feature extraction.",
+  "status": "passed",
+  "n_files_byte_identical": 19,
+  "files": [
+    {
+      "file": "cohort_summary.csv",
+      "sha256": "0c65a76e4c567aa5d3e1fada9ef67a17c7fcb160cd8d3be016e74732a53b28eb",
+      "byte_identical": true
+    },
+    {
+      "file": "cohort_summary.json",
+      "sha256": "a7510722e477e9f3f626cdf5226480cabb21bade1313994bc56cfc0a187fc31a",
+      "byte_identical": true
+    },
+    {
+      "file": "figures/actual_development_lexical_density.png",
+      "sha256": "457b37572c3449139a2d44ed96051b58c5c7ae3300080ad6085b75f359e8032d",
+      "byte_identical": true
+    },
+    {
+      "file": "figures/actual_development_lexical_density.svg",
+      "sha256": "7a56e953f10ba82b02730f0e8a35c9fd537fea85227dcdf79190a6ce7f1405f2",
+      "byte_identical": true
+    },
+    {
+      "file": "figures/actual_development_tokens_and_wait.png",
+      "sha256": "3223a0c504ff6e813c927aef1efd0d40ab1e8e3a01ed76bda92c140c230dc6a1",
+      "byte_identical": true
+    },
+    {
+      "file": "figures/actual_development_tokens_and_wait.svg",
+      "sha256": "a023b62c971560e1071c4db55091b5628a8c380d0fe91ffbaaa55e61d707d9d3",
+      "byte_identical": true
+    },
+    {
+      "file": "figures/actual_primary_case_tokens.png",
+      "sha256": "521c3a99acb34d6de88a93f6474c45d634dd900eeaca7550ffd19e36c520522c",
+      "byte_identical": true
+    },
+    {
+      "file": "figures/actual_primary_case_tokens.svg",
+      "sha256": "9948359451cc67197ee10fe6b6537e75800db19c6272582676a58ae4eadcfbed",
+      "byte_identical": true
+    },
+    {
+      "file": "figures/laboratory_primary_cases.png",
+      "sha256": "959a4fa36c7916238c56260e11e59c4a2e9642b6f4ece33be2d3719f7ea75374",
+      "byte_identical": true
+    },
+    {
+      "file": "figures/laboratory_primary_cases.svg",
+      "sha256": "b98c6f32d6342cc6d673df563b5c678ccc2ff662b6f21c005b06296e0b4abcbd",
+      "byte_identical": true
+    },
+    {
+      "file": "figures/reserve_outcome_stratified_descriptive.png",
+      "sha256": "4d5e50272d6b06c984737120b7f2a96a9799e96da95f9a0847a299245cdb2996",
+      "byte_identical": true
+    },
+    {
+      "file": "figures/reserve_outcome_stratified_descriptive.svg",
+      "sha256": "82ed4210e42e435a907f1fed2d3aaf7366b9f703de75feb89a5cf1f971dff2d2",
+      "byte_identical": true
+    },
+    {
+      "file": "figures/reserve_tokens_and_character_screen.png",
+      "sha256": "955ff7d6289ea69bdc4a3b39a9f5e73f1419cd89452e83198c0bef2ed6d64394",
+      "byte_identical": true
+    },
+    {
+      "file": "figures/reserve_tokens_and_character_screen.svg",
+      "sha256": "3c8e117b3273c81116d649957b5b5ee922745086f11c58e03c00d8ad42fd33c5",
+      "byte_identical": true
+    },
+    {
+      "file": "outcome_stratified_descriptive.csv",
+      "sha256": "1047395386a2d47ab7ab8f7ab5cb1cd25386d35233256acbcafe7661b0e4c9ce",
+      "byte_identical": true
+    },
+    {
+      "file": "paired_vs_control.csv",
+      "sha256": "c5d4ae9d371792f4c19d71a9b712b47c6f335de61a7eedf457c884130cb993eb",
+      "byte_identical": true
+    },
+    {
+      "file": "panel_family_summary.csv",
+      "sha256": "f540b1667a8ae69f215a993c7a2b6e9770f1e06ecf1e853bcb905d2fc2212403",
+      "byte_identical": true
+    },
+    {
+      "file": "panel_family_summary.json",
+      "sha256": "156df898ce4759bee35464942d45097072f7b7786a8a94f42e7bde497c5c597b",
+      "byte_identical": true
+    },
+    {
+      "file": "primary_cases.csv",
+      "sha256": "a20d9bf33574915fba64ed08449200db72019be0bb4cbbd366a6c193e946684b",
+      "byte_identical": true
+    }
+  ],
+  "wording_correction_regeneration": {
+    "all503_rows_unchanged": true,
+    "numerical_rows_sha256": "4c4371f23387bca51e688aaa2a46e5350e7000ab38773926105e2fea69c26a72",
+    "note": "Current script reran from saved raw inputs after smoke/word-occurrence wording correction; no new inference."
+  }
+}

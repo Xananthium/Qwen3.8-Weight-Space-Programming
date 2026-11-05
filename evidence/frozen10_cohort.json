@@ -1,0 +1,24 @@
+{
+  "frozen_at": "2026-11-05T09:02:42.380075+00:00",
+  "selection": "First10 strict wrong, completed answers in fixed reserve32 order. Excludes cutoffs/unparsed; selected before any edited serving output. All32 remain reported so repairs cannot hide losses on previously correct questions.",
+  "ids": [
+    "hle:6730d8d2f51df13db2f61050",
+    "hle:6750df09c905be9066a3980c",
+    "hle:6716e28929a01505aba1ddb5",
+    "hle:670c775842b25f65425c86c2",
+    "hle:672e1ba8e62456d8519fb95b",
+    "hle:66f760ebf206a49e129c7ed9",
+    "hle:672de1afed6de72b75b8c7e6",
+    "hle:6714e9dacbabe50aa0256711",
+    "hle:670ad4fbb4aea214feb705d3",
+    "hle:67255d0e51c2cc162e5b53e4"
+  ],
+  "repairs": {
+    "control": 0,
+    "primary_half_flanks": 0,
+    "secondary_joint64": 0,
+    "halfdose_a1p5": 0,
+    "early15": 0
+  },
+  "source_sha256": "918d120c4e6898db5fd6807c89969d0136bbfd7ba34bd2f51b76c69cd3f49e84"
+}

@@ -1,0 +1,6 @@
+condition,cohort,n,strict_correct,cutoff,intended_correct,output_tokens,completed_model_proof_certified
+control,separate_planar_development_case,1,1,0,1,6172,False
+primary_half_flanks,separate_planar_development_case,1,0,1,0,16384,False
+secondary_joint64,separate_planar_development_case,1,1,0,1,10489,False
+halfdose_a1p5,separate_planar_development_case,1,1,0,1,4339,False
+early15,separate_planar_development_case,1,1,0,1,6207,False

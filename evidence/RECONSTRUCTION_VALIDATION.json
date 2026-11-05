@@ -1,0 +1,36 @@
+{
+  "cpu_only": true,
+  "torch_enabled": false,
+  "pinned_parquet_verified": true,
+  "questions_verified": 37,
+  "full_canonical_records_verified": 37,
+  "private_output_written": false,
+  "tokenizer_template_files": [
+    {
+      "file": "config.json",
+      "sha256": "191e0af232104ed8b65258cf3fb2b842e288008baca7633c11b82a1ac7203aab",
+      "bytes": 4312
+    },
+    {
+      "file": "tokenizer.json",
+      "sha256": "0997f410c57a1f4e53b09e4be8f4a172d90edd9564368fb0847030937229b9f3",
+      "bytes": 12809320
+    },
+    {
+      "file": "tokenizer_config.json",
+      "sha256": "b11349aafa7cdc6a320767cf7ceb29ed82f7eda5d65e8e0819e76f0ce947bf27",
+      "bytes": 17928
+    },
+    {
+      "file": "chat_template.jinja",
+      "sha256": "bf80ad07c19d540b0699d0184c0c7586822f776439198697de73b2f7d3b841ca",
+      "bytes": 9115
+    },
+    {
+      "file": "generation_config.json",
+      "sha256": "e70c136c1b78ddc1fb0905bac8e733a4dc448d4f852a5dd75143fffc70be550e",
+      "bytes": 202
+    }
+  ],
+  "scope": "Exact source/record verification only; no historical stochastic generation replay or GPU/API activity."
+}

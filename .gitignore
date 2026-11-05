@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+*.pyc
+.cache/
+rebuilt/
+private_evidence/
+private_hle_source/
+internal_pending_rights/
+local-state/
+*.gguf
+*.safetensors
+*.so
+.env
+.env.*
+*.log

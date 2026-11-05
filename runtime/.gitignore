@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+*.so
+build/
+dist/
+*.egg-info/
+# Local manifests, machine paths, caches and logs belong outside this release.
+local-state/

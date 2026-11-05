@@ -1,0 +1,27 @@
+Rights and publication findings, checked 2026-11-05
+
+MODEL CHAIN
+The immediate source is HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF, pinned revision993a5971fda8f30dd1b7eb2654792ba4415c7460. Its card explicitly retains Apache-2.0 and identifies Qwen/Qwen3.8-27B as the base. Official Qwen/Qwen3.8-27B also declares Apache-2.0; its reviewed LICENSE is pinned at8c0b3d30f3ae96f5c7f774de704bf0ada83e422a. The latter is the license-source revision, not an independently established exact unquantized ancestor commit of the Hauhau file.
+
+Source GGUF SHA256: ba36dc3c2b2ff5e0aa5d71092a8894546996a6a119ae391803dda07cdc08516d.
+This publication is a derivative experiment, not an official Qwen or HauhauCS release. Credit Qwen/Alibaba Cloud for the base and HauhauCS for the Aggressive mixed-precision GGUF. Identify all changed files/tensors prominently; preserve applicable upstream copyright/attribution notices and provide Apache-2.0. Apache section4 also requires retaining any applicable upstream NOTICE; the reviewed Qwen listing had LICENSE/README and Hauhau listing README, with no separate NOTICE found. Do not imply endorsement or inherit upstream signed-manifest authenticity for modified tensors. The selected layer49/50/51 delta and any newly exported/requantized artifact need their own hashes and numerical-validation limits.
+
+Official sources:
+https://huggingface.co/HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF
+https://huggingface.co/Qwen/Qwen3.8-27B
+https://www.apache.org/licenses/LICENSE-2.0
+Pinned card and LICENSE copies are under source_notices; retrieval URLs/hashes are recorded separately.
+
+HLE DATASET
+Official cais/hle is MIT-tagged, auto-gated, and explicitly asks users not to publicly share, re-upload or distribute the dataset to preserve benchmark integrity. Its public card includes no-training contamination guidance. These are distinct observations: gating is an access mechanism, MIT is a license declaration, and the integrity request should not be misrepresented as an independently established categorical legal prohibition. Any conditions accepted by the original account are not reproduced or assumed transferable here. Public raw README retrieval returned401; the public dataset page and metadata exposed the declaration/request. The experiment pinned5a81a4c7271a2a2a312b9a690f0c2fde837e4c29, matching the verified source parquet.
+
+Publication policy: respect the explicit integrity request by omitting benchmark questions, images, reference rationales, official answer labels and losslessly decodable prompt token arrays from this public evidence export. Raw API jobs/results contain all of these and are not safe to copy wholesale. A model-generated output is not automatically independent of the benchmark: it can quote or reconstruct the question, options or solution. Raw generated HLE text/token arrays are therefore hash-inventoried but not rehosted in this package. New selective excerpts require separate content review; a blanket label of 'our outputs' does not perform that review.
+
+Public scientific observations include case IDs, aggregate/per-case correctness and cutoff statuses, token counts, timings, candidate hashes, source hashes and methods. No raw answer or low-entropy standalone answer hash is published. IDs permit authorized dataset users to locate the exact cases. Scripts reconstruct source records only after each reproducer independently obtains authorized source access; they do not bypass gating. A private raw-output archive remains needed for exact historical proof review. Source hashes verify bytes if supplied through an appropriate channel; rerunning a model cannot be promised to reproduce sampled outputs exactly.
+
+https://huggingface.co/datasets/cais/hle
+https://huggingface.co/docs/hub/datasets-gated
+https://github.com/centerforaisafety/hle/blob/main/citation.txt
+
+SCOPE
+This folder publishes derived observations and provenance, not third-party benchmark data or a blanket license for all files in the original experiment. Research links confer no permission to copy unlicensed third-party code. Keep per-component licenses for model weights, independent code and documentation distinct. No credentials, environment dumps, absolute machine paths or private launch configurations are included. Full raw evidence remains preserved locally; the public inventory documents what is withheld and why, without claiming that this reduced package is an independently complete proof audit.

@@ -1,0 +1,66 @@
+[
+  {
+    "name": "001_capture_0_productive",
+    "pair": 0,
+    "label": "productive",
+    "record_id": "constructed_0_productive",
+    "problem_sha256": "2d79228257d883d2050fa1ec44482337e870bad2526ac7de8fa400e981d90abe",
+    "prefix_sha256": "ee106777812c03a6c742a096636b918a2969522bcf46746bc0ccad15a5126ff1"
+  },
+  {
+    "name": "001_capture_0_repetitive",
+    "pair": 0,
+    "label": "repetitive",
+    "record_id": "constructed_0_repetitive",
+    "problem_sha256": "2d79228257d883d2050fa1ec44482337e870bad2526ac7de8fa400e981d90abe",
+    "prefix_sha256": "1127ed5b8993175deb4d2968367590393bac998e562b848036b0ccfc3ce6bec9"
+  },
+  {
+    "name": "003_capture_1_productive",
+    "pair": 1,
+    "label": "productive",
+    "record_id": "constructed_1_productive",
+    "problem_sha256": "2cbb3fad02fb24f52a9bffc48faa88328d65f4413ade29d1bba833a2640e5586",
+    "prefix_sha256": "fc8c4c31bb81d5765aecc8ffae4af1359e5699a321f809b10328762f384a541e"
+  },
+  {
+    "name": "003_capture_1_repetitive",
+    "pair": 1,
+    "label": "repetitive",
+    "record_id": "constructed_1_repetitive",
+    "problem_sha256": "2cbb3fad02fb24f52a9bffc48faa88328d65f4413ade29d1bba833a2640e5586",
+    "prefix_sha256": "275edfeeab3eebdfe376cd72f148a6e705c04a49fffea44079f975b493868d15"
+  },
+  {
+    "name": "005_capture_2_productive",
+    "pair": 2,
+    "label": "productive",
+    "record_id": "constructed_2_productive",
+    "problem_sha256": "05d74caa6c54ee878e268415804152f8879fab4b38830b798588e3bb29513772",
+    "prefix_sha256": "aa83b8f2b382646f5329404bfe4217433bd6c7a2ed6f7ed5a737c1b1efdf9a43"
+  },
+  {
+    "name": "005_capture_2_repetitive",
+    "pair": 2,
+    "label": "repetitive",
+    "record_id": "constructed_2_repetitive",
+    "problem_sha256": "05d74caa6c54ee878e268415804152f8879fab4b38830b798588e3bb29513772",
+    "prefix_sha256": "0577c6b702e706abd5ad477e191ceda701c85b3a1f0b0435aeead0ca51d6a8b9"
+  },
+  {
+    "name": "007_capture_3_productive",
+    "pair": 3,
+    "label": "productive",
+    "record_id": "constructed_3_productive",
+    "problem_sha256": "3109c6e95505693eecd81d97d124e926ba70c5687fcdc1938d62ebdca30b3e9c",
+    "prefix_sha256": "c20b26173a4f597a2a3f770940b838f44b87a50c03468f0dfe705c3e5c94b589"
+  },
+  {
+    "name": "007_capture_3_repetitive",
+    "pair": 3,
+    "label": "repetitive",
+    "record_id": "constructed_3_repetitive",
+    "problem_sha256": "3109c6e95505693eecd81d97d124e926ba70c5687fcdc1938d62ebdca30b3e9c",
+    "prefix_sha256": "19e8f3ff08db352d7cdf39626459ee1dd73b0f551fe8e5b9fe3f22e581fdaa97"
+  }
+]

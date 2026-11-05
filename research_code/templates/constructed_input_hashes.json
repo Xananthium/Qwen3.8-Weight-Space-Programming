@@ -1,0 +1,15 @@
+{
+  "source_dataset_file_sha256": "4f43fbec6920bffbb2ceb4519e16345521e2cba82dfc101ba0da7891472fa693",
+  "discovery_record_ids": [
+    "gsm8k_train:2079",
+    "gsm8k_train:2451",
+    "gsm8k_train:2703",
+    "gsm8k_train:854"
+  ],
+  "productive_suffix_utf8_sha256": "1b88ad791e4bf5965663f37b74b8b48349fcc76d7f2bb6a24bd9623227c9a387",
+  "productive_suffix_utf8_bytes": 94,
+  "recheck_sentence_with_newline_utf8_sha256": "e472656b19761dd1a966738391597100bf8467e65cd8a5d44cb440a5740bd624",
+  "recheck_sentence_with_newline_utf8_bytes": 161,
+  "recheck_repetitions": 5,
+  "material_policy": "No GSM problem, worked solution, reference answer or authored prefix string is rehosted here. Exact input strings require separately authorized source records/archive."
+}

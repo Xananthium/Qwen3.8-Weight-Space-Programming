@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "checks": [
+    "503 unique outputs;405 actual+98 laboratory",
+    "all saved token counts and text/token boundaries agree",
+    "exact phase+control token accounting",
+    "all frozen full32 totals reproduced",
+    "selected GSM retention23/24 preserved",
+    "early15 punctuation failures656/22 reproduced",
+    "no cutoff passes",
+    "matched prompt hashes identical within each cohort/seed/case",
+    "synthetic redundant boundary and unfinished thought accounting"
+  ],
+  "boundary_marker_count_histogram": {
+    "1": 458,
+    "0": 43,
+    "2": 2
+  },
+  "actual_cutoffs": 31,
+  "laboratory_cutoffs": 12
+}

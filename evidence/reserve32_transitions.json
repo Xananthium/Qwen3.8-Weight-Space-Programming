@@ -1,0 +1,106 @@
+{
+  "primary_half_flanks": {
+    "strict": {
+      "gained": [
+        "hle:6739e06f5a81384176dd28cd"
+      ],
+      "lost": [
+        "hle:6724217c9909a95d1bf7aa1c",
+        "hle:67242f1f911674ab1b5d904b"
+      ],
+      "retained": [
+        "hle:672a5ecf541155da3e036094"
+      ]
+    },
+    "intended": {
+      "gained": [
+        "hle:6739e06f5a81384176dd28cd"
+      ],
+      "lost": [
+        "hle:6724217c9909a95d1bf7aa1c",
+        "hle:67242f1f911674ab1b5d904b"
+      ],
+      "retained": [
+        "hle:672a5ecf541155da3e036094"
+      ]
+    }
+  },
+  "secondary_joint64": {
+    "strict": {
+      "gained": [],
+      "lost": [
+        "hle:6724217c9909a95d1bf7aa1c",
+        "hle:672a5ecf541155da3e036094"
+      ],
+      "retained": [
+        "hle:67242f1f911674ab1b5d904b"
+      ]
+    },
+    "intended": {
+      "gained": [
+        "hle:671ac42e34dde826ba049e63"
+      ],
+      "lost": [
+        "hle:6724217c9909a95d1bf7aa1c",
+        "hle:672a5ecf541155da3e036094"
+      ],
+      "retained": [
+        "hle:67242f1f911674ab1b5d904b"
+      ]
+    }
+  },
+  "halfdose_a1p5": {
+    "strict": {
+      "gained": [
+        "hle:673735aa61f20f11eb1097d2",
+        "hle:6726054b0aae355a51195ce8",
+        "hle:671ac42e34dde826ba049e63"
+      ],
+      "lost": [
+        "hle:6724217c9909a95d1bf7aa1c",
+        "hle:67242f1f911674ab1b5d904b"
+      ],
+      "retained": [
+        "hle:672a5ecf541155da3e036094"
+      ]
+    },
+    "intended": {
+      "gained": [
+        "hle:673735aa61f20f11eb1097d2",
+        "hle:6726054b0aae355a51195ce8",
+        "hle:671ac42e34dde826ba049e63"
+      ],
+      "lost": [
+        "hle:6724217c9909a95d1bf7aa1c",
+        "hle:67242f1f911674ab1b5d904b"
+      ],
+      "retained": [
+        "hle:672a5ecf541155da3e036094"
+      ]
+    }
+  },
+  "early15": {
+    "strict": {
+      "gained": [
+        "hle:6726054b0aae355a51195ce8"
+      ],
+      "lost": [],
+      "retained": [
+        "hle:6724217c9909a95d1bf7aa1c",
+        "hle:67242f1f911674ab1b5d904b",
+        "hle:672a5ecf541155da3e036094"
+      ]
+    },
+    "intended": {
+      "gained": [
+        "hle:6726054b0aae355a51195ce8"
+      ],
+      "lost": [],
+      "retained": [
+        "hle:6724217c9909a95d1bf7aa1c",
+        "hle:67242f1f911674ab1b5d904b",
+        "hle:672a5ecf541155da3e036094"
+      ]
+    }
+  }
+}

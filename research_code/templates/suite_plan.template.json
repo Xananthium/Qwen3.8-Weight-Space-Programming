@@ -1,0 +1,52 @@
+[
+  {
+    "stage": "development7",
+    "job": "PRIVATE_JOBS/development7.generate.json",
+    "seed": 20261105
+  },
+  {
+    "stage": "development7_seed07",
+    "job": "PRIVATE_JOBS/development7_seed07.generate.json",
+    "seed": 20261107
+  },
+  {
+    "stage": "hle_reserve8",
+    "job": "PRIVATE_JOBS/hle_reserve8.generate.json",
+    "seed": 20261106
+  },
+  {
+    "stage": "hle_reserve_next8",
+    "job": "PRIVATE_JOBS/hle_reserve_next8.generate.json",
+    "seed": 20261106
+  },
+  {
+    "stage": "hle_reserve_16_24",
+    "job": "PRIVATE_JOBS/hle_reserve_16_24.generate.json",
+    "seed": 20261106
+  },
+  {
+    "stage": "hle_reserve_24_32",
+    "job": "PRIVATE_JOBS/hle_reserve_24_32.generate.json",
+    "seed": 20261106
+  },
+  {
+    "stage": "planar1",
+    "job": "PRIVATE_JOBS/planar1.generate.json",
+    "seed": 20261106
+  },
+  {
+    "stage": "gsm_retention24",
+    "job": "PRIVATE_JOBS/gsm_retention24.generate.json",
+    "seed": 20261106
+  },
+  {
+    "stage": "state_transfer4",
+    "job": "PRIVATE_JOBS/state_transfer4.generate.json",
+    "seed": 20261106
+  },
+  {
+    "stage": "loop_retention6",
+    "job": "PRIVATE_JOBS/loop_retention6.generate.json",
+    "seed": 20261106
+  }
+]

@@ -1,0 +1,163 @@
+{
+  "status": "public_release_inventory",
+  "analysis": "language_analysis_v1_20261105",
+  "n_generations": 503,
+  "actual_generations": 405,
+  "laboratory_generations": 98,
+  "actual_conditions": 5,
+  "laboratory_panels": 14,
+  "public_data_policy": "No full gated prompts, reference rationales, raw generations, raw token arrays, or absolute input paths. Internal audit paths and generated suffixes are excluded. Full source traces remain private; authorized reconstruction instructions are provided.",
+  "excluded_directory": "internal_pending_rights/",
+  "files": [
+    {
+      "file": ".gitignore",
+      "bytes": 50,
+      "sha256": "e17417bb4b41c23c9eee981d626c45b858c5cb4fce3cdfc1614760ef404522a0"
+    },
+    {
+      "file": "README.md",
+      "bytes": 6627,
+      "sha256": "e7e3790965f2d670489eabd9b3b67595690fb7748c3002b8e19d8e8daa219f85"
+    },
+    {
+      "file": "REPORT.md",
+      "bytes": 17428,
+      "sha256": "c5df3bbeb697a74d20313a90afe38600f563373be95de910fe469eba6cc9ae64"
+    },
+    {
+      "file": "analyze_language.py",
+      "bytes": 34249,
+      "sha256": "59d0ce4a8e6b8a913435126dd6a04f8da72dc41477918fcd8fca334721ee6501"
+    },
+    {
+      "file": "manual_tail_annotations.json",
+      "bytes": 54859,
+      "sha256": "0fb8d5d604e1d608ad9356703b4cbb05c894888f8ca7b37e2d07a87049d93a27"
+    },
+    {
+      "file": "public/checks.json",
+      "bytes": 637,
+      "sha256": "7622f5916eb5a826c1d48b66950a837d01197733597a84808ee354cce939f0a7"
+    },
+    {
+      "file": "public/cohort_summary.csv",
+      "bytes": 18899,
+      "sha256": "0c65a76e4c567aa5d3e1fada9ef67a17c7fcb160cd8d3be016e74732a53b28eb"
+    },
+    {
+      "file": "public/cohort_summary.json",
+      "bytes": 120149,
+      "sha256": "a7510722e477e9f3f626cdf5226480cabb21bade1313994bc56cfc0a187fc31a"
+    },
+    {
+      "file": "public/figures/actual_development_lexical_density.png",
+      "bytes": 142220,
+      "sha256": "457b37572c3449139a2d44ed96051b58c5c7ae3300080ad6085b75f359e8032d"
+    },
+    {
+      "file": "public/figures/actual_development_lexical_density.svg",
+      "bytes": 32356,
+      "sha256": "7a56e953f10ba82b02730f0e8a35c9fd537fea85227dcdf79190a6ce7f1405f2"
+    },
+    {
+      "file": "public/figures/actual_development_tokens_and_wait.png",
+      "bytes": 198789,
+      "sha256": "3223a0c504ff6e813c927aef1efd0d40ab1e8e3a01ed76bda92c140c230dc6a1"
+    },
+    {
+      "file": "public/figures/actual_development_tokens_and_wait.svg",
+      "bytes": 54477,
+      "sha256": "a023b62c971560e1071c4db55091b5628a8c380d0fe91ffbaaa55e61d707d9d3"
+    },
+    {
+      "file": "public/figures/actual_primary_case_tokens.png",
+      "bytes": 130493,
+      "sha256": "521c3a99acb34d6de88a93f6474c45d634dd900eeaca7550ffd19e36c520522c"
+    },
+    {
+      "file": "public/figures/actual_primary_case_tokens.svg",
+      "bytes": 34183,
+      "sha256": "9948359451cc67197ee10fe6b6537e75800db19c6272582676a58ae4eadcfbed"
+    },
+    {
+      "file": "public/figures/laboratory_primary_cases.png",
+      "bytes": 114646,
+      "sha256": "959a4fa36c7916238c56260e11e59c4a2e9642b6f4ece33be2d3719f7ea75374"
+    },
+    {
+      "file": "public/figures/laboratory_primary_cases.svg",
+      "bytes": 20537,
+      "sha256": "b98c6f32d6342cc6d673df563b5c678ccc2ff662b6f21c005b06296e0b4abcbd"
+    },
+    {
+      "file": "public/figures/reserve_outcome_stratified_descriptive.png",
+      "bytes": 230349,
+      "sha256": "4d5e50272d6b06c984737120b7f2a96a9799e96da95f9a0847a299245cdb2996"
+    },
+    {
+      "file": "public/figures/reserve_outcome_stratified_descriptive.svg",
+      "bytes": 142078,
+      "sha256": "82ed4210e42e435a907f1fed2d3aaf7366b9f703de75feb89a5cf1f971dff2d2"
+    },
+    {
+      "file": "public/figures/reserve_tokens_and_character_screen.png",
+      "bytes": 124101,
+      "sha256": "955ff7d6289ea69bdc4a3b39a9f5e73f1419cd89452e83198c0bef2ed6d64394"
+    },
+    {
+      "file": "public/figures/reserve_tokens_and_character_screen.svg",
+      "bytes": 45103,
+      "sha256": "3c8e117b3273c81116d649957b5b5ee922745086f11c58e03c00d8ad42fd33c5"
+    },
+    {
+      "file": "public/generation_metrics.csv",
+      "bytes": 340561,
+      "sha256": "6661ffee7637216106100e9d7f68a4ecc283e5123d88625f9a6c896bfe6ad32d"
+    },
+    {
+      "file": "public/generation_metrics.json",
+      "bytes": 1526086,
+      "sha256": "7e9cefc93a4c3740e23fd2c9a8ded80c67c8c9ef3f0c0d8b857ad428fe58d971"
+    },
+    {
+      "file": "public/manual_tail_review.json",
+      "bytes": 54859,
+      "sha256": "0fb8d5d604e1d608ad9356703b4cbb05c894888f8ca7b37e2d07a87049d93a27"
+    },
+    {
+      "file": "public/outcome_stratified_descriptive.csv",
+      "bytes": 41977,
+      "sha256": "1047395386a2d47ab7ab8f7ab5cb1cd25386d35233256acbcafe7661b0e4c9ce"
+    },
+    {
+      "file": "public/paired_vs_control.csv",
+      "bytes": 98542,
+      "sha256": "c5d4ae9d371792f4c19d71a9b712b47c6f335de61a7eedf457c884130cb993eb"
+    },
+    {
+      "file": "public/panel_family_summary.csv",
+      "bytes": 14478,
+      "sha256": "f540b1667a8ae69f215a993c7a2b6e9770f1e06ecf1e853bcb905d2fc2212403"
+    },
+    {
+      "file": "public/panel_family_summary.json",
+      "bytes": 91713,
+      "sha256": "156df898ce4759bee35464942d45097072f7b7786a8a94f42e7bde497c5c597b"
+    },
+    {
+      "file": "public/primary_cases.csv",
+      "bytes": 36293,
+      "sha256": "a20d9bf33574915fba64ed08449200db72019be0bb4cbbd366a6c193e946684b"
+    },
+    {
+      "file": "public/reproducibility_validation.json",
+      "bytes": 3984,
+      "sha256": "cf079fd3dd35fd4ea40dc291120282ef4eb2b96549d0960586b5c5904186008f"
+    },
+    {
+      "file": "requirements-figures.txt",
+      "bytes": 19,
+      "sha256": "de950d3b75e4ad1a760c121533e06390c84574f7dd0b53c0eaa742ab6d5c2f38"
+    }
+  ]
+}

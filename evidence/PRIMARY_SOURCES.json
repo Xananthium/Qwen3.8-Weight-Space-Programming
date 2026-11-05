@@ -1,0 +1,14 @@
+{
+  "checked_date": "2026-11-05",
+  "models": [
+    {"id": "HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF", "revision": "993a5971fda8f30dd1b7eb2654792ba4415c7460", "license": "Apache-2.0", "url": "https://huggingface.co/HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF"},
+    {"id": "Qwen/Qwen3.8-27B", "reviewed_license_revision": "8c0b3d30f3ae96f5c7f774de704bf0ada83e422a", "license": "Apache-2.0", "url": "https://huggingface.co/Qwen/Qwen3.8-27B", "limit": "The exact pre-quantization ancestor commit of the Hauhau file is not independently established by this license check."}
+  ],
+  "dataset": {"id": "cais/hle", "revision": "5a81a4c7271a2a2a312b9a690f0c2fde837e4c29", "license_tag": "mit", "gated": "auto", "url": "https://huggingface.co/datasets/cais/hle", "integrity_request": "Official card asks users not to publicly share, re-upload or distribute the dataset.", "citation": "https://github.com/centerforaisafety/hle/blob/main/citation.txt"},
+  "research": [
+    {"title": "Sparks of Weight-Space Programming: LLMs can natively read & write neural network weights", "authors": ["Rikiya Takehi", "Jayden Teoh", "Alex Zhang", "Omar Khattab"], "url": "https://rikiyat.github.io/blog/weight-space-programming/", "experiment_logs": "https://github.com/RikiyaT/lm_understand-logs/tree/main/exp8_math", "relation": "Motivation; source experiment used Qwen3.5-0.8B and different tasks. Its reported improvements are not results for this checkpoint."},
+    {"title": "LLM Neuroanatomy II: Modern LLM Hacking and hints of a Universal Language?", "author": "David Noel Ng", "url": "https://dnhkng.github.io/posts/rys-ii/", "relation": "Relayering motivation. Initial Math16/EQ16 were small custom probes, not standard MATH-500 or full EQ-Bench; later validation and configurations must be distinguished. Architectural position matching does not establish functional-circuit equivalence."},
+    {"title": "llm-circuit-finder", "author": "alainnothere", "url": "https://github.com/alainnothere/llm-circuit-finder", "relation": "Independent relayering report on different models/tasks. Cited only; no license to copy its code is inferred from public visibility."},
+    {"title": "ThinkEdit: Interpretable Weight Editing to Mitigate Overly Short Thinking in Reasoning Models", "authors": ["Chung-En Sun", "Ge Yan", "Tsui-Wei Weng"], "year": 2025, "url": "https://aclanthology.org/2025.emnlp-main.861/", "doi": "10.18653/v1/2025.emnlp-main.861", "relation": "Related weight-editing research on overly short reasoning and attention-head output projections; our MLP down-projection interventions and repetition observations are distinct."}
+  ]
+}

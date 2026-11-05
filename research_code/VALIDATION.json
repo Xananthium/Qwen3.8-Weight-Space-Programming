@@ -1,0 +1,36 @@
+{
+  "status": "passed",
+  "scope": "Offline portability/curation validation, not an end-to-end inference test.",
+  "model_calls": 0,
+  "HTTP_calls": 0,
+  "GPU_operations": 0,
+  "checks": [
+    "All12 Python modules parse",
+    "Two generic originals byte-identical",
+    "18 frozen grading function ASTs unchanged",
+    "Synthetic choice strict/unparsed/unfinished/cutoff distinction",
+    "Synthetic state order/extra entity/cutoff/multipart/malformed box",
+    "Synthetic request/SSE token accounting and post-finish rejection",
+    "Generic tetrahedron certificate, no benchmark fixture",
+    "All14 published laboratory source routes round-trip",
+    "Synthetic NumPy sparse rank-one support and materialized-update algebra",
+    "Math/tool CLI imports/help under recorded math-verify environment",
+    "Public-source privacy screen plus manual source selection"
+  ],
+  "actual_hle_frozen_grade_replay": {
+    "outputs": 205,
+    "matching_statuses": 205,
+    "note": "Ported frozen grader replayed on existing private actual results; no raw text/keys written here."
+  },
+  "dependencies_used_for_checks": {
+    "stdlib": "Python3.12",
+    "numerical": "NumPy2.3.5/GGUF0.19.0",
+    "math_cli": "math-verify0.9.0/SymPy1.14.0"
+  },
+  "no_claims": [
+    "Full pipeline reproduced",
+    "New stochastic generations",
+    "Merged model historical benchmark equivalence",
+    "Rebuilt GPU runtime correctness"
+  ]
+}

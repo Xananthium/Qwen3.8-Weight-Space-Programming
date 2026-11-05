@@ -1,0 +1,380 @@
+{
+  "scope": "Minimal public method-inspection/authorized-replay source set; no complete end-to-end or numerical-equivalence claim.",
+  "source_root_label": "private_experiment_root",
+  "public_files": [
+    {
+      "public_file": "make_constructed_probes.py",
+      "public_sha256": "7a4d240f5cb18410ad5d51b28c9882017c46bf9b730ea5b20c2cddd532d646f4",
+      "status": "port/redaction",
+      "original_sources": [
+        {
+          "original_relative_path": "queue_initial.py",
+          "sha256": "6e9a7ceebc2b2c6587a4993961151485057cd7eca59b73369673007a6edfca2c",
+          "bytes": 1390
+        }
+      ],
+      "changes": "External discovery records and authored strings; no dataset text or queue writes; explicit output directory."
+    },
+    {
+      "public_file": "fit_sparse_contrasts.py",
+      "public_sha256": "e65f8e10e918e050de86f072f63a523637430ca374d07127b19e341578cba085",
+      "status": "port",
+      "original_sources": [
+        {
+          "original_relative_path": "build_candidates.py",
+          "sha256": "085e4d912345a8f8ada2326599de6b16e96523374155cdf5575cfb8d3de83226",
+          "bytes": 3458
+        },
+        {
+          "original_relative_path": "build_neighbor_candidates.py",
+          "sha256": "7341dac2d559dae96d5ec0fe36a1dfbff929e5d3b6e62baa54779f16c64e9026",
+          "bytes": 4604
+        }
+      ],
+      "changes": "Same four-pair direction, projection, differential score, argsort and coefficient arithmetic; explicit paths/layers; original candidate-ranking/sweep side effects omitted."
+    },
+    {
+      "public_file": "assemble_upper_edit.py",
+      "public_sha256": "df0d923add7cffc41b011721e06accc72629c4c399d6d0eb692ed2b9297f2432",
+      "status": "port",
+      "original_sources": [
+        {
+          "original_relative_path": "build_neighbor_candidates.py",
+          "sha256": "7341dac2d559dae96d5ec0fe36a1dfbff929e5d3b6e62baa54779f16c64e9026",
+          "bytes": 4604
+        }
+      ],
+      "changes": "Same center preservation and relative flank scaling; one explicitly requested output; no sweep or runtime edits."
+    },
+    {
+      "public_file": "api_batch_eval.py",
+      "public_sha256": "843f9bb1c1844d9843b87d5a1d69edae070604c9b881e1b6d6eee9c388422c90",
+      "status": "byte_identical_original",
+      "original_sources": [
+        {
+          "original_relative_path": "hle/agent_research/diagnostics/production_static_successor/api_batch_eval.py",
+          "sha256": "843f9bb1c1844d9843b87d5a1d69edae070604c9b881e1b6d6eee9c388422c90",
+          "bytes": 12967
+        }
+      ],
+      "changes": "No changes."
+    },
+    {
+      "public_file": "run_suite.py",
+      "public_sha256": "949f289b6a87be2efd0a792dacbc8d9be38dde4d70a5653e580529df424aeeac",
+      "status": "port",
+      "original_sources": [
+        {
+          "original_relative_path": "run_serving_suite.py",
+          "sha256": "f9fc8c311fa13540071ea5f819e83cf5cc7dd828bf9e1a8887e5606f2dc6750a",
+          "bytes": 4690
+        }
+      ],
+      "changes": "Interpreter, job map and endpoint become arguments; no smoke dispatcher; plan by default; explicit run preserves sequential fail-fast behavior without retries."
+    },
+    {
+      "public_file": "hle_score.py",
+      "public_sha256": "c1bc4e635df7c5376ac26c4b4c3bf94707488291d67b1e45e2a582c526ddb3ca",
+      "status": "frozen_functions_ported_cli",
+      "original_sources": [
+        {
+          "original_relative_path": "hle_score.py",
+          "sha256": "fccee6db9356e5dcc5db8e3045289696cf61ada3d8bb80805f92e617966accfb",
+          "bytes": 5065
+        }
+      ],
+      "changes": "parse_answer and score function ASTs unchanged. Historical research-journal CLI replaced by explicit non-overwriting output."
+    },
+    {
+      "public_file": "hle_continuation.py",
+      "public_sha256": "ade5548bf8da5a890b6c38d47e8f0e8fec6c84ca48f52d6542db02e54fcffe5d",
+      "status": "byte_identical_original",
+      "original_sources": [
+        {
+          "original_relative_path": "hle_continuation.py",
+          "sha256": "ade5548bf8da5a890b6c38d47e8f0e8fec6c84ca48f52d6542db02e54fcffe5d",
+          "bytes": 3991
+        }
+      ],
+      "changes": "No changes; legacy restarted-RNG joining retained."
+    },
+    {
+      "public_file": "score_math_tool.py",
+      "public_sha256": "02c809ea2ba78236f5b231c1985180bd30427d16040e39e0a87ac460956d1a36",
+      "status": "frozen_functions_ported_cli",
+      "original_sources": [
+        {
+          "original_relative_path": "score.py",
+          "sha256": "ea7f49756d8299d1a48d751c1ff3886391c34bdd26b425748b41aad6d7de37fd",
+          "bytes": 4863
+        }
+      ],
+      "changes": "All four scoring functions unchanged. Explicit non-overwriting output CLI replaces adjacent automatic output."
+    },
+    {
+      "public_file": "score_state_transfer.py",
+      "public_sha256": "93f51fe0ff52911ce1b99fce2037ec1ce53b61ccb097681c00f95b66e119a6bb",
+      "status": "frozen_predicates_ported_cli",
+      "original_sources": [
+        {
+          "original_relative_path": "score_state_transfer.py",
+          "sha256": "9346cfcd2afd8b72f565b76a809a1cd323b28106f699c396115d71fa0ffa054f",
+          "bytes": 14807
+        }
+      ],
+      "changes": "Parsing/output predicates unchanged; answer map mandatory; default private path, data-dependent self-test and original CLI omitted."
+    },
+    {
+      "public_file": "lab_routing.py",
+      "public_sha256": "342eac9c9e37ecf2aebab1e16840c0de312f2ac6283fd42cc2ba63fe4866b643",
+      "status": "new_offline_planner_from_original_semantics",
+      "original_sources": [
+        {
+          "original_relative_path": "worker_relayer.py",
+          "sha256": "ad29378531c42aaecaeebca6a9e9fddc5c2fbb7154c87711aa5b6d0fd0c78ee3",
+          "bytes": 4938
+        },
+        {
+          "original_relative_path": "queue_sweep.py",
+          "sha256": "699882c3cf190b9f1aed3dade9d809b2c0d208beb44db253fefd3ffc8820e102",
+          "bytes": 993
+        },
+        {
+          "original_relative_path": "engine.py",
+          "sha256": "87f6e1babead299e922bc1df336e8aa2ffe41ffc85bc6d99002e2d7d3f6a5b70",
+          "bytes": 8407
+        }
+      ],
+      "changes": "Only pure source-route semantics and inert job format retained; no torch/runtime/cache mutation or active queue polling."
+    },
+    {
+      "public_file": "graph_certificate.py",
+      "public_sha256": "e39b94c6b9e37ee07cab9ec1d299bebd66b57c3c5f6368e3e0baf0b83f80ad2c",
+      "status": "generic_port_with_benchmark_data_redacted",
+      "original_sources": [
+        {
+          "original_relative_path": "hle/agent_research/sol6_followup/checkable_hle_oracle.py",
+          "sha256": "8fb76525d7482a09ec643089ff2634aa67972ec9393d27a06aa2ab14722926a3",
+          "bytes": 2983
+        }
+      ],
+      "changes": "Specific HLE-derived faces, vertex tests and result literals removed; generic face input/new-edge argument; no HLE key or fixture."
+    },
+    {
+      "public_file": "validate_cpu.py",
+      "public_sha256": "a72a422f193430959cde0466d38806d7a67a0e4cb32aaa7b86bcea9365f11ff1",
+      "status": "new_validation",
+      "original_sources": [],
+      "changes": "Synthetic fixtures only; no benchmark data, model, HTTP or GPU operations."
+    }
+  ],
+  "preserved_scoring_function_ast_checks": [
+    {
+      "public_file": "hle_score.py",
+      "function": "parse_answer",
+      "original_relative_path": "hle_score.py",
+      "function_ast_sha256": "d10cce569c195bf3c54c637b2142a3636f5cd1a4649a61293743a751aa80db14",
+      "unchanged": true
+    },
+    {
+      "public_file": "hle_score.py",
+      "function": "score",
+      "original_relative_path": "hle_score.py",
+      "function_ast_sha256": "36be1c69cf741976ce8739897314ba618650798d78370670d64bd3def00b9831",
+      "unchanged": true
+    },
+    {
+      "public_file": "score_math_tool.py",
+      "function": "normalize_answer",
+      "original_relative_path": "score.py",
+      "function_ast_sha256": "e263457e6b450402f298296c4a1019daf677e3deb7faaac6eb597e887413f7fb",
+      "unchanged": true
+    },
+    {
+      "public_file": "score_math_tool.py",
+      "function": "last_box",
+      "original_relative_path": "score.py",
+      "function_ast_sha256": "8c8cf960bfe686308d07a64f081d089bacede7a3ea03fb4450e8940123c917eb",
+      "unchanged": true
+    },
+    {
+      "public_file": "score_math_tool.py",
+      "function": "duplication",
+      "original_relative_path": "score.py",
+      "function_ast_sha256": "9346ad540981125cf58f042c09b80c5630fca8f5e050b5388b23ed138e158215",
+      "unchanged": true
+    },
+    {
+      "public_file": "score_math_tool.py",
+      "function": "score",
+      "original_relative_path": "score.py",
+      "function_ast_sha256": "25e8dbb1226ffce53487699ddaa3f24b11977cc44bd4c9c8be35701a44791050",
+      "unchanged": true
+    },
+    {
+      "public_file": "score_state_transfer.py",
+      "function": "_escaped",
+      "original_relative_path": "score_state_transfer.py",
+      "function_ast_sha256": "56415881557643155954ae909246b0791171cf7c661e6f284ff0bc5580eb135f",
+      "unchanged": true
+    },
+    {
+      "public_file": "score_state_transfer.py",
+      "function": "final_boxes",
+      "original_relative_path": "score_state_transfer.py",
+      "function_ast_sha256": "5b188d9df7a3069c3f8130101deb0d5abe12d0d8d4184a5cb86ca2c2936884ce",
+      "unchanged": true
+    },
+    {
+      "public_file": "score_state_transfer.py",
+      "function": "final_box",
+      "original_relative_path": "score_state_transfer.py",
+      "function_ast_sha256": "a2a66ab6ec1ba76b310a5d9ec260daf26c886adb5d83264c588141327ad6da70",
+      "unchanged": true
+    },
+    {
+      "public_file": "score_state_transfer.py",
+      "function": "normalize_format",
+      "original_relative_path": "score_state_transfer.py",
+      "function_ast_sha256": "d6a27a5dbe2e98579f110ba05fdeb88fd65460aa551070ba4a693c15873f57ac",
+      "unchanged": true
+    },
+    {
+      "public_file": "score_state_transfer.py",
+      "function": "_outer",
+      "original_relative_path": "score_state_transfer.py",
+      "function_ast_sha256": "06e5b934b55a8ffb4286f95b534dc3255613b238c7676c05582a723b285afe38",
+      "unchanged": true
+    },
+    {
+      "public_file": "score_state_transfer.py",
+      "function": "_sequence",
+      "original_relative_path": "score_state_transfer.py",
+      "function_ast_sha256": "c07811b11f31f2e756e049880e00196d5b4a0aeade54810a124cfe550ed91d83",
+      "unchanged": true
+    },
+    {
+      "public_file": "score_state_transfer.py",
+      "function": "answer_kind",
+      "original_relative_path": "score_state_transfer.py",
+      "function_ast_sha256": "64e2ec92eb38755d30ff86a0214547c2d828717f2b6ec9322b6e49902eee6bd3",
+      "unchanged": true
+    },
+    {
+      "public_file": "score_state_transfer.py",
+      "function": "parse_payload",
+      "original_relative_path": "score_state_transfer.py",
+      "function_ast_sha256": "906f7b24bdb92d04c98626753695d9d41e7d5a4f34d82f3e35512551c5fa1e36",
+      "unchanged": true
+    },
+    {
+      "public_file": "score_state_transfer.py",
+      "function": "canonical_gold",
+      "original_relative_path": "score_state_transfer.py",
+      "function_ast_sha256": "d801bcfd48905b060261080d73917fcc5fa88694db01e81da7a9f70cae81a4de",
+      "unchanged": true
+    },
+    {
+      "public_file": "score_state_transfer.py",
+      "function": "_complete_answer",
+      "original_relative_path": "score_state_transfer.py",
+      "function_ast_sha256": "2bbd5bb54126b36e0860688567a77086be95035251cdd91c44ec08a10320e9b0",
+      "unchanged": true
+    },
+    {
+      "public_file": "score_state_transfer.py",
+      "function": "parse_separate_parts",
+      "original_relative_path": "score_state_transfer.py",
+      "function_ast_sha256": "f2b8d88ec6adf0d51b7631dd97c4f93483dcb3b473f8eb025781492535ec3175",
+      "unchanged": true
+    },
+    {
+      "public_file": "score_state_transfer.py",
+      "function": "score_output",
+      "original_relative_path": "score_state_transfer.py",
+      "function_ast_sha256": "98775a7f59543315ff70a401cffbb452ef59462ac2a373a7ccdcf4b1a3ccbb46",
+      "unchanged": true
+    }
+  ],
+  "omitted_originals": [
+    {
+      "original_relative_path": "queue_initial.py",
+      "sha256": "6e9a7ceebc2b2c6587a4993961151485057cd7eca59b73369673007a6edfca2c",
+      "bytes": 1390,
+      "reason_not_copied": "Contains dataset-derived solutions and authored continuation strings; active queue writes removed from port.",
+      "requirements": "Authorized ordered discovery records plus exact two authored UTF-8 strings and original template/capture runtime."
+    },
+    {
+      "original_relative_path": "make_trial_records.py",
+      "sha256": "101b451fca927452ea1c88f23104656f9b4b4e67f693859f738baf6a8d5c77a8",
+      "bytes": 2573,
+      "reason_not_copied": "Contains experiment-specific tool messages and dataset-derived record assembly; not necessary for the minimal generic runner.",
+      "requirements": "Authorized frozen loop/tool jobs and historical chat template; do not reconstruct from aggregate scores."
+    },
+    {
+      "original_relative_path": "engine.py",
+      "sha256": "87f6e1babead299e922bc1df336e8aa2ffe41ffc85bc6d99002e2d7d3f6a5b70",
+      "bytes": 8407,
+      "reason_not_copied": "Machine-bound GPU engine/active job queue; runtime deliberately not duplicated.",
+      "requirements": "Pinned vLLM/GGUF environment, source GGUF/config/template, model-specific workers, separate spare state/cache slots and original queue jobs."
+    },
+    {
+      "original_relative_path": "worker_ops.py",
+      "sha256": "898eadbb05674a469502d646cfa22e3049622f28c67bcb65c668edadbe1f2a77",
+      "bytes": 5022,
+      "reason_not_copied": "Model-specific GPU patch/capture integration; runtime deliberately not duplicated.",
+      "requirements": "Historical numerical integration and last32 prefill capture point; TP2 rank-order sharding and source weights."
+    },
+    {
+      "original_relative_path": "worker_relayer.py",
+      "sha256": "ad29378531c42aaecaeebca6a9e9fddc5c2fbb7154c87711aa5b6d0fd0c78ee3",
+      "bytes": 4938,
+      "reason_not_copied": "Stateful model-specific cache integration; only inert source-route planning ported.",
+      "requirements": "Preallocated independent attention/cache identities and shared stateless components; do not reuse one stateful attention instance."
+    },
+    {
+      "original_relative_path": "hle/agent_research/sol6_followup/build_layer50_good_nullspace_joint64.py",
+      "sha256": "e8afadd42cf7f3a156e3470dda876ad9c61f53e2b6a656abf2d23aa65df02014",
+      "bytes": 5932,
+      "reason_not_copied": "Scope-limited omission: full secondary constrained fitter retains machine-bound result/capture paths.",
+      "requirements": "Original64 support/source coefficient; four productive and four repetitive layer50 input means; FP64 five-row SVD affine constraints,1.1x norm cap,FP32 storage; original result/array attestation."
+    },
+    {
+      "original_relative_path": "hle/agent_research/sol6_followup/checkable_hle_oracle.py",
+      "sha256": "8fb76525d7482a09ec643089ff2634aa67972ec9393d27a06aa2ab14722926a3",
+      "bytes": 2983,
+      "reason_not_copied": "Question-specific graph data/result statements omitted from public generic proof port.",
+      "requirements": "Separately authorized graph/face data; independent mathematical theorem argument; not a verifier of all model prose."
+    },
+    {
+      "original_relative_path": "hle/agent_research/checkable/suggestions.json",
+      "sha256": "3f98bbd615645278249243244ce7c0353986110f9621079497e69c291aa4e120",
+      "bytes": 9528,
+      "reason_not_copied": "Contains HLE-specific solutions, official keys and review inputs; not public source code.",
+      "requirements": "Authorized private review archive for exact question-specific review. No automated complete game/phylogeny proof grader is claimed."
+    },
+    {
+      "original_relative_path": "prepare_hle.py",
+      "sha256": "d37d02b15592afcfe2f8bbb888be3d118defdd52f78030541138acc52e0f7b4a",
+      "bytes": 6481,
+      "reason_not_copied": "Benchmark preparation/pool access kept outside curated source collection.",
+      "requirements": "Official authorized dataset plus evidence record IDs/hashes and reconstruction instructions."
+    },
+    {
+      "original_relative_path": "constructed_probes.json",
+      "sha256": "c7c252616d7b336b18313bee6849891922c3a0205f0c1b92cb34cd7efedbbc81",
+      "bytes": 8012,
+      "reason_not_copied": "Dataset text and authored prefix strings omitted.",
+      "requirements": "See templates/constructed_input_hashes.json and redacted capture maps."
+    },
+    {
+      "original_relative_path": "neighbor_capture_map.json",
+      "sha256": "5a0b4b9c81ef0cee473ba4b77780ed3899b7c67ac019eb3024327c240e2fc59c",
+      "bytes": 8428,
+      "reason_not_copied": "Dataset text and authored prefix strings omitted.",
+      "requirements": "See redacted neighbor capture map; original numerical captures are required."
+    }
+  ],
+  "data_policy": "No full HLE problem/key/rationale, GSM problem/solution/authored continuation, raw trace/token history, credential, environment snapshot, or private absolute path is bundled. Public hashes are not missing data.",
+  "runtime_policy": "Model/runtime package remains separate; no runtime files duplicated here."
+}

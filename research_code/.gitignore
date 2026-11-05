@@ -1,0 +1,9 @@
+PRIVATE/
+__pycache__/
+*.npz
+*.gguf
+*.safetensors
+*.result.json
+*.partial.jsonl
+*.events.jsonl
+*.scores.json

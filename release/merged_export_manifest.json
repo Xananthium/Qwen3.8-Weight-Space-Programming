@@ -1,0 +1,6342 @@
+{
+  "created_at_utc": "2026-11-05T16:35:43.428267+00:00",
+  "name": "Calmer-Qwen3.8-27B-4bit",
+  "base_repo": "HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF",
+  "base_revision": "993a5971fda8f30dd1b7eb2654792ba4415c7460",
+  "source_sha256": "ba36dc3c2b2ff5e0aa5d71092a8894546996a6a119ae391803dda07cdc08516d",
+  "delta_file": "calmer_delta.npz",
+  "delta_sha256": "ebb80ab4f906b7c7fbc61e95dd285b1e27b82b35e3e68982e575ccbfe80f8b51",
+  "global_alpha": 1.5,
+  "effective_layer_strengths": {
+    "49": 0.25,
+    "50": 1.5,
+    "51": 0.25
+  },
+  "block_route": "original64_once",
+  "architecture": "qwen35",
+  "output_file": "Calmer-Qwen3.8-27B-Q4_K_P-F32Edits.gguf",
+  "output_bytes": 18809113472,
+  "output_sha256": "9875d0d1f9ad37599ecd5b9b9aa5e32b3a585aeff83af64df52a00aceea6cab8",
+  "quantization": "Original mixed Q4_K_P base; only three down-projection tensors promoted from Q5_K to F32.",
+  "tensor_type_counts": {
+    "Q6_K": 19,
+    "F32": 363,
+    "Q4_K": 97,
+    "Q5_K": 322,
+    "IQ4_XS": 65
+  },
+  "changes": [
+    {
+      "tensor": "blk.49.ffn_down.weight",
+      "layer_zero_based": 49,
+      "source_type": "Q5_K",
+      "export_type": "F32",
+      "shape": [
+        5120,
+        17408
+      ],
+      "selected_columns": [
+        58,
+        115,
+        332,
+        481,
+        843,
+        1088,
+        1205,
+        1336,
+        1408,
+        1532,
+        1582,
+        2313,
+        2519,
+        3004,
+        3384,
+        3478,
+        4244,
+        4276,
+        4394,
+        4435,
+        4866,
+        5036,
+        5240,
+        5310,
+        5632,
+        5651,
+        5720,
+        6098,
+        6470,
+        6994,
+        7089,
+        7231,
+        7269,
+        7707,
+        7862,
+        8027,
+        8329,
+        8640,
+        9066,
+        9106,
+        10160,
+        11146,
+        11334,
+        11409,
+        11678,
+        11997,
+        12769,
+        13002,
+        13357,
+        13624,
+        13820,
+        13845,
+        13884,
+        13885,
+        14041,
+        14124,
+        14899,
+        15402,
+        15642,
+        15766,
+        16150,
+        16469,
+        16723,
+        16777
+      ],
+      "changed_entries": 327680,
+      "relative_frobenius_change": 0.0009241033694706857,
+      "max_random_probe_algebra_error": 1.9073486328125e-06,
+      "algebra_scope": "CPU FP32 algebra; not BF16 kernel or inference equivalence",
+      "original_encoded_sha256": "fdbeaa466f2827b85638962f999855add3f09fdedb112ab4a6e7e8ac75575611",
+      "edited_float32_sha256": "8cd87b12bc22a68a2eb9298fcc5680048451e5b9e49d91da0ea59b2909f4948f"
+    },
+    {
+      "tensor": "blk.50.ffn_down.weight",
+      "layer_zero_based": 50,
+      "source_type": "Q5_K",
+      "export_type": "F32",
+      "shape": [
+        5120,
+        17408
+      ],
+      "selected_columns": [
+        367,
+        403,
+        451,
+        500,
+        745,
+        1077,
+        1209,
+        1489,
+        1951,
+        2229,
+        2303,
+        2843,
+        2925,
+        3134,
+        3417,
+        3460,
+        3619,
+        3672,
+        3734,
+        4634,
+        4725,
+        5381,
+        5438,
+        5765,
+        5781,
+        6392,
+        6464,
+        6593,
+        6718,
+        6752,
+        7305,
+        7489,
+        7679,
+        7767,
+        7810,
+        7945,
+        8241,
+        8491,
+        8650,
+        8741,
+        8856,
+        9191,
+        10452,
+        10565,
+        10574,
+        10772,
+        11064,
+        11137,
+        11241,
+        11880,
+        12071,
+        12733,
+        12855,
+        13365,
+        13715,
+        14554,
+        14681,
+        14838,
+        14914,
+        15213,
+        15723,
+        16022,
+        17159,
+        17211
+      ],
+      "changed_entries": 327672,
+      "relative_frobenius_change": 0.009075932204723358,
+      "max_random_probe_algebra_error": 1.9073486328125e-06,
+      "algebra_scope": "CPU FP32 algebra; not BF16 kernel or inference equivalence",
+      "original_encoded_sha256": "bfacc15699ffa4965fed71f3d474f5d5cfe3c98a80ff932f9ccc82e7311cb7a3",
+      "edited_float32_sha256": "7ce2d978a9b843da0cc90c83c23dd0d021586474a9b9a50bfd7d0cbfac044c80"
+    },
+    {
+      "tensor": "blk.51.ffn_down.weight",
+      "layer_zero_based": 51,
+      "source_type": "Q5_K",
+      "export_type": "F32",
+      "shape": [
+        5120,
+        17408
+      ],
+      "selected_columns": [
+        0,
+        256,
+        259,
+        374,
+        663,
+        751,
+        984,
+        1102,
+        1108,
+        1522,
+        1723,
+        1780,
+        1845,
+        2112,
+        2136,
+        2381,
+        2506,
+        3002,
+        3024,
+        3120,
+        3360,
+        4769,
+        5043,
+        5574,
+        5731,
+        5868,
+        6468,
+        6549,
+        6778,
+        7436,
+        7507,
+        7628,
+        7752,
+        7916,
+        7921,
+        8289,
+        8301,
+        8320,
+        8453,
+        8513,
+        8688,
+        9270,
+        9661,
+        9868,
+        10559,
+        10794,
+        10954,
+        11012,
+        11099,
+        11689,
+        11800,
+        11900,
+        11942,
+        12037,
+        12131,
+        12194,
+        12219,
+        12270,
+        14584,
+        14669,
+        15499,
+        16298,
+        17293,
+        17346
+      ],
+      "changed_entries": 327680,
+      "relative_frobenius_change": 0.0009588587563484907,
+      "max_random_probe_algebra_error": 1.6689300537109375e-06,
+      "algebra_scope": "CPU FP32 algebra; not BF16 kernel or inference equivalence",
+      "original_encoded_sha256": "9ab7858dee623ed4753d9e3972368f4db6775b599e95dd4eee16816689f7f130",
+      "edited_float32_sha256": "472c9a689d77b41d11a11b6058d041d868e7ce1d5a8871ac0a2944209453493f"
+    }
+  ],
+  "all_other_tensor_payloads_byte_identical": true,
+  "merged_inference_benchmark_status": "not evaluated; historical scores apply only to original packed matmul plus fixed FP32 sidecar",
+  "tensor_inventory": [
+    {
+      "tensor": "output.weight",
+      "type": "Q6_K",
+      "encoded_bytes": 1042944000,
+      "sha256": "2155d6e1f7c5549077438c4760e6e150945dd5e406484b29162dff7b03d05da0",
+      "edited": false
+    },
+    {
+      "tensor": "output_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "6fd82db40269faccff5c6f4bbcd4b3dbd81af3283905cf91e4b2344166fed32b",
+      "edited": false
+    },
+    {
+      "tensor": "token_embd.weight",
+      "type": "Q4_K",
+      "encoded_bytes": 715161600,
+      "sha256": "cd189c9aeec15909b1e436da78946039189691bed725c9dad30273fe0357a11f",
+      "edited": false
+    },
+    {
+      "tensor": "blk.0.attn_gate.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "afbc0dde2c344356037eb85f5a93f55d60ac766c4c0d855f95c6c64dec2902b2",
+      "edited": false
+    },
+    {
+      "tensor": "blk.0.attn_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "e42bd94b2fffdc950c35326defebc991e6c9d1f3375a9e57188463e3e939298a",
+      "edited": false
+    },
+    {
+      "tensor": "blk.0.attn_qkv.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 36044800,
+      "sha256": "6df8b0938a92cb52320b447218e0d9042b35cbcbd4c5a9bea20b21a3ed64fae8",
+      "edited": false
+    },
+    {
+      "tensor": "blk.0.ffn_down.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "bde06a3434f579eb367824e500124202873b4898803f110bafecec81fa2ad618",
+      "edited": false
+    },
+    {
+      "tensor": "blk.0.ffn_gate.weight",
+      "type": "IQ4_XS",
+      "encoded_bytes": 47349760,
+      "sha256": "f70a6f589f20f6d40fe00cf29dd2963eb3b6c24fde36628a8ee9892e761d07eb",
+      "edited": false
+    },
+    {
+      "tensor": "blk.0.ffn_up.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "1853edc7f0c36d670ca979a9fc829c3f5ee99268cafe8f30d6195df4b92ebdfa",
+      "edited": false
+    },
+    {
+      "tensor": "blk.0.post_attention_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "cac578535fb4c2fc1ccaf722083ccc64d8991df2baecfd610616ff42c6898b7a",
+      "edited": false
+    },
+    {
+      "tensor": "blk.0.ssm_a",
+      "type": "F32",
+      "encoded_bytes": 192,
+      "sha256": "bbff840ac762ff38ba2841d041cd2021eaf4e4551023d2663fa589d4ee6b5ba0",
+      "edited": false
+    },
+    {
+      "tensor": "blk.0.ssm_alpha.weight",
+      "type": "Q4_K",
+      "encoded_bytes": 138240,
+      "sha256": "61d8d8fff3761407b5b1be0b2eebd356c38279f295ba0697364cda3bb82a5e52",
+      "edited": false
+    },
+    {
+      "tensor": "blk.0.ssm_beta.weight",
+      "type": "Q4_K",
+      "encoded_bytes": 138240,
+      "sha256": "98736986e7046fe69d2c63acc3f6cf9f2d4bda9b25acf947002d72b305919328",
+      "edited": false
+    },
+    {
+      "tensor": "blk.0.ssm_conv1d.weight",
+      "type": "F32",
+      "encoded_bytes": 163840,
+      "sha256": "1467210191e39f6cb6acc8aadf08c95b38d464c078f419f3a619af0bdff433f2",
+      "edited": false
+    },
+    {
+      "tensor": "blk.0.ssm_dt.bias",
+      "type": "F32",
+      "encoded_bytes": 192,
+      "sha256": "bf313b166f0b8c1253b041d381699f2b55921ac5dc32aed460db0fae70d4de83",
+      "edited": false
+    },
+    {
+      "tensor": "blk.0.ssm_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 512,
+      "sha256": "9b99b9e43d21529320cfb320ad2ffc630b0d0d373369011261b623fe9de66891",
+      "edited": false
+    },
+    {
+      "tensor": "blk.0.ssm_out.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "da4ac15bba1aa8afba9f9df967d5a080f07041095945c8af9a7a7755b381240e",
+      "edited": false
+    },
+    {
+      "tensor": "blk.1.attn_gate.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "41d6dca703d6c90417ad19d1e80849aaae2ae22257a9b0bee87079518d61f623",
+      "edited": false
+    },
+    {
+      "tensor": "blk.1.attn_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "00ada7b2decb568a2727ee501b031f754e5a7f3000fbda72b82d329c3180a05a",
+      "edited": false
+    },
+    {
+      "tensor": "blk.1.attn_qkv.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 36044800,
+      "sha256": "76223867742210bd6f0601716f5819e299fd3b3e8de5dfaaa6007cc0e005233b",
+      "edited": false
+    },
+    {
+      "tensor": "blk.1.ffn_down.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "d10d73b89ea753a023db2255b395400bb5f694f10c8600fde575951c23dcf322",
+      "edited": false
+    },
+    {
+      "tensor": "blk.1.ffn_gate.weight",
+      "type": "IQ4_XS",
+      "encoded_bytes": 47349760,
+      "sha256": "77cab57d894ec8b5176eb8867241c54551d1b24793a616ff21b91bf030d5b45c",
+      "edited": false
+    },
+    {
+      "tensor": "blk.1.ffn_up.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "b00c6d573f295ec5a8ccb006fb4b488d24efc299360884c9d2f5064843dfd2ff",
+      "edited": false
+    },
+    {
+      "tensor": "blk.1.post_attention_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "877d16da5e26d1bf08bcd9f79e82c4cf2295d8b23f09bab840fc02976e0f88e4",
+      "edited": false
+    },
+    {
+      "tensor": "blk.1.ssm_a",
+      "type": "F32",
+      "encoded_bytes": 192,
+      "sha256": "1d154f724dc08d53b8f2b983d71cec202102ab0d312571f3ce82075085565afa",
+      "edited": false
+    },
+    {
+      "tensor": "blk.1.ssm_alpha.weight",
+      "type": "Q4_K",
+      "encoded_bytes": 138240,
+      "sha256": "3e0da3ffedd72597bf80e5f6111bacc84e72647fe80ad4d596f4599be363f9bc",
+      "edited": false
+    },
+    {
+      "tensor": "blk.1.ssm_beta.weight",
+      "type": "Q4_K",
+      "encoded_bytes": 138240,
+      "sha256": "7173936f94c45c80f693f307466809b7e1f987c1b6420718f17d2d8d9249484b",
+      "edited": false
+    },
+    {
+      "tensor": "blk.1.ssm_conv1d.weight",
+      "type": "F32",
+      "encoded_bytes": 163840,
+      "sha256": "a7439d45cf83b032c0914d48f54f893a976bb9adceb99cc91b92b015030f1364",
+      "edited": false
+    },
+    {
+      "tensor": "blk.1.ssm_dt.bias",
+      "type": "F32",
+      "encoded_bytes": 192,
+      "sha256": "f900ff3de8a9f939cd027d1c716e678a00b460ea1f5be97403ece821ed7067ab",
+      "edited": false
+    },
+    {
+      "tensor": "blk.1.ssm_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 512,
+      "sha256": "8d4d738c2eb28c05f7e5e214253c2d0823bc88882cb7c43f95cab008d354f45b",
+      "edited": false
+    },
+    {
+      "tensor": "blk.1.ssm_out.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "db3a517526031f0885416335290fbe9695ae22c0a31aa7476daaecaca792cda9",
+      "edited": false
+    },
+    {
+      "tensor": "blk.2.attn_gate.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "02f7d553a189ff22c172931c9b519053064abae7005f92d123b616f3045ffbc0",
+      "edited": false
+    },
+    {
+      "tensor": "blk.2.attn_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "4dfaa8db7c89b172c690cf4e35716e05ef05786dc860b229206eddbff1c78a5c",
+      "edited": false
+    },
+    {
+      "tensor": "blk.2.attn_qkv.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 36044800,
+      "sha256": "e9a43456ef6a08bf421b7e4ea393f2337ce9f5285a366b37dac10fe402b0c2b4",
+      "edited": false
+    },
+    {
+      "tensor": "blk.2.ffn_down.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "a8a56c6c7ccff2f76e34a983e2e458db20a663b7749f9fba2445b04a322706b5",
+      "edited": false
+    },
+    {
+      "tensor": "blk.2.ffn_gate.weight",
+      "type": "IQ4_XS",
+      "encoded_bytes": 47349760,
+      "sha256": "5137cae1189d2eec5cbfe10750f3f699aeae04aa17f705050199ace91284ff4a",
+      "edited": false
+    },
+    {
+      "tensor": "blk.2.ffn_up.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "fce03c40a7ebc10dbe45e2d45340c467d2da07fd345f8965237b0759f13db45d",
+      "edited": false
+    },
+    {
+      "tensor": "blk.2.post_attention_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "d59aa6d0d0d00e24d3ed70c343850a500cd24b534e78cbaf8a633abd054d3f50",
+      "edited": false
+    },
+    {
+      "tensor": "blk.2.ssm_a",
+      "type": "F32",
+      "encoded_bytes": 192,
+      "sha256": "dcc329724df39b2ce96634256f18df05302e6cea2d81cba60f53ecefb700b274",
+      "edited": false
+    },
+    {
+      "tensor": "blk.2.ssm_alpha.weight",
+      "type": "Q4_K",
+      "encoded_bytes": 138240,
+      "sha256": "6f04673033ec7f4513aae855cf2877d1dac1ccf16684823b7237516e7933c55b",
+      "edited": false
+    },
+    {
+      "tensor": "blk.2.ssm_beta.weight",
+      "type": "Q4_K",
+      "encoded_bytes": 138240,
+      "sha256": "07f621cef6ea1cf51bea140d93e5b5c9afe74ca88a3224284ce4950ccbbedb05",
+      "edited": false
+    },
+    {
+      "tensor": "blk.2.ssm_conv1d.weight",
+      "type": "F32",
+      "encoded_bytes": 163840,
+      "sha256": "7de6386f841c9b8c3c122d7b5831348e5e672398945a537202145a975d8f0b01",
+      "edited": false
+    },
+    {
+      "tensor": "blk.2.ssm_dt.bias",
+      "type": "F32",
+      "encoded_bytes": 192,
+      "sha256": "b9f8ff9e98f00875269ec8fce9f11623e7abca7b6add09c1980d3ab123bc1436",
+      "edited": false
+    },
+    {
+      "tensor": "blk.2.ssm_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 512,
+      "sha256": "3ca0f3c06fb888627198498c689988e51a4711e829b8fa6cd025eda105ec6e90",
+      "edited": false
+    },
+    {
+      "tensor": "blk.2.ssm_out.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "adf080e24d26ce77dd85eb510b7283755c99a668e0d80690551b8b33bc29d845",
+      "edited": false
+    },
+    {
+      "tensor": "blk.3.attn_k.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 3604480,
+      "sha256": "32ddc74f68f277f86fb4a5b62f689a54ffe5c466ac4bb1772b1bbe0558c0837c",
+      "edited": false
+    },
+    {
+      "tensor": "blk.3.attn_k_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 1024,
+      "sha256": "ee91cf13406aeae547d3dc9d8f0c206f74cab884307908443ba64f4e25e05993",
+      "edited": false
+    },
+    {
+      "tensor": "blk.3.attn_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "8a9ebc7b359fe5e7d66f5f6c511c0da0b1e85156b5785067c00e208da6d89e31",
+      "edited": false
+    },
+    {
+      "tensor": "blk.3.attn_output.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "0b89a76d4268f84c9b4929e4b523f9a416b5b579e95addc849ff9ed67c6687a7",
+      "edited": false
+    },
+    {
+      "tensor": "blk.3.attn_q.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 43253760,
+      "sha256": "789ba5bfebe5b47204522bf3fdc8d763471d22193e479e44bd5cf22693e6af11",
+      "edited": false
+    },
+    {
+      "tensor": "blk.3.attn_q_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 1024,
+      "sha256": "0a1e69ec17836e25342e749b0717faa3a75682a24a592c303ce07ba1cf4673f7",
+      "edited": false
+    },
+    {
+      "tensor": "blk.3.attn_v.weight",
+      "type": "Q6_K",
+      "encoded_bytes": 4300800,
+      "sha256": "7995297b75cbeba6c2d0d576a99b0f532f39abc239a35a385888047a66bd9959",
+      "edited": false
+    },
+    {
+      "tensor": "blk.3.ffn_down.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "31b0b8c379a61d559c1b0e35c6f9f1bb3ea442b877d5cced20ca089559d96fc9",
+      "edited": false
+    },
+    {
+      "tensor": "blk.3.ffn_gate.weight",
+      "type": "IQ4_XS",
+      "encoded_bytes": 47349760,
+      "sha256": "00615821c5c1e0a89ad3c8e0fabb6dded8a3c5a3a6f3d072c648bbb7be129e19",
+      "edited": false
+    },
+    {
+      "tensor": "blk.3.ffn_up.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "83ffbdfa0cbbf80cb8ba3e31e7d50d0149e6ceffffb7002a6d9722df4e86862d",
+      "edited": false
+    },
+    {
+      "tensor": "blk.3.post_attention_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "15b6daf3f0355b45a977ddd7ca1b4a4ce3f4279080dd53173bd508573a3d80a6",
+      "edited": false
+    },
+    {
+      "tensor": "blk.4.attn_gate.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "5d295b153750f02b119f997afe381e65a6b1916e4bfc61670c0f8a5d01d2fe24",
+      "edited": false
+    },
+    {
+      "tensor": "blk.4.attn_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "d1703140214de6c0c559ac9dd2ad9f459eaea1a66e0207b58e8b3eaa3f2219f4",
+      "edited": false
+    },
+    {
+      "tensor": "blk.4.attn_qkv.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 36044800,
+      "sha256": "028dc97cb684f5a1efa9d2474e8ac36071138284bc39ceea6d2e27c76eba68df",
+      "edited": false
+    },
+    {
+      "tensor": "blk.4.ffn_down.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "f50d3d3f217f9596091d088cffe8093b469145b60e4d80fbcd129b9c6c7ff39f",
+      "edited": false
+    },
+    {
+      "tensor": "blk.4.ffn_gate.weight",
+      "type": "IQ4_XS",
+      "encoded_bytes": 47349760,
+      "sha256": "1a5532e7d47abbbb75c91bc6140acd3864d48966168d329415552f26e14d4a21",
+      "edited": false
+    },
+    {
+      "tensor": "blk.4.ffn_up.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "24f062b7cfee8d74e9e21adeff45ffc42b191fb8085a031915d5ba526b44b55e",
+      "edited": false
+    },
+    {
+      "tensor": "blk.4.post_attention_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "643d9483e39811f5b14d7d324901df24fcdf7c1882c5dc5d56add3c52bdd6646",
+      "edited": false
+    },
+    {
+      "tensor": "blk.4.ssm_a",
+      "type": "F32",
+      "encoded_bytes": 192,
+      "sha256": "8167fa3ba97dd69de886e2359f786ca83c04d01952eb5cf69294c7573a8719ec",
+      "edited": false
+    },
+    {
+      "tensor": "blk.4.ssm_alpha.weight",
+      "type": "Q4_K",
+      "encoded_bytes": 138240,
+      "sha256": "9aa0a2657deffe8f4c3b9be55b656a43b1b7d024801d89139a716b2cb38b98f0",
+      "edited": false
+    },
+    {
+      "tensor": "blk.4.ssm_beta.weight",
+      "type": "Q4_K",
+      "encoded_bytes": 138240,
+      "sha256": "417c8a49060bf01d58d931a43e7be4a74db102c1c28a7ce598b4d21d9d6a98e9",
+      "edited": false
+    },
+    {
+      "tensor": "blk.4.ssm_conv1d.weight",
+      "type": "F32",
+      "encoded_bytes": 163840,
+      "sha256": "35699d829622fd937a1c199f8ba7f2622251951dff3d85a9fbc23223aff232b3",
+      "edited": false
+    },
+    {
+      "tensor": "blk.4.ssm_dt.bias",
+      "type": "F32",
+      "encoded_bytes": 192,
+      "sha256": "d3074c56a5050d42c844962979dbf1e1fb1b5fb9cff94c9827bf7a49125dda21",
+      "edited": false
+    },
+    {
+      "tensor": "blk.4.ssm_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 512,
+      "sha256": "733007a2e58c2a03fec95ca83432c0ab7d3a2ebf69f7768ca333c407fea874fb",
+      "edited": false
+    },
+    {
+      "tensor": "blk.4.ssm_out.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "9f0d3957e47ff60a978d5f1f760d10e899d4bd635ba39f1fd2875d87ac43a31e",
+      "edited": false
+    },
+    {
+      "tensor": "blk.5.attn_gate.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "bf5c9c4173290ece506f346afe970f45186d65b705ece7cdd66859588ddb487e",
+      "edited": false
+    },
+    {
+      "tensor": "blk.5.attn_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "bfe9940612b8fe73b145d8f4fa13f1ce4e1bfd3e831987b360a39951e45b5646",
+      "edited": false
+    },
+    {
+      "tensor": "blk.5.attn_qkv.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 36044800,
+      "sha256": "4b2501e2df7a3f44ce9b0732645b6cae8f741b5388c1027052c6daec9738ff9b",
+      "edited": false
+    },
+    {
+      "tensor": "blk.5.ffn_down.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "b9dae0f14b24bca31caad6a510acda4944f8494e52da928351355ce94a83b0a5",
+      "edited": false
+    },
+    {
+      "tensor": "blk.5.ffn_gate.weight",
+      "type": "IQ4_XS",
+      "encoded_bytes": 47349760,
+      "sha256": "cb7d5919dc1fcf7ef0635359df33f11c4e5bd1a0f4ba35073f1b9abe2a9ab013",
+      "edited": false
+    },
+    {
+      "tensor": "blk.5.ffn_up.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "4532c396ca6a01f8274d039504df4811f54b5c669aa50b61a950122172837a45",
+      "edited": false
+    },
+    {
+      "tensor": "blk.5.post_attention_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "118e4201634424a0ab31ff6802c57a67ddad4f2f71d2771e7805f09a2ad77a1f",
+      "edited": false
+    },
+    {
+      "tensor": "blk.5.ssm_a",
+      "type": "F32",
+      "encoded_bytes": 192,
+      "sha256": "7c7ad9dc5ad7bb4e4b015cfbbc5c005b41c6543e47436cc6c0664c36bce7728a",
+      "edited": false
+    },
+    {
+      "tensor": "blk.5.ssm_alpha.weight",
+      "type": "Q4_K",
+      "encoded_bytes": 138240,
+      "sha256": "802df3adde23174feb5f420c0cfcb077a3e2e914dd709f825c13a22ef3cd2a64",
+      "edited": false
+    },
+    {
+      "tensor": "blk.5.ssm_beta.weight",
+      "type": "Q4_K",
+      "encoded_bytes": 138240,
+      "sha256": "afca7f4eae02ec92a8e9bd3beeed1da14771261bf0d506b934a2fbf43546c353",
+      "edited": false
+    },
+    {
+      "tensor": "blk.5.ssm_conv1d.weight",
+      "type": "F32",
+      "encoded_bytes": 163840,
+      "sha256": "c77421a7ccfc818c478c0f34de15aee40edcdc56d47dcc5039d5095438a31559",
+      "edited": false
+    },
+    {
+      "tensor": "blk.5.ssm_dt.bias",
+      "type": "F32",
+      "encoded_bytes": 192,
+      "sha256": "b309f36cd880e88c8cd07f96a201bbe9a8f9abe2d58ac515b6d503cd9a8b6091",
+      "edited": false
+    },
+    {
+      "tensor": "blk.5.ssm_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 512,
+      "sha256": "49e9db7d50c07a35a1239b4a66dc0cd2bd18768c8dc0daa7fdea792310ba7fd1",
+      "edited": false
+    },
+    {
+      "tensor": "blk.5.ssm_out.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "abbeb8443031cb93e78661c4f033b2d07da5f575bd2b4bb3ea77f8df4ef76cc2",
+      "edited": false
+    },
+    {
+      "tensor": "blk.6.attn_gate.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "6e495cce9b210fe5e53190101c51110fbef57a7d30efe6c547d3ce05cb1798f7",
+      "edited": false
+    },
+    {
+      "tensor": "blk.6.attn_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "b99299f7484d8ba87927f3285a6738c62797d11c05a71350db13f442adea8942",
+      "edited": false
+    },
+    {
+      "tensor": "blk.6.attn_qkv.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 36044800,
+      "sha256": "97ca94ba32ec782de07e72efc80fa82b21026ea4bbb0647bba247c29f707f32e",
+      "edited": false
+    },
+    {
+      "tensor": "blk.6.ffn_down.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "d6bb05c7b0d4170931e2c7b7d5a35183d30d159a92f8fef1a189d2c966235415",
+      "edited": false
+    },
+    {
+      "tensor": "blk.6.ffn_gate.weight",
+      "type": "IQ4_XS",
+      "encoded_bytes": 47349760,
+      "sha256": "617cf469f115d39039943f90271e469abc452e28d46e76571e342b3db620a5a2",
+      "edited": false
+    },
+    {
+      "tensor": "blk.6.ffn_up.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "930c31359de9e0ab4f976168bfc2cd0cccfacc658cca737511dd399e45ef3034",
+      "edited": false
+    },
+    {
+      "tensor": "blk.6.post_attention_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "50cf840d093aad9722f68de4f74ab3d19c70390488af4efe2e29d48e20e712d7",
+      "edited": false
+    },
+    {
+      "tensor": "blk.6.ssm_a",
+      "type": "F32",
+      "encoded_bytes": 192,
+      "sha256": "83545a17c11fc095462bb24bb88813add123c09c9f8eaf57ab9f0212c439e1f1",
+      "edited": false
+    },
+    {
+      "tensor": "blk.6.ssm_alpha.weight",
+      "type": "Q4_K",
+      "encoded_bytes": 138240,
+      "sha256": "23330075a78934fe24ebc4d1dfcf62cfa3ffef880457fc5ae93ca841ea64fb12",
+      "edited": false
+    },
+    {
+      "tensor": "blk.6.ssm_beta.weight",
+      "type": "Q4_K",
+      "encoded_bytes": 138240,
+      "sha256": "d736be08a187e3c6c1354717e0ce91a226d26468b3795d2e14256ed884da09ab",
+      "edited": false
+    },
+    {
+      "tensor": "blk.6.ssm_conv1d.weight",
+      "type": "F32",
+      "encoded_bytes": 163840,
+      "sha256": "0a51a01337aa5be5c470bf3dd3016c9378e442a974eadc4df478176cbc221299",
+      "edited": false
+    },
+    {
+      "tensor": "blk.6.ssm_dt.bias",
+      "type": "F32",
+      "encoded_bytes": 192,
+      "sha256": "0cba168739c38428a20b3978c9b45120419d90adbc253d80e93eeb90273a065f",
+      "edited": false
+    },
+    {
+      "tensor": "blk.6.ssm_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 512,
+      "sha256": "337de9c86e938a87b08baf66c3ad5bfce5a550db12ee0ad1a1f896b6055cd134",
+      "edited": false
+    },
+    {
+      "tensor": "blk.6.ssm_out.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "9c4613a479a9c73d5805c03d4f43ce4dcb5898732802e62960a63bd2878abb4d",
+      "edited": false
+    },
+    {
+      "tensor": "blk.7.attn_k.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 3604480,
+      "sha256": "4ea147282bba409c5c411bac8c9fa2555c769e16e3c50a210020d9cdf6cad1a9",
+      "edited": false
+    },
+    {
+      "tensor": "blk.7.attn_k_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 1024,
+      "sha256": "fc91c9eda28bbab5d944dac897417cfba1534fb89ae225735495e0d310a33742",
+      "edited": false
+    },
+    {
+      "tensor": "blk.7.attn_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "b2b2f5ba1a0c2bec86684ec2e5045aa96f829a8828fc39597b35836b93ff84a3",
+      "edited": false
+    },
+    {
+      "tensor": "blk.7.attn_output.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "7a345eba70abab4aa953b980df22598c1d473008ca125c44055fb4dc61643879",
+      "edited": false
+    },
+    {
+      "tensor": "blk.7.attn_q.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 43253760,
+      "sha256": "d5378553e5c45e4a516470a087eca86c3cfb029e6401095fb05332e13f321d8e",
+      "edited": false
+    },
+    {
+      "tensor": "blk.7.attn_q_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 1024,
+      "sha256": "40e6aab6c9f2802f5f2f127fbccd8abcd9471103a276514cca0e9e3be9cf3f8c",
+      "edited": false
+    },
+    {
+      "tensor": "blk.7.attn_v.weight",
+      "type": "Q6_K",
+      "encoded_bytes": 4300800,
+      "sha256": "87142237c3b31b354619f7654de4643b1997ba93416dabee440ba6a788dd22dd",
+      "edited": false
+    },
+    {
+      "tensor": "blk.7.ffn_down.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "a1c2cfc05e7b462d80e89fadad8122241b8a626b7d76a3b3ce2399ad3580807e",
+      "edited": false
+    },
+    {
+      "tensor": "blk.7.ffn_gate.weight",
+      "type": "IQ4_XS",
+      "encoded_bytes": 47349760,
+      "sha256": "82cc52a16e890b0b4b3a5507cb7659d58953641c71513b3121994cb14d3589c3",
+      "edited": false
+    },
+    {
+      "tensor": "blk.7.ffn_up.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "993259d6122bfd5e82c1609f034b92ad48d8bf82b759b7a57d8d73f259e1fcda",
+      "edited": false
+    },
+    {
+      "tensor": "blk.7.post_attention_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "6921966c27f8271c2b903482c250d058f38474f59ef53f63f33b443f19bd408c",
+      "edited": false
+    },
+    {
+      "tensor": "blk.8.attn_gate.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "9a855ab24c4f597f3df51b2a60c453acba70e7b9655346c7b56636488a0992aa",
+      "edited": false
+    },
+    {
+      "tensor": "blk.8.attn_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "d5a9af188421c5d7f1e811567f50bd45b0374ba6385441e0435e250ee90370ae",
+      "edited": false
+    },
+    {
+      "tensor": "blk.8.attn_qkv.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 36044800,
+      "sha256": "d1e6589392feb600f5df5c4d6006c75016fb4b9c94ab3247c3d5b811ec45b3e5",
+      "edited": false
+    },
+    {
+      "tensor": "blk.8.ffn_down.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "dae0c8f28ba9b00ee56a0df370cadb1d3c369becda996fbe616097f045243631",
+      "edited": false
+    },
+    {
+      "tensor": "blk.8.ffn_gate.weight",
+      "type": "IQ4_XS",
+      "encoded_bytes": 47349760,
+      "sha256": "1632b87627851f2f00deb5acf9b859d07b0a7b53d69f5d903d1c2af87123fb81",
+      "edited": false
+    },
+    {
+      "tensor": "blk.8.ffn_up.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "0778a4cbd372bc164fe0b51df129343977d9c413e306ce76f8b27a4762879b27",
+      "edited": false
+    },
+    {
+      "tensor": "blk.8.post_attention_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "04ae765f6e2f13fa3351f0e2f4b9cbe2fb96875a1643fb353e17463a9bbc6379",
+      "edited": false
+    },
+    {
+      "tensor": "blk.8.ssm_a",
+      "type": "F32",
+      "encoded_bytes": 192,
+      "sha256": "40dc163847ed54bdc733da921dd7802fb07636f3b55d1704ad354950873d8180",
+      "edited": false
+    },
+    {
+      "tensor": "blk.8.ssm_alpha.weight",
+      "type": "Q4_K",
+      "encoded_bytes": 138240,
+      "sha256": "6f7df7f024e0371edf5d0275e7c0fa174523d8e8b4499a1cffae99545d88de32",
+      "edited": false
+    },
+    {
+      "tensor": "blk.8.ssm_beta.weight",
+      "type": "Q4_K",
+      "encoded_bytes": 138240,
+      "sha256": "beed33b3e87969f7c9b35d7805d36cfe1b4d78e50927c63c69a1fb9e403ea879",
+      "edited": false
+    },
+    {
+      "tensor": "blk.8.ssm_conv1d.weight",
+      "type": "F32",
+      "encoded_bytes": 163840,
+      "sha256": "1cdc7d55d72355a9ada0778d87dc3d5055263332b20daae15a6c53a8ed62c5c4",
+      "edited": false
+    },
+    {
+      "tensor": "blk.8.ssm_dt.bias",
+      "type": "F32",
+      "encoded_bytes": 192,
+      "sha256": "04ca0e93be110ec02c3ce937343d3e7bcc79cad055f22670c7dc1522c724832d",
+      "edited": false
+    },
+    {
+      "tensor": "blk.8.ssm_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 512,
+      "sha256": "a1ec028c0c8e6b766f5d236c27ef1a16e0bd7f8ba2336ce40571d657ca7c9439",
+      "edited": false
+    },
+    {
+      "tensor": "blk.8.ssm_out.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "a8535dabc9bbf88730ecc6b975644a7db376f99e76ba4abeab2f321035db394d",
+      "edited": false
+    },
+    {
+      "tensor": "blk.9.attn_gate.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "e23fd3ae81dc8c9fc492687b8318b2e1376e73fa9a2dc73c08f527d43f49ad54",
+      "edited": false
+    },
+    {
+      "tensor": "blk.9.attn_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "947c98b0ba74bbe5abcc3f8fa500abb5d2ff4022b4738ee0a01df757340618b8",
+      "edited": false
+    },
+    {
+      "tensor": "blk.9.attn_qkv.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 36044800,
+      "sha256": "88910c5690759d0fd69d5d033dc7fab52519d935f6c4fd4ea4b035d5a88a7601",
+      "edited": false
+    },
+    {
+      "tensor": "blk.9.ffn_down.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "3ed2950bfd92948a25e339b99dfe0910e034251bff0f7f1c45245f2f390392a2",
+      "edited": false
+    },
+    {
+      "tensor": "blk.9.ffn_gate.weight",
+      "type": "IQ4_XS",
+      "encoded_bytes": 47349760,
+      "sha256": "cb04a022e38638711467b7d811e49c82b4142424f4f75dc290847991b0e8c604",
+      "edited": false
+    },
+    {
+      "tensor": "blk.9.ffn_up.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "894353bee9845fb0773d1686f04e55e96109058f861ff7a74d928b92852011aa",
+      "edited": false
+    },
+    {
+      "tensor": "blk.9.post_attention_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "f873e0174cf09db639a0eff292c84615b6447e6bf512e3b4762da941ffd3cb09",
+      "edited": false
+    },
+    {
+      "tensor": "blk.9.ssm_a",
+      "type": "F32",
+      "encoded_bytes": 192,
+      "sha256": "dca5a43f45d3e3eec8fa3d2abc23989d103ad83f78d3b77d2ba5379f410b06c3",
+      "edited": false
+    },
+    {
+      "tensor": "blk.9.ssm_alpha.weight",
+      "type": "Q4_K",
+      "encoded_bytes": 138240,
+      "sha256": "2e880f06d824675c41e219db7462f5582b4bccfec340bc9a203ae668b9fa41ea",
+      "edited": false
+    },
+    {
+      "tensor": "blk.9.ssm_beta.weight",
+      "type": "Q4_K",
+      "encoded_bytes": 138240,
+      "sha256": "27b75a15a6eda4b3b83ef767db083c82db83d134811bdff54dcd185cf9489be5",
+      "edited": false
+    },
+    {
+      "tensor": "blk.9.ssm_conv1d.weight",
+      "type": "F32",
+      "encoded_bytes": 163840,
+      "sha256": "811b37fd735104284a123ca611fcbe5fb5c5885536ef6f50e757a02fc5bda32e",
+      "edited": false
+    },
+    {
+      "tensor": "blk.9.ssm_dt.bias",
+      "type": "F32",
+      "encoded_bytes": 192,
+      "sha256": "e0e094664204dfc89860a7d6733d7ae481b3cb61b92c9a60f0642f25c1c6fded",
+      "edited": false
+    },
+    {
+      "tensor": "blk.9.ssm_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 512,
+      "sha256": "f112e884424b437b13dae9325ea1c588939e61ba6c511b6e5626cb0e034d0471",
+      "edited": false
+    },
+    {
+      "tensor": "blk.9.ssm_out.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "24a6ffc8594de3cb85153be591928f96a287ded27d63ca55daa6ecd8996fb877",
+      "edited": false
+    },
+    {
+      "tensor": "blk.10.attn_gate.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "23d225f9220a0fd81d523ca9f9f84f710f793cdc10953164755ea57ab234c6f8",
+      "edited": false
+    },
+    {
+      "tensor": "blk.10.attn_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "9be8915998c8d82328d766eb0dc90e89499907e5c143cefa11f89e267c3cc81a",
+      "edited": false
+    },
+    {
+      "tensor": "blk.10.attn_qkv.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 36044800,
+      "sha256": "ef1a2a6443dddebd56628a6a4ab32ad185fffb51fd4c128b5de4c46e27174bb0",
+      "edited": false
+    },
+    {
+      "tensor": "blk.10.ffn_down.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "13fcf5ef3868ee38e2d380691a83e6045a8742bc3f3358c5696792ab0ab493ac",
+      "edited": false
+    },
+    {
+      "tensor": "blk.10.ffn_gate.weight",
+      "type": "IQ4_XS",
+      "encoded_bytes": 47349760,
+      "sha256": "ffde544456522c134efd76ed81b900e95884f17e34d4842e01a59e43bfb41faa",
+      "edited": false
+    },
+    {
+      "tensor": "blk.10.ffn_up.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "175fc5378dd25fb6c0630e4e10b444ed80235ee41046ff4a70101a1ba7a9737e",
+      "edited": false
+    },
+    {
+      "tensor": "blk.10.post_attention_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "f3912975bfa4e6a40a30f0623be8363c5f26a7f59ab88a56a9e4876652c8e80e",
+      "edited": false
+    },
+    {
+      "tensor": "blk.10.ssm_a",
+      "type": "F32",
+      "encoded_bytes": 192,
+      "sha256": "c3819ffbbfce7dfbdd31b53f2f41bb8c7482ac263de5f8bacddfc83f7554a96a",
+      "edited": false
+    },
+    {
+      "tensor": "blk.10.ssm_alpha.weight",
+      "type": "Q4_K",
+      "encoded_bytes": 138240,
+      "sha256": "0af1521138257b9b6fd03a75f56299bc360502059b263e510263975202aa9802",
+      "edited": false
+    },
+    {
+      "tensor": "blk.10.ssm_beta.weight",
+      "type": "Q4_K",
+      "encoded_bytes": 138240,
+      "sha256": "c6e0d76e9f52cbe4fee5becf8c59b2970dd79af17ae379d739559ca9d7ec035d",
+      "edited": false
+    },
+    {
+      "tensor": "blk.10.ssm_conv1d.weight",
+      "type": "F32",
+      "encoded_bytes": 163840,
+      "sha256": "1d06ab0c3c3d7f10836bfb3f8d1cdbd980cf89919a893c3d0eeaa89ccaea82b9",
+      "edited": false
+    },
+    {
+      "tensor": "blk.10.ssm_dt.bias",
+      "type": "F32",
+      "encoded_bytes": 192,
+      "sha256": "316fbcac21e4938068aa29381329c655dbecc75a855cc92907ec7cf9435b6b2a",
+      "edited": false
+    },
+    {
+      "tensor": "blk.10.ssm_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 512,
+      "sha256": "9d57b6c1bfa6e132eeea48fe90eacf15720959a4b12853f8dd527da5b519f9ae",
+      "edited": false
+    },
+    {
+      "tensor": "blk.10.ssm_out.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "c18f4e8fc95cb2e39780b7d989a616efd4596cb07be58526ecad50e189bdaedf",
+      "edited": false
+    },
+    {
+      "tensor": "blk.11.attn_k.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 3604480,
+      "sha256": "a3abf4203c1c872be60866713b011715d1bfa86c65a7b8421f75c7f9093d5da5",
+      "edited": false
+    },
+    {
+      "tensor": "blk.11.attn_k_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 1024,
+      "sha256": "5e442e330ec8b1622920ec8ea80d8b78a8e8d072d50fc8b25e4a5b5ab93f2c28",
+      "edited": false
+    },
+    {
+      "tensor": "blk.11.attn_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "a9ac4bc8adbc831e1f62ae2251a20242c5060b967fed1fcac3bff411b5768ac3",
+      "edited": false
+    },
+    {
+      "tensor": "blk.11.attn_output.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "48ce0d412b85f922f181016a4a6311097b6982e4c51b8f1f83c8c9463503bbf4",
+      "edited": false
+    },
+    {
+      "tensor": "blk.11.attn_q.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 43253760,
+      "sha256": "5155bf24cd98b4c5cee2b4b0fc8f5d7b7bb7c3424818d60e1a346af9972f9787",
+      "edited": false
+    },
+    {
+      "tensor": "blk.11.attn_q_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 1024,
+      "sha256": "c7ec47ca756b481e5af081e1f1dda5340b70bc99d1547d7b9622527060af19ef",
+      "edited": false
+    },
+    {
+      "tensor": "blk.11.attn_v.weight",
+      "type": "Q6_K",
+      "encoded_bytes": 4300800,
+      "sha256": "d52d4a257dab5b01fefdd408cac9709629d7ce57146013c6c51a5551c0365086",
+      "edited": false
+    },
+    {
+      "tensor": "blk.11.ffn_down.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "2c5fb643b6f575f30fd53adc5694e4eb1edf59b34ea3f4c6782ab55b3c18422c",
+      "edited": false
+    },
+    {
+      "tensor": "blk.11.ffn_gate.weight",
+      "type": "IQ4_XS",
+      "encoded_bytes": 47349760,
+      "sha256": "6ffcc2826879bb979ae062c18e6b8c124ea8e279eac4108806bf7e0e17447570",
+      "edited": false
+    },
+    {
+      "tensor": "blk.11.ffn_up.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "864ecaba05dee0f164cebde07689872e28c4cf25d40fbd862533b575b9578511",
+      "edited": false
+    },
+    {
+      "tensor": "blk.11.post_attention_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "45521a1b543747dfde32cd7320742e348502be9c957103f1dbf35ff6b4a4bb47",
+      "edited": false
+    },
+    {
+      "tensor": "blk.12.attn_gate.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "2d31e1c0445e5058bd77968ec3a37043285372ab8dd2a0aeb219cad9b0e298e6",
+      "edited": false
+    },
+    {
+      "tensor": "blk.12.attn_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "9653be680b8cbf7bbd338d8df474aa078c57492589089b6d9fe954667835ebfb",
+      "edited": false
+    },
+    {
+      "tensor": "blk.12.attn_qkv.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 36044800,
+      "sha256": "9300c28d2bb378bb8eb081b50a260de401b43e9fec1703811176525954d57198",
+      "edited": false
+    },
+    {
+      "tensor": "blk.12.ffn_down.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "14050d47f5387bf26c6831f17de70daf83c743999dd0cf45f0317345379f49c2",
+      "edited": false
+    },
+    {
+      "tensor": "blk.12.ffn_gate.weight",
+      "type": "IQ4_XS",
+      "encoded_bytes": 47349760,
+      "sha256": "9b281e917f125439ca301d0ee6f481f5a045d1b64e66516ae8deb28a43b0cc8d",
+      "edited": false
+    },
+    {
+      "tensor": "blk.12.ffn_up.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "61a14af0921c772f05b1b31ab97e7ebb56279bf537b1061b024ce9863f1918d0",
+      "edited": false
+    },
+    {
+      "tensor": "blk.12.post_attention_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "c666bc50045ec83fff709349dc0fc4ec76804033d262a659dded312d103fe9b3",
+      "edited": false
+    },
+    {
+      "tensor": "blk.12.ssm_a",
+      "type": "F32",
+      "encoded_bytes": 192,
+      "sha256": "dd41c1a28104769a43d2bcfd021c9c4e788f347b2b76eb641f324835f07002df",
+      "edited": false
+    },
+    {
+      "tensor": "blk.12.ssm_alpha.weight",
+      "type": "Q4_K",
+      "encoded_bytes": 138240,
+      "sha256": "9009ec2ca4eec1ca2c7c655d8eff894aab84b8850fe38bbffcf22b4caae03217",
+      "edited": false
+    },
+    {
+      "tensor": "blk.12.ssm_beta.weight",
+      "type": "Q4_K",
+      "encoded_bytes": 138240,
+      "sha256": "dc4dddf93ac469108af784e3cacb08609c1fdfd6c12a6cdaf012bfece09f242b",
+      "edited": false
+    },
+    {
+      "tensor": "blk.12.ssm_conv1d.weight",
+      "type": "F32",
+      "encoded_bytes": 163840,
+      "sha256": "5d111e61f2343d31c414f7b8f6deeb689e43ab170ee27538ba78143d904a02a0",
+      "edited": false
+    },
+    {
+      "tensor": "blk.12.ssm_dt.bias",
+      "type": "F32",
+      "encoded_bytes": 192,
+      "sha256": "096888bf1444f4719c58abab6922dcc67995a934c24a3e7c4ded1a15f7017a08",
+      "edited": false
+    },
+    {
+      "tensor": "blk.12.ssm_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 512,
+      "sha256": "dd850c3453f04a106a21f5de845207920a366103cc0e4afcbba72c23b7621bbd",
+      "edited": false
+    },
+    {
+      "tensor": "blk.12.ssm_out.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "f8ea46c050aaeed7fc4ff943c8aac4b0cf4186ee2e3dd0739d72d05cae01284b",
+      "edited": false
+    },
+    {
+      "tensor": "blk.13.attn_gate.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "2b0ebe44425fb587c384504380803c3ac19aad6a641899ff5ec240b49fa0a8bc",
+      "edited": false
+    },
+    {
+      "tensor": "blk.13.attn_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "ba9d1653f6273d4bdf63add8f25300ff52e126c992adc080de4f4b7033f33021",
+      "edited": false
+    },
+    {
+      "tensor": "blk.13.attn_qkv.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 36044800,
+      "sha256": "53f9bcfdd22bef37cf5f277bca95c8eaecc04a86ceb518f02fd829f0d887959f",
+      "edited": false
+    },
+    {
+      "tensor": "blk.13.ffn_down.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "fc18201544a87753148ff0a7730cd93882fb9304450abaaac3da1c44a82086ca",
+      "edited": false
+    },
+    {
+      "tensor": "blk.13.ffn_gate.weight",
+      "type": "IQ4_XS",
+      "encoded_bytes": 47349760,
+      "sha256": "2e35e81bce9fe17413894770568d8089fd844c6f923867ea82d0ef105be8d158",
+      "edited": false
+    },
+    {
+      "tensor": "blk.13.ffn_up.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "c0aa2384cd48eb7d17fec36171c00f2d811df5094f0be205050fb5f52725b07e",
+      "edited": false
+    },
+    {
+      "tensor": "blk.13.post_attention_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "53f27243ec2cd62f3089ebe51154fd3ea607bd791e4f1878818f4ec839c93aa6",
+      "edited": false
+    },
+    {
+      "tensor": "blk.13.ssm_a",
+      "type": "F32",
+      "encoded_bytes": 192,
+      "sha256": "47c622772975437285fe43d65b3ed86465ab69ffed962bf9caf35c83cf89f599",
+      "edited": false
+    },
+    {
+      "tensor": "blk.13.ssm_alpha.weight",
+      "type": "Q4_K",
+      "encoded_bytes": 138240,
+      "sha256": "1790f4173fe6aa56fcf10cb63392d9e4bc1642c51d203ae5a064f41b88700122",
+      "edited": false
+    },
+    {
+      "tensor": "blk.13.ssm_beta.weight",
+      "type": "Q4_K",
+      "encoded_bytes": 138240,
+      "sha256": "0d5967777af67bb54d885ecb76b53989769429eea281f99841698548256cd3b0",
+      "edited": false
+    },
+    {
+      "tensor": "blk.13.ssm_conv1d.weight",
+      "type": "F32",
+      "encoded_bytes": 163840,
+      "sha256": "30b192f6a424839f00aae84d8e51a44fa2aa489115b4896e8b43b617a9660414",
+      "edited": false
+    },
+    {
+      "tensor": "blk.13.ssm_dt.bias",
+      "type": "F32",
+      "encoded_bytes": 192,
+      "sha256": "2cf909efb71e0bc0f19aae227ed5ad7d5e176f21cd91e0ced39d3126f86dc006",
+      "edited": false
+    },
+    {
+      "tensor": "blk.13.ssm_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 512,
+      "sha256": "07d8d99ff711e9eb4209ca138f9cd87abafc8a0cbe5eb16bcbd93110493f6425",
+      "edited": false
+    },
+    {
+      "tensor": "blk.13.ssm_out.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "1ba51f2352a84397403b8fff495781ace90b75e7f6251ca32b99bbca9722fe00",
+      "edited": false
+    },
+    {
+      "tensor": "blk.14.attn_gate.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "8490112f6cfb5e5c9ce97bbdeabeef6ae3a112ce8b6ef1763b2f7fed305eff76",
+      "edited": false
+    },
+    {
+      "tensor": "blk.14.attn_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "5eaccd246eda06fe85d87b31c10db93574135ca29bd2287342e1b618522f1dac",
+      "edited": false
+    },
+    {
+      "tensor": "blk.14.attn_qkv.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 36044800,
+      "sha256": "fa4966d43ef227f68f64822df9dfa890aaff8e7dfe3cb80b1d94373837c86531",
+      "edited": false
+    },
+    {
+      "tensor": "blk.14.ffn_down.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "92299e3c4e2df45f5712cb1ae39914cfc8db6096144cbabc92a852f517cf2b9d",
+      "edited": false
+    },
+    {
+      "tensor": "blk.14.ffn_gate.weight",
+      "type": "IQ4_XS",
+      "encoded_bytes": 47349760,
+      "sha256": "36a5e6b682162d3b8ce3c897042de969a336e19ddce3183d3055d890906b66a9",
+      "edited": false
+    },
+    {
+      "tensor": "blk.14.ffn_up.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "45b47dcbeb3fc015d85dc9c96ecfa3c3c26fc465d9ab0e7eb882a48764c27cf2",
+      "edited": false
+    },
+    {
+      "tensor": "blk.14.post_attention_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "ceb8857260e9819168fd9ecaabeda6410be064a1c5e94a7765f0dec34f06b4bf",
+      "edited": false
+    },
+    {
+      "tensor": "blk.14.ssm_a",
+      "type": "F32",
+      "encoded_bytes": 192,
+      "sha256": "c24329e63e02d23e744237b7df919aab1ccbfb413d4f2b5d0e6654a851958d08",
+      "edited": false
+    },
+    {
+      "tensor": "blk.14.ssm_alpha.weight",
+      "type": "Q4_K",
+      "encoded_bytes": 138240,
+      "sha256": "f65b21801f19eeeeefbe661c78903f1e7199dcccd7ae39e6ed3a59e355dad783",
+      "edited": false
+    },
+    {
+      "tensor": "blk.14.ssm_beta.weight",
+      "type": "Q4_K",
+      "encoded_bytes": 138240,
+      "sha256": "84838f981c8312155f4beaef63c1f86b20b8343d41b24aea409eca7b19ab59e9",
+      "edited": false
+    },
+    {
+      "tensor": "blk.14.ssm_conv1d.weight",
+      "type": "F32",
+      "encoded_bytes": 163840,
+      "sha256": "79afbac47daf2e29f072a669644fb2b8382843bca4df5e1be5811e41fa269e48",
+      "edited": false
+    },
+    {
+      "tensor": "blk.14.ssm_dt.bias",
+      "type": "F32",
+      "encoded_bytes": 192,
+      "sha256": "dd0899e35f60b1600127014a4913f92ad2445f5bf59708aa49f84a8345593da7",
+      "edited": false
+    },
+    {
+      "tensor": "blk.14.ssm_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 512,
+      "sha256": "24d4329c64a46c9b73f599cceb46e49f8bd7c9f733340a0a5e8fdd5a7f1aa8c4",
+      "edited": false
+    },
+    {
+      "tensor": "blk.14.ssm_out.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "cc1c90ede1b299ee74f8248e69945b1ab59e8b0ac37a9e2e8e1082e379fdaccd",
+      "edited": false
+    },
+    {
+      "tensor": "blk.15.attn_k.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 3604480,
+      "sha256": "963028ea435a26237d351efa4de49f2ae91ab320bfe12caa2b1810c247cb57c8",
+      "edited": false
+    },
+    {
+      "tensor": "blk.15.attn_k_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 1024,
+      "sha256": "0f48d880da4ea680c0cb3bd3ccdcb03f687c7b6ea69a7e5564aa34ba338f0142",
+      "edited": false
+    },
+    {
+      "tensor": "blk.15.attn_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "c895996b730d91571cbc3cfba3e81e290491800057751a23efdb987bd985d145",
+      "edited": false
+    },
+    {
+      "tensor": "blk.15.attn_output.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "32893000da30188e099b138167f0205c1953cc2723e5c612fe5ab9ff6ef26b1c",
+      "edited": false
+    },
+    {
+      "tensor": "blk.15.attn_q.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 43253760,
+      "sha256": "7278954e29b90ebfcc2abd4316e2d1d44d7e2cc4151b21d5fd1fddda274e6652",
+      "edited": false
+    },
+    {
+      "tensor": "blk.15.attn_q_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 1024,
+      "sha256": "4774f00709dd00de03652479f8f96c540ad79e65c7d9059488600fbe9b9aaf5f",
+      "edited": false
+    },
+    {
+      "tensor": "blk.15.attn_v.weight",
+      "type": "Q6_K",
+      "encoded_bytes": 4300800,
+      "sha256": "d405b8bdfc249330b38bb5356abc2d3ddaf9f2929f5dc072642cca522283be8c",
+      "edited": false
+    },
+    {
+      "tensor": "blk.15.ffn_down.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "a7a3956ef116ce2c0abdef56e609afb5ffaed8f1d64fa21976312238bb227fd7",
+      "edited": false
+    },
+    {
+      "tensor": "blk.15.ffn_gate.weight",
+      "type": "IQ4_XS",
+      "encoded_bytes": 47349760,
+      "sha256": "fd24a62a0d050775f27ff856218df52fe10a3c3e3c15eaeab776374125338261",
+      "edited": false
+    },
+    {
+      "tensor": "blk.15.ffn_up.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "e7d799e798388fecd70025bf8b636059c704ee3e811794e4d54073c00c54d145",
+      "edited": false
+    },
+    {
+      "tensor": "blk.15.post_attention_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "00e3a3143642cf0aa98d63d5d622470d7f85bdc14b1d1512caced871993e4980",
+      "edited": false
+    },
+    {
+      "tensor": "blk.16.attn_gate.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "45a4871819badde56f1b1814f1c4123b8d2fde608ab00b4807927970cf981229",
+      "edited": false
+    },
+    {
+      "tensor": "blk.16.attn_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "892b0a9cf44840dc1e1356d2edb26c1c2b1ac205f99e4e4024fad29b0df7b3d4",
+      "edited": false
+    },
+    {
+      "tensor": "blk.16.attn_qkv.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 36044800,
+      "sha256": "a22d3bd01df9b7a271eda15df2904aea054fc6d3ec0c7dd5177b35085d9cde2a",
+      "edited": false
+    },
+    {
+      "tensor": "blk.16.ffn_down.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "74644d2c9dad9a1749393f97dc8ac6860bc147636f53824aea4d04d99e7195bc",
+      "edited": false
+    },
+    {
+      "tensor": "blk.16.ffn_gate.weight",
+      "type": "IQ4_XS",
+      "encoded_bytes": 47349760,
+      "sha256": "64676f7c610bed4597e8e0b8bd296e9534476fbc8aef427dfe378fcc3052fc1d",
+      "edited": false
+    },
+    {
+      "tensor": "blk.16.ffn_up.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "b62e4c037007f237e2aedb6858fcbcef9a1293017634bbc7b51946416493d045",
+      "edited": false
+    },
+    {
+      "tensor": "blk.16.post_attention_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "4cd5dfa197dccbe8fba709d542a595c0d7da308c214c65dd97a5eac281de0660",
+      "edited": false
+    },
+    {
+      "tensor": "blk.16.ssm_a",
+      "type": "F32",
+      "encoded_bytes": 192,
+      "sha256": "82d826823772700f59060dbdd09aa5e1b14fe233bacbccab63edabaf453aad35",
+      "edited": false
+    },
+    {
+      "tensor": "blk.16.ssm_alpha.weight",
+      "type": "Q4_K",
+      "encoded_bytes": 138240,
+      "sha256": "a64fcdaa85895a14e27ee6318e0b10a51dfce341371871c1144e22c208bc8e1e",
+      "edited": false
+    },
+    {
+      "tensor": "blk.16.ssm_beta.weight",
+      "type": "Q4_K",
+      "encoded_bytes": 138240,
+      "sha256": "929bcd4aa74a0cf0a9fca4c1a1e42a1854419eaea3d06864fc51ab8b41abd5fc",
+      "edited": false
+    },
+    {
+      "tensor": "blk.16.ssm_conv1d.weight",
+      "type": "F32",
+      "encoded_bytes": 163840,
+      "sha256": "27dcc6ccf102e0cc5fed0060cd85aa3fa6bd04f1b76ba3264ce1776a2547cdcf",
+      "edited": false
+    },
+    {
+      "tensor": "blk.16.ssm_dt.bias",
+      "type": "F32",
+      "encoded_bytes": 192,
+      "sha256": "c8120722533b532cddb1a651e7d0e59efef0e68163d319b132581f82279f6335",
+      "edited": false
+    },
+    {
+      "tensor": "blk.16.ssm_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 512,
+      "sha256": "387ad397bef86b0a0fa520c6a4ddf97d5f110b1e8c1236a651abf4694528b3b9",
+      "edited": false
+    },
+    {
+      "tensor": "blk.16.ssm_out.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "966df9b1f0422e53c7141579a0a6d670bf421d27777d2d8a12cc96473be86340",
+      "edited": false
+    },
+    {
+      "tensor": "blk.17.attn_gate.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "271b70276b575be5a808ff1a300a033a625e6b20164d8384453acfd37fbca928",
+      "edited": false
+    },
+    {
+      "tensor": "blk.17.attn_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "d468e70f90be839bb6810ba378bbe5bc38ff207219284e09914d2fd6483e6d4d",
+      "edited": false
+    },
+    {
+      "tensor": "blk.17.attn_qkv.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 36044800,
+      "sha256": "a4cb2aad1ae424f66bad9a3e6842858bf016f794b618f78a5ab6f2d9ab55e667",
+      "edited": false
+    },
+    {
+      "tensor": "blk.17.ffn_down.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "6cab1ea6e366445a18f94578b357f9bc4987957937afc0ca60fd3c2990b33f4a",
+      "edited": false
+    },
+    {
+      "tensor": "blk.17.ffn_gate.weight",
+      "type": "IQ4_XS",
+      "encoded_bytes": 47349760,
+      "sha256": "60e3ba1f6ea7d7bbb3e1e7c98147254191d6e19a1b56b36805cbf690035a7ab3",
+      "edited": false
+    },
+    {
+      "tensor": "blk.17.ffn_up.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "5405ddbc9147fb216930ee75f6a1ef185bf241c329180aeb6527ccb7a4489cf4",
+      "edited": false
+    },
+    {
+      "tensor": "blk.17.post_attention_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "e2e7db7c7b3cc8cde8a335de90a7e7072024fd2a8fd35c9755c9200cb761fce6",
+      "edited": false
+    },
+    {
+      "tensor": "blk.17.ssm_a",
+      "type": "F32",
+      "encoded_bytes": 192,
+      "sha256": "98fefae2db7c44ef15cd76e15ce5451d46155dcdd0a28a80a425ba2b8760d522",
+      "edited": false
+    },
+    {
+      "tensor": "blk.17.ssm_alpha.weight",
+      "type": "Q4_K",
+      "encoded_bytes": 138240,
+      "sha256": "c1906f47f33d512a3794a56aeb9ed94febf741815547fe4a3b3de153a863319d",
+      "edited": false
+    },
+    {
+      "tensor": "blk.17.ssm_beta.weight",
+      "type": "Q4_K",
+      "encoded_bytes": 138240,
+      "sha256": "10e3be4d9b5daea07371448ccae42bf6efc343bf289316416df41ea075c7be21",
+      "edited": false
+    },
+    {
+      "tensor": "blk.17.ssm_conv1d.weight",
+      "type": "F32",
+      "encoded_bytes": 163840,
+      "sha256": "af5c7f667ca436e71883b4f68b9812f2797884d22e0991ff2b41ac8b1635a065",
+      "edited": false
+    },
+    {
+      "tensor": "blk.17.ssm_dt.bias",
+      "type": "F32",
+      "encoded_bytes": 192,
+      "sha256": "342e61f58121f6ff4f138c6119c2e4948bd7b47ff8bcd028a8c2b76eaf61ff3c",
+      "edited": false
+    },
+    {
+      "tensor": "blk.17.ssm_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 512,
+      "sha256": "7fdb4bc7b06b6ced929a0e0995b583f133fe60080467984defdc722ca633eb20",
+      "edited": false
+    },
+    {
+      "tensor": "blk.17.ssm_out.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "22312db5e9d7fab7b61fee245e7156dc10b9a935a42b9ab729047973ea8f7cf7",
+      "edited": false
+    },
+    {
+      "tensor": "blk.18.attn_gate.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "24df2d302b7c3ebafe077845af7b9e05dafd4c639617cabd5659d844bc11a875",
+      "edited": false
+    },
+    {
+      "tensor": "blk.18.attn_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "b65d16e17edddaadcc2bab26f30e78277ac3b6ae4044c917ccfb391d9d79cf5a",
+      "edited": false
+    },
+    {
+      "tensor": "blk.18.attn_qkv.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 36044800,
+      "sha256": "04051d1383e76675c3b58312feb1af6a3a7539b4460e11995d0509d793c52415",
+      "edited": false
+    },
+    {
+      "tensor": "blk.18.ffn_down.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "2db56eea667eb08c40995f5cf408802d02d66005e2654b98614b882aab9c314c",
+      "edited": false
+    },
+    {
+      "tensor": "blk.18.ffn_gate.weight",
+      "type": "IQ4_XS",
+      "encoded_bytes": 47349760,
+      "sha256": "38416609b2b1662ed16966509083a0ac2ff6f60d4161bd00e17edf99d49da9d5",
+      "edited": false
+    },
+    {
+      "tensor": "blk.18.ffn_up.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "eed06662861bd4ac6d088e0e48d5d8028e3009dff0b3309f190e2f9ed0e4d89e",
+      "edited": false
+    },
+    {
+      "tensor": "blk.18.post_attention_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "c4f0e48df566bb8eb167b6a1f50342d80886421886085fa436b7c6424626c1bf",
+      "edited": false
+    },
+    {
+      "tensor": "blk.18.ssm_a",
+      "type": "F32",
+      "encoded_bytes": 192,
+      "sha256": "db427f45efb3f30f9c2e2aeb2a49a1414636543f5b462383d5272740ae9cd69c",
+      "edited": false
+    },
+    {
+      "tensor": "blk.18.ssm_alpha.weight",
+      "type": "Q4_K",
+      "encoded_bytes": 138240,
+      "sha256": "52eca0dd16da77051e0597776f30561fec61bfc1e1a69c4bff5411a0a6349a67",
+      "edited": false
+    },
+    {
+      "tensor": "blk.18.ssm_beta.weight",
+      "type": "Q4_K",
+      "encoded_bytes": 138240,
+      "sha256": "eaf23d8d577ce843248cd30524a6cf6ba3a0a04cbc733ff7b25cf41651cce0fc",
+      "edited": false
+    },
+    {
+      "tensor": "blk.18.ssm_conv1d.weight",
+      "type": "F32",
+      "encoded_bytes": 163840,
+      "sha256": "523f6ed9f472acdfcb23ef6d01b9cc68e2b914290edc6478ddac1350baa511eb",
+      "edited": false
+    },
+    {
+      "tensor": "blk.18.ssm_dt.bias",
+      "type": "F32",
+      "encoded_bytes": 192,
+      "sha256": "330b7407c46fd140ab62b0d9e7e7d07365622e932a15bfcccd59d0fda87e4592",
+      "edited": false
+    },
+    {
+      "tensor": "blk.18.ssm_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 512,
+      "sha256": "9de1581342dcd07527419b2bb67feb654368e8ccd9381e9552317f6dcd7c249c",
+      "edited": false
+    },
+    {
+      "tensor": "blk.18.ssm_out.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "8b5bdcd7c4f2366e83fbca3ada5f6a289f64193c963ab967ba60431c31506988",
+      "edited": false
+    },
+    {
+      "tensor": "blk.19.attn_k.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 3604480,
+      "sha256": "ee58b236eda301535bdfdf4611c3e6c373a341548e0647d1e228ff20655e70c6",
+      "edited": false
+    },
+    {
+      "tensor": "blk.19.attn_k_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 1024,
+      "sha256": "ab2ff427921c3822b2ba5eb83325588e1dac03a79c9aa3bffb1aa5fc48a101aa",
+      "edited": false
+    },
+    {
+      "tensor": "blk.19.attn_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "54909dbdeeb7bf166524f9e6acafe122e6fe5c63d302c9cbb5b6eb09b74b9bd2",
+      "edited": false
+    },
+    {
+      "tensor": "blk.19.attn_output.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "0b774b82d2764f160441ed37aa3854317b1cd312f982ad48f4596bd3aa88ee09",
+      "edited": false
+    },
+    {
+      "tensor": "blk.19.attn_q.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 43253760,
+      "sha256": "e3248b4326700be0b225c722e5a2fba7e2a7d7fb283ca4dbf5f4b00244e4c54b",
+      "edited": false
+    },
+    {
+      "tensor": "blk.19.attn_q_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 1024,
+      "sha256": "0ca9d0bffceadbf7e74d8b3c22bf66baca51807f15d5cfa031065a70a69ec155",
+      "edited": false
+    },
+    {
+      "tensor": "blk.19.attn_v.weight",
+      "type": "Q6_K",
+      "encoded_bytes": 4300800,
+      "sha256": "bff8223543bee475b1d6e7916d54d3912a675cf4e9170b7b99bff1617f35a6db",
+      "edited": false
+    },
+    {
+      "tensor": "blk.19.ffn_down.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "8ff155a4a8732d953eb2a6032daab90e94ec9023f973e1709768ceca0ab8af45",
+      "edited": false
+    },
+    {
+      "tensor": "blk.19.ffn_gate.weight",
+      "type": "IQ4_XS",
+      "encoded_bytes": 47349760,
+      "sha256": "83e16471b733009534366b63bc924ef00d800558b88d5bd052af9121abdfa7f5",
+      "edited": false
+    },
+    {
+      "tensor": "blk.19.ffn_up.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "a0f8e283b5863505999410f618eb9c573e23a2330bac8ebe540a10f6896b062f",
+      "edited": false
+    },
+    {
+      "tensor": "blk.19.post_attention_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "40e8800e5eb05504f8d25886667b505434cb7348d7bd14227c7cbabec727a639",
+      "edited": false
+    },
+    {
+      "tensor": "blk.20.attn_gate.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "37d0dd2333991267cf8b1ff936ace7ae00dbf7a021257186c3654334cdd0e8df",
+      "edited": false
+    },
+    {
+      "tensor": "blk.20.attn_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "6b3a0ea3c83ebca7097e57ea194b20ca37d6cb6b39d0f0e9578dbbe88977f296",
+      "edited": false
+    },
+    {
+      "tensor": "blk.20.attn_qkv.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 36044800,
+      "sha256": "68bfa0d3ffff492ff544aac7d6c4425dbe41a1273cb5b28c5a8437f3a7b3fc85",
+      "edited": false
+    },
+    {
+      "tensor": "blk.20.ffn_down.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "334abf01be55b89fc39499af6b67789d671e87d1a19d34fd7573a11d2bd1517b",
+      "edited": false
+    },
+    {
+      "tensor": "blk.20.ffn_gate.weight",
+      "type": "IQ4_XS",
+      "encoded_bytes": 47349760,
+      "sha256": "2aacacf301adf52a60a6cf77d5672ae6f849710cebfdce906ae5c866357387ce",
+      "edited": false
+    },
+    {
+      "tensor": "blk.20.ffn_up.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "2366951920ade7a5d377d504cb03ebd0743bac1e028c2f08f4eda01215b6687b",
+      "edited": false
+    },
+    {
+      "tensor": "blk.20.post_attention_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "3e0e08db1ba1ea3cbc9f6bacacac8bbb55f4aeff12ae85d2b0060b4cde918772",
+      "edited": false
+    },
+    {
+      "tensor": "blk.20.ssm_a",
+      "type": "F32",
+      "encoded_bytes": 192,
+      "sha256": "cf7bdff6152661330058e87267373c40afea4f0c131765b00b8eba94254f73f2",
+      "edited": false
+    },
+    {
+      "tensor": "blk.20.ssm_alpha.weight",
+      "type": "Q4_K",
+      "encoded_bytes": 138240,
+      "sha256": "9137983f2ccd2dc0bb206b1a5107012d13ac01475f37fa7bddd8fd8741bdda5e",
+      "edited": false
+    },
+    {
+      "tensor": "blk.20.ssm_beta.weight",
+      "type": "Q4_K",
+      "encoded_bytes": 138240,
+      "sha256": "3cc37407eb990431b21ace0e71941255958d7b99274598d9e23bd5f40396d166",
+      "edited": false
+    },
+    {
+      "tensor": "blk.20.ssm_conv1d.weight",
+      "type": "F32",
+      "encoded_bytes": 163840,
+      "sha256": "76c60119d711fd8b0a975ead4879d386d91862dd80a8c617754a1dc712b195ea",
+      "edited": false
+    },
+    {
+      "tensor": "blk.20.ssm_dt.bias",
+      "type": "F32",
+      "encoded_bytes": 192,
+      "sha256": "6b4884f9425cd1686068b2853777b135666830f9752ec9f4c0e67224fd012566",
+      "edited": false
+    },
+    {
+      "tensor": "blk.20.ssm_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 512,
+      "sha256": "a7868b74be35bfc81a24f923d84101afce53929347773e5ee3fc5ca5c9ed7465",
+      "edited": false
+    },
+    {
+      "tensor": "blk.20.ssm_out.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "90186adfccb9db3014afca61199c3a6616c4e9b9fecf93d8e90ebbdd914064f4",
+      "edited": false
+    },
+    {
+      "tensor": "blk.21.attn_gate.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "d7ed2a3535fc751999b1bfcf8bd2fb5a779eff8ce4485057f6040b348d93dcc1",
+      "edited": false
+    },
+    {
+      "tensor": "blk.21.attn_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "9e4797b7d55054b80d0750017c1ab1bdcbe415c20118c1b6cf69564dc2a6f673",
+      "edited": false
+    },
+    {
+      "tensor": "blk.21.attn_qkv.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 36044800,
+      "sha256": "cecac90d4510c3f00fc51ef7c9f6cc7f878cedfdf449d13e990eb3134c567b8f",
+      "edited": false
+    },
+    {
+      "tensor": "blk.21.ffn_down.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "c33fd3caebf7f3de28b5eaaf53d0e888caa383595850b7892ef71271e77b46d2",
+      "edited": false
+    },
+    {
+      "tensor": "blk.21.ffn_gate.weight",
+      "type": "IQ4_XS",
+      "encoded_bytes": 47349760,
+      "sha256": "80ce88464ca63f9f7b8ca74fda591adcd79a0f3329ca845bdd349f4e27113a1b",
+      "edited": false
+    },
+    {
+      "tensor": "blk.21.ffn_up.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "3d1fef80abf3f34672ffbd57e4e82fde461e23d04a17e9f12e0bd146fd3a4b89",
+      "edited": false
+    },
+    {
+      "tensor": "blk.21.post_attention_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "4ab21e26b6905a922cfe794c0497283a4f6de61584ea7b0dba3992bceccdf8e1",
+      "edited": false
+    },
+    {
+      "tensor": "blk.21.ssm_a",
+      "type": "F32",
+      "encoded_bytes": 192,
+      "sha256": "e4d34b4d079fdd3573c03058cd20385cd84add550eda34046d0cd81edeeb18c4",
+      "edited": false
+    },
+    {
+      "tensor": "blk.21.ssm_alpha.weight",
+      "type": "Q4_K",
+      "encoded_bytes": 138240,
+      "sha256": "21c192911690673e46f845bb7df6d4ae7cfc99ac8e03efc9e6842fa9d44aa8ce",
+      "edited": false
+    },
+    {
+      "tensor": "blk.21.ssm_beta.weight",
+      "type": "Q4_K",
+      "encoded_bytes": 138240,
+      "sha256": "5330a3629d66ed7316c1f77beda85e9aa4c6b95b1dd758dcbbe6ddca08d9b6da",
+      "edited": false
+    },
+    {
+      "tensor": "blk.21.ssm_conv1d.weight",
+      "type": "F32",
+      "encoded_bytes": 163840,
+      "sha256": "f31bd221fb1eb190b1e3b42486f0a759c640312656da025ecfae1e736f3a2724",
+      "edited": false
+    },
+    {
+      "tensor": "blk.21.ssm_dt.bias",
+      "type": "F32",
+      "encoded_bytes": 192,
+      "sha256": "2815abff075b05017a7db966dca41b9cf4bf8056a7aebd23bab7de5e074a8ed5",
+      "edited": false
+    },
+    {
+      "tensor": "blk.21.ssm_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 512,
+      "sha256": "cdae9f45af0c3442a5e3ac9375369c80530f44173f876694e210b9b328864d27",
+      "edited": false
+    },
+    {
+      "tensor": "blk.21.ssm_out.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "cdbcf36e5fc725d7a46dd4d2a012193e4d5145715378dc7cfdeddbb55a336ccb",
+      "edited": false
+    },
+    {
+      "tensor": "blk.22.attn_gate.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "d83980ea62767654c8b0804d1da7097caec8123cd420d835745ecee9a238208b",
+      "edited": false
+    },
+    {
+      "tensor": "blk.22.attn_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "d948c494218cd1619f29be608c5af0694f8c7e0d159ad36438906b337517dd2b",
+      "edited": false
+    },
+    {
+      "tensor": "blk.22.attn_qkv.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 36044800,
+      "sha256": "ca57b694104ceec89654d90ca1e84c5cc32a72d2d029d7094531f96e3236cccf",
+      "edited": false
+    },
+    {
+      "tensor": "blk.22.ffn_down.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "092ffdcd32c2489b56a845a1dabda5f5801278e259a8320eaa0c9dd7a03491dd",
+      "edited": false
+    },
+    {
+      "tensor": "blk.22.ffn_gate.weight",
+      "type": "IQ4_XS",
+      "encoded_bytes": 47349760,
+      "sha256": "ac47fd42df8831b338c8f626eee5ee788356c7bec06cc711161fd7816f96129e",
+      "edited": false
+    },
+    {
+      "tensor": "blk.22.ffn_up.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "24e27c48c16959fd339aacd446600a9f1b275fb8ecfa7477c6dcb5441161cbf4",
+      "edited": false
+    },
+    {
+      "tensor": "blk.22.post_attention_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "a88e6fac61e01586622e39f17ca65a14c4fbaedc643768a787cd08d90db3cbab",
+      "edited": false
+    },
+    {
+      "tensor": "blk.22.ssm_a",
+      "type": "F32",
+      "encoded_bytes": 192,
+      "sha256": "8c1ed2acf046467f42f8e20e14902ded15e809cdc9f5c887d652e92bbd44ed97",
+      "edited": false
+    },
+    {
+      "tensor": "blk.22.ssm_alpha.weight",
+      "type": "Q4_K",
+      "encoded_bytes": 138240,
+      "sha256": "d186609e9d3492713abdbe4fa81bf5aa6f79f6e760bad585d763f7618a039c70",
+      "edited": false
+    },
+    {
+      "tensor": "blk.22.ssm_beta.weight",
+      "type": "Q4_K",
+      "encoded_bytes": 138240,
+      "sha256": "2a746173eb31b5d6633a812239db662d125f0d04a6d81546998309dd8b08ecc6",
+      "edited": false
+    },
+    {
+      "tensor": "blk.22.ssm_conv1d.weight",
+      "type": "F32",
+      "encoded_bytes": 163840,
+      "sha256": "5315da3a7546ddf825c73392c86a8b0b510e56c3594f1aef738732e7c356bae8",
+      "edited": false
+    },
+    {
+      "tensor": "blk.22.ssm_dt.bias",
+      "type": "F32",
+      "encoded_bytes": 192,
+      "sha256": "d1c3f23b7197a6f4dbedfa71a3caf58a7592e59efccf951acdd7b7e2d2423bfc",
+      "edited": false
+    },
+    {
+      "tensor": "blk.22.ssm_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 512,
+      "sha256": "9f301b92defac70db25a6e2de2a26476769924f70c663e16d390b9032d33153e",
+      "edited": false
+    },
+    {
+      "tensor": "blk.22.ssm_out.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "1f78249b20667c8703b816c2b66c298b745885cb02bbb85a96471f7884876bb1",
+      "edited": false
+    },
+    {
+      "tensor": "blk.23.attn_k.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 3604480,
+      "sha256": "4640c0bd3596a041e130a051cdd5d187a56efda241ba53ed9d7440a6b5be9e64",
+      "edited": false
+    },
+    {
+      "tensor": "blk.23.attn_k_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 1024,
+      "sha256": "944695ee49aeb0ec789d687602919475ca213fdde39d56226f3f02e9a4b3a2d4",
+      "edited": false
+    },
+    {
+      "tensor": "blk.23.attn_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "bcbe46a519f159ffd93d52512268685b87053c66efbb8fbceccd76fd2d681ddf",
+      "edited": false
+    },
+    {
+      "tensor": "blk.23.attn_output.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "bade2d213beaf2ad145933779026f6bf8cf2b6ae5f60d52d66a36e23f781930c",
+      "edited": false
+    },
+    {
+      "tensor": "blk.23.attn_q.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 43253760,
+      "sha256": "c8cc1d3a5d4698e789ddaba081312a8ee0c5fdc968cc830f2ce5b6c3cd52d52c",
+      "edited": false
+    },
+    {
+      "tensor": "blk.23.attn_q_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 1024,
+      "sha256": "a4e1e99b954ada4af1afa6c30bc8156ba38de7519d04bbd9b6bdff7c098e52cb",
+      "edited": false
+    },
+    {
+      "tensor": "blk.23.attn_v.weight",
+      "type": "Q6_K",
+      "encoded_bytes": 4300800,
+      "sha256": "bd1527a108d71a444130e4f806a9676acc7d13c4ff99d562c048c78024b8e91c",
+      "edited": false
+    },
+    {
+      "tensor": "blk.23.ffn_down.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "56d9b4712c3167646fdc0afa178542136d7a97b94dd1f93625fdfca6f5fbd186",
+      "edited": false
+    },
+    {
+      "tensor": "blk.23.ffn_gate.weight",
+      "type": "IQ4_XS",
+      "encoded_bytes": 47349760,
+      "sha256": "bcab19b0d1299fba0081d4bc81e2f5852a19162527ecc4f7525c04b228d63d6e",
+      "edited": false
+    },
+    {
+      "tensor": "blk.23.ffn_up.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "9a27a6aa4e786dc9978fc723ee3798070e423754ca3a2f557d18b268c028492e",
+      "edited": false
+    },
+    {
+      "tensor": "blk.23.post_attention_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "a7fcf5ce2ee36d1c8dd83ccc18836a5a145f7106bcb3ce1e8db0b06a66a3f0e8",
+      "edited": false
+    },
+    {
+      "tensor": "blk.24.attn_gate.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "591fab570345684aeb652a80169d29400456e47d1a7a29f397c5045db79944fe",
+      "edited": false
+    },
+    {
+      "tensor": "blk.24.attn_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "ee7d0ad9cc1b24bb0cc3e61a6f7c68a6e0e4b0a3ac0220427cf66ee2c83c81e9",
+      "edited": false
+    },
+    {
+      "tensor": "blk.24.attn_qkv.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 36044800,
+      "sha256": "2910ccaa6dee1b04956789bc5ef9d69bb215584c80187bc5bb010d59d5d376e1",
+      "edited": false
+    },
+    {
+      "tensor": "blk.24.ffn_down.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "52bae68aa3d06e90c1c9192b88614d99a869e2032d726933754c7a7c2b451e43",
+      "edited": false
+    },
+    {
+      "tensor": "blk.24.ffn_gate.weight",
+      "type": "IQ4_XS",
+      "encoded_bytes": 47349760,
+      "sha256": "1c82f2f49d0bdbdb3ad7a3bf6a786ac31d2adccd6f58d1f5be4815ad186f2934",
+      "edited": false
+    },
+    {
+      "tensor": "blk.24.ffn_up.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "193729f33f9dec9a97d49c8e791e6dad54ee0561f691ae5ffa7566ede8d0dc30",
+      "edited": false
+    },
+    {
+      "tensor": "blk.24.post_attention_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "830b04ab078562fb8012045af8ad74b7024527f89d9b155bc5336b85de5b4c22",
+      "edited": false
+    },
+    {
+      "tensor": "blk.24.ssm_a",
+      "type": "F32",
+      "encoded_bytes": 192,
+      "sha256": "d461d190e0c7226583b53b9c8c6061449e2863350f70ee86f527d3732355d7cf",
+      "edited": false
+    },
+    {
+      "tensor": "blk.24.ssm_alpha.weight",
+      "type": "Q4_K",
+      "encoded_bytes": 138240,
+      "sha256": "028e25786f4a9894e3ce665cd5a2b5bb59cedb0a009e9469f0a1aa456023ba7a",
+      "edited": false
+    },
+    {
+      "tensor": "blk.24.ssm_beta.weight",
+      "type": "Q4_K",
+      "encoded_bytes": 138240,
+      "sha256": "20ad70b6dedcddbadb8d6175aa7228d893c0fe86a08b2c0bfe3682fb9b142fdd",
+      "edited": false
+    },
+    {
+      "tensor": "blk.24.ssm_conv1d.weight",
+      "type": "F32",
+      "encoded_bytes": 163840,
+      "sha256": "863b2c395d5edb7c5245d1c48cfc90dd60af547a1099ff36acbf4efa9c1a10c3",
+      "edited": false
+    },
+    {
+      "tensor": "blk.24.ssm_dt.bias",
+      "type": "F32",
+      "encoded_bytes": 192,
+      "sha256": "90942caedac8f000727d8ef26f38ca2084b50f0fd0e59e76990bc1f947222e6d",
+      "edited": false
+    },
+    {
+      "tensor": "blk.24.ssm_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 512,
+      "sha256": "dc27662be8d06acd9123b0fddd4556ef23c933415a14cd296fbf9264d4c285eb",
+      "edited": false
+    },
+    {
+      "tensor": "blk.24.ssm_out.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "19d22f0d0c653d4accbb11ce4f3b10afaec066e61b20cdfb4952246fba8150b3",
+      "edited": false
+    },
+    {
+      "tensor": "blk.25.attn_gate.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "77dfb6db7e52ce187946a7eb0fbd8d65c5e1da214e551130a4b82b529a77122f",
+      "edited": false
+    },
+    {
+      "tensor": "blk.25.attn_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "536dd87592fbda2dba8d2b87c59eabcc2d97fb696facfcadfd6229d28b381013",
+      "edited": false
+    },
+    {
+      "tensor": "blk.25.attn_qkv.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 36044800,
+      "sha256": "fcd504c1f273fe0db70943835e96e9285c972391422b53dc1dcf0fbc1e0f22cf",
+      "edited": false
+    },
+    {
+      "tensor": "blk.25.ffn_down.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "37babae5312d65912a40c65b6c85f6872d342bb1eab52796f3689f5998345d9b",
+      "edited": false
+    },
+    {
+      "tensor": "blk.25.ffn_gate.weight",
+      "type": "IQ4_XS",
+      "encoded_bytes": 47349760,
+      "sha256": "d8db44d31dd7247b7637ab7b30bf802022169f232db6a3c1559b39e6b72cd6c4",
+      "edited": false
+    },
+    {
+      "tensor": "blk.25.ffn_up.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "4fb99457bcd3c886305ba41d9b6cd92b9b45cd3d573bd0cc87faf31435c01fd3",
+      "edited": false
+    },
+    {
+      "tensor": "blk.25.post_attention_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "44bc15ced4cb1407793ceb5a71010db5de602295f99d8ec91c36102b6b62db4a",
+      "edited": false
+    },
+    {
+      "tensor": "blk.25.ssm_a",
+      "type": "F32",
+      "encoded_bytes": 192,
+      "sha256": "fa143884137a40525628ab0b8a600d143d8cc9d92ac39f5115b7fcf8041bc0c1",
+      "edited": false
+    },
+    {
+      "tensor": "blk.25.ssm_alpha.weight",
+      "type": "Q4_K",
+      "encoded_bytes": 138240,
+      "sha256": "ba7a7e4a21a32c586819a81fc4337c75ddd78a8f93a9ed17f7c7a6cb124ea0e0",
+      "edited": false
+    },
+    {
+      "tensor": "blk.25.ssm_beta.weight",
+      "type": "Q4_K",
+      "encoded_bytes": 138240,
+      "sha256": "d9ec7c4e0fa655a1811e92227b5eded194dbd8c7ac4a6fbd6b20f7b3d13c4d95",
+      "edited": false
+    },
+    {
+      "tensor": "blk.25.ssm_conv1d.weight",
+      "type": "F32",
+      "encoded_bytes": 163840,
+      "sha256": "3689c38ce092d3a815155fa001b0ac2b1b974e5520620a58e7a30a360f972491",
+      "edited": false
+    },
+    {
+      "tensor": "blk.25.ssm_dt.bias",
+      "type": "F32",
+      "encoded_bytes": 192,
+      "sha256": "cbff733244b8ea69076e2e743ca1fa67445dcbaf7d65d30554cbf0fd87c34ac7",
+      "edited": false
+    },
+    {
+      "tensor": "blk.25.ssm_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 512,
+      "sha256": "d38e2759896014317f9b3c9e7d6064a02edd33d5de1a7ccc878717aeebca0e96",
+      "edited": false
+    },
+    {
+      "tensor": "blk.25.ssm_out.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "68ea469b32abb26f6191455cd3e948d1676f5044e86618ace9deb88709be6ce2",
+      "edited": false
+    },
+    {
+      "tensor": "blk.26.attn_gate.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "e1183061a3bfe82984fb82e80250e0e51e2508c74bc6df76e61c9fac175614b9",
+      "edited": false
+    },
+    {
+      "tensor": "blk.26.attn_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "94db4f1279b0773db51da1feec04b7323bfdb3c349802a214cfd665d3b3e6381",
+      "edited": false
+    },
+    {
+      "tensor": "blk.26.attn_qkv.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 36044800,
+      "sha256": "70c6b1c680362b06d0b57cbaab85ac97277503518d8fc833a7e0804791c184a5",
+      "edited": false
+    },
+    {
+      "tensor": "blk.26.ffn_down.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "999fcdba6086a719a890b66026fdc23e6dee5b5cbede6af7433f00cd64d5f6b8",
+      "edited": false
+    },
+    {
+      "tensor": "blk.26.ffn_gate.weight",
+      "type": "IQ4_XS",
+      "encoded_bytes": 47349760,
+      "sha256": "c67c65af9b5608e9e4bc41aaca451a56764690ae5b033412edd27621d4f65c45",
+      "edited": false
+    },
+    {
+      "tensor": "blk.26.ffn_up.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "9cdb6ffe83e531ba442d493c344cd8d9dcb1bfc809ecd1388098fbe9e69d4525",
+      "edited": false
+    },
+    {
+      "tensor": "blk.26.post_attention_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "602b0172c7cb335d4cfe51a4e65cf62c680651c0830aded4359d3ed60eee2934",
+      "edited": false
+    },
+    {
+      "tensor": "blk.26.ssm_a",
+      "type": "F32",
+      "encoded_bytes": 192,
+      "sha256": "cb57072d43ec769f125ecca0665f307dbdfc1f62575ac3b77871ff3c3e2151c3",
+      "edited": false
+    },
+    {
+      "tensor": "blk.26.ssm_alpha.weight",
+      "type": "Q4_K",
+      "encoded_bytes": 138240,
+      "sha256": "fd59f6e22fd54ce38eac93272518e9f12fc8092ac0de28b3325680a1c366eb84",
+      "edited": false
+    },
+    {
+      "tensor": "blk.26.ssm_beta.weight",
+      "type": "Q4_K",
+      "encoded_bytes": 138240,
+      "sha256": "fa3f17b191aba07ceeb68903d6b107564e8801b41a3f8e3ceb010f22e5bf1ca0",
+      "edited": false
+    },
+    {
+      "tensor": "blk.26.ssm_conv1d.weight",
+      "type": "F32",
+      "encoded_bytes": 163840,
+      "sha256": "296f13cbc4e6397151b16b9c52420ceaf95a1c31ffe736f9f5977677c79c88fc",
+      "edited": false
+    },
+    {
+      "tensor": "blk.26.ssm_dt.bias",
+      "type": "F32",
+      "encoded_bytes": 192,
+      "sha256": "fb83ef3c5d14ac99857ee6da363059362db9ff09a6862caa1f8cb37265704972",
+      "edited": false
+    },
+    {
+      "tensor": "blk.26.ssm_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 512,
+      "sha256": "8c28172ada1aff8138e5ed0e06da968e65c7f84037f3760d2b24297a449ea34b",
+      "edited": false
+    },
+    {
+      "tensor": "blk.26.ssm_out.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "86a14d33acef6b7df1f21a1cad57895080eeb0a58e5aa1fce57c724df29f38d6",
+      "edited": false
+    },
+    {
+      "tensor": "blk.27.attn_k.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 3604480,
+      "sha256": "4ac6711c74d7ad71c3ea27e67faaa8dd36c4760a972c7acb0e52d8fabf66eef2",
+      "edited": false
+    },
+    {
+      "tensor": "blk.27.attn_k_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 1024,
+      "sha256": "16ce6c0a8cb1718159486e2aaf98cf0d771d0f0e9fb739f151d4d533400c3908",
+      "edited": false
+    },
+    {
+      "tensor": "blk.27.attn_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "0a1e32b8e53625892f2c85cbb41568cdae0e2919f636ee453dbf91fbe40baf7a",
+      "edited": false
+    },
+    {
+      "tensor": "blk.27.attn_output.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "8207d3058dc6df2a2df26baa0ed1a21272eefba1284d07dfc8118ed8623d61ce",
+      "edited": false
+    },
+    {
+      "tensor": "blk.27.attn_q.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 43253760,
+      "sha256": "33d7828dcba7d399f632d602d23c7b4a84a108145a2872c3d5f534f2e8afd3b0",
+      "edited": false
+    },
+    {
+      "tensor": "blk.27.attn_q_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 1024,
+      "sha256": "07354e1961b95ccd2e22424cac04b131d80a83845beac494a0e7a7ab42bb360b",
+      "edited": false
+    },
+    {
+      "tensor": "blk.27.attn_v.weight",
+      "type": "Q6_K",
+      "encoded_bytes": 4300800,
+      "sha256": "e46dbc75cd9c515265fe0386f1759884d795508dd34c9414d08d99001d659e73",
+      "edited": false
+    },
+    {
+      "tensor": "blk.27.ffn_down.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "96050788dd270d5935a644d39d130e93172bad657714b0baf94d341bac5e3046",
+      "edited": false
+    },
+    {
+      "tensor": "blk.27.ffn_gate.weight",
+      "type": "IQ4_XS",
+      "encoded_bytes": 47349760,
+      "sha256": "2068e1ed38ee1a4bc6517a591c443daac2311b46fdd077ff270b70ea73607dd7",
+      "edited": false
+    },
+    {
+      "tensor": "blk.27.ffn_up.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "d3abf459f8f0effa92e5e5b0ecaa4db7fc4a4ba75b6de59e5ad8a30e2a4a832d",
+      "edited": false
+    },
+    {
+      "tensor": "blk.27.post_attention_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "a9e6ec48d0d2b4c5018ceaec867e95f83fe81962e330506b0bf744a280c0a0c0",
+      "edited": false
+    },
+    {
+      "tensor": "blk.28.attn_gate.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "09ce8a3d87b0c07b349d161b11c4d98d9e899e8711e8bae2ac5920fa0bd019bb",
+      "edited": false
+    },
+    {
+      "tensor": "blk.28.attn_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "8199069c8aa644c880e72b69c3329afb91494263393b9e90666f7e4681de0c1a",
+      "edited": false
+    },
+    {
+      "tensor": "blk.28.attn_qkv.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 36044800,
+      "sha256": "f374ea1fd720e7c2971a5ce95d9cc8609a6ede22bd28e22c1641c878076e224e",
+      "edited": false
+    },
+    {
+      "tensor": "blk.28.ffn_down.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "033355ae99104ed9768874425024e71e47f06e6e8640459cdd6b4d128976b4d6",
+      "edited": false
+    },
+    {
+      "tensor": "blk.28.ffn_gate.weight",
+      "type": "IQ4_XS",
+      "encoded_bytes": 47349760,
+      "sha256": "d04e07cc2ed081ca3514960347fd73b591a958f1739b93f277e8d32bb012e0d8",
+      "edited": false
+    },
+    {
+      "tensor": "blk.28.ffn_up.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "68eecb57385cab4afe9f70e54028d4281676c4deeb2429ef949ff7cc68f8e4b5",
+      "edited": false
+    },
+    {
+      "tensor": "blk.28.post_attention_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "0563eccaba8ebd877419f9389cc7c5765305290bdc7902f833712b26db4a3ca9",
+      "edited": false
+    },
+    {
+      "tensor": "blk.28.ssm_a",
+      "type": "F32",
+      "encoded_bytes": 192,
+      "sha256": "2ddbd7f4362a7146b9da981286b38244dc6323ff5b3188b35a2dddefd13a6efc",
+      "edited": false
+    },
+    {
+      "tensor": "blk.28.ssm_alpha.weight",
+      "type": "Q4_K",
+      "encoded_bytes": 138240,
+      "sha256": "59b5a5d3a8ba01ebe23348739ee6729c22d68a08149c546160b53f0729f7ee4a",
+      "edited": false
+    },
+    {
+      "tensor": "blk.28.ssm_beta.weight",
+      "type": "Q4_K",
+      "encoded_bytes": 138240,
+      "sha256": "3d8b5c1b65eaf1e7537d88571dee067fe1f0101c6bcd9e53828fe3f7f0fbf203",
+      "edited": false
+    },
+    {
+      "tensor": "blk.28.ssm_conv1d.weight",
+      "type": "F32",
+      "encoded_bytes": 163840,
+      "sha256": "37b57d7d266bd75f27f17e152ba5fc6ca66de9d9589f83fdf770424e607357b3",
+      "edited": false
+    },
+    {
+      "tensor": "blk.28.ssm_dt.bias",
+      "type": "F32",
+      "encoded_bytes": 192,
+      "sha256": "5f92cd9da42d3742562ff82979d11c5df72762757a4edead9e94162356603b78",
+      "edited": false
+    },
+    {
+      "tensor": "blk.28.ssm_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 512,
+      "sha256": "e3a297511ae57cb27a196918fa18cd1637a56ae43458208e8d511f11e050d787",
+      "edited": false
+    },
+    {
+      "tensor": "blk.28.ssm_out.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "324cb9d8b0cfca3c66ef47df99f8304a8ba0d2d3184800110ddcd3c0af706a0c",
+      "edited": false
+    },
+    {
+      "tensor": "blk.29.attn_gate.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "80cf9330fb798995193fca4d12f3b018ec80534db5ba1015234e1c3e05feaace",
+      "edited": false
+    },
+    {
+      "tensor": "blk.29.attn_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "d7fd995a526de5710f07b6402dcb7360bd5f33bb35cba4241689e29473e725c1",
+      "edited": false
+    },
+    {
+      "tensor": "blk.29.attn_qkv.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 36044800,
+      "sha256": "67500addafea19a9c1b0e1c46e07d11c0252283efa922dbee3eaf550ece2143e",
+      "edited": false
+    },
+    {
+      "tensor": "blk.29.ffn_down.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "efea637bc7c3b3c8f2670ab38d1001b7f1cc545388f35b4137a805f37801b16d",
+      "edited": false
+    },
+    {
+      "tensor": "blk.29.ffn_gate.weight",
+      "type": "IQ4_XS",
+      "encoded_bytes": 47349760,
+      "sha256": "d0d89012eab91d8866078426ddef963cd0e53f81c4a34bbc74f353c424e13cee",
+      "edited": false
+    },
+    {
+      "tensor": "blk.29.ffn_up.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "3b6bd08bab4fad7bb2cd580b497e533d061b232cd1cab12c6564fbb577b7e97a",
+      "edited": false
+    },
+    {
+      "tensor": "blk.29.post_attention_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "57805be34c3feb8b520f4f25f9cde5c731a28b8e8ab82acd743eaa6ef4898664",
+      "edited": false
+    },
+    {
+      "tensor": "blk.29.ssm_a",
+      "type": "F32",
+      "encoded_bytes": 192,
+      "sha256": "c677c7291d8c4f4525dc6cc73ca1930a5af6523b5284fb71dd08fd397fd2065b",
+      "edited": false
+    },
+    {
+      "tensor": "blk.29.ssm_alpha.weight",
+      "type": "Q4_K",
+      "encoded_bytes": 138240,
+      "sha256": "f4740b9b7fac58b1dc26913491b64b9244bbabe3146f5018613307e1288ff974",
+      "edited": false
+    },
+    {
+      "tensor": "blk.29.ssm_beta.weight",
+      "type": "Q4_K",
+      "encoded_bytes": 138240,
+      "sha256": "5aee8a0ceab6a726b8c1fcaf893152a2e77b656a36eccfd05561a31126228d97",
+      "edited": false
+    },
+    {
+      "tensor": "blk.29.ssm_conv1d.weight",
+      "type": "F32",
+      "encoded_bytes": 163840,
+      "sha256": "ec8a5499eb908e961a03c8e9c05cccc51af6bd36748d579e496c772a6be47f02",
+      "edited": false
+    },
+    {
+      "tensor": "blk.29.ssm_dt.bias",
+      "type": "F32",
+      "encoded_bytes": 192,
+      "sha256": "6df25aee2579707e62ad66a323ded65e1e3eaead9049b56f239926914c71e5c5",
+      "edited": false
+    },
+    {
+      "tensor": "blk.29.ssm_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 512,
+      "sha256": "0c400dbf53d1c12f05d43d88a3b06b1399febe5303d277215152878a7a326e30",
+      "edited": false
+    },
+    {
+      "tensor": "blk.29.ssm_out.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "db2478dd083d6550b7a1b679dbe52f29b8ac8e137d5e879d3f7d2b2f632c0165",
+      "edited": false
+    },
+    {
+      "tensor": "blk.30.attn_gate.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "bb6faeecc0cf54c0284e8b20d103624892143070cc9296a4c83cc85633198099",
+      "edited": false
+    },
+    {
+      "tensor": "blk.30.attn_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "c151ebbe0d743aad8330c9f6fc966a3c19ff002b76bd3ff56a25f3bb77a5f23c",
+      "edited": false
+    },
+    {
+      "tensor": "blk.30.attn_qkv.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 36044800,
+      "sha256": "7f8a3e10aebaa54540575b0db3d6c75a87e3b3abe2a748077611e2b24932ae86",
+      "edited": false
+    },
+    {
+      "tensor": "blk.30.ffn_down.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "fea9daa5f1d7078a50f7497a473e5d0504b4078ce30635a3925f36f2d6f6d98c",
+      "edited": false
+    },
+    {
+      "tensor": "blk.30.ffn_gate.weight",
+      "type": "IQ4_XS",
+      "encoded_bytes": 47349760,
+      "sha256": "a490556ffee3ed536234bf65a47c42080e13d49f81b87a7758c530c9abd72955",
+      "edited": false
+    },
+    {
+      "tensor": "blk.30.ffn_up.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "5239b2d028bf9fdf8b781901fabbb2cbb6bf24d48092b54bacd3460a7f72e56f",
+      "edited": false
+    },
+    {
+      "tensor": "blk.30.post_attention_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "041521116c9e40c64a7900270db80f73e66e11c2cd41b183f7a4a13c69ad72ac",
+      "edited": false
+    },
+    {
+      "tensor": "blk.30.ssm_a",
+      "type": "F32",
+      "encoded_bytes": 192,
+      "sha256": "38f00be8c1d0470239757fbe675da1df4e910a63e78186cdc8fe6186dd6fa404",
+      "edited": false
+    },
+    {
+      "tensor": "blk.30.ssm_alpha.weight",
+      "type": "Q4_K",
+      "encoded_bytes": 138240,
+      "sha256": "9c6bed001d1f4228febcc0f4db422ab76ff87cbb0f8c0a3b77c6e16bbf15665b",
+      "edited": false
+    },
+    {
+      "tensor": "blk.30.ssm_beta.weight",
+      "type": "Q4_K",
+      "encoded_bytes": 138240,
+      "sha256": "82b62e9ae80a7f7bd93e78f6fb7af263d4af7da4b9753e5bdbf6fdbf8ca3f9d3",
+      "edited": false
+    },
+    {
+      "tensor": "blk.30.ssm_conv1d.weight",
+      "type": "F32",
+      "encoded_bytes": 163840,
+      "sha256": "85c2048c6619f8a89a97034e9954a773ba995ff5bf6a7ff63415a59a08355be3",
+      "edited": false
+    },
+    {
+      "tensor": "blk.30.ssm_dt.bias",
+      "type": "F32",
+      "encoded_bytes": 192,
+      "sha256": "74de4bdfdefa378e083e7559457bdb0057f7ac6962e801a4c39bae516e42ad50",
+      "edited": false
+    },
+    {
+      "tensor": "blk.30.ssm_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 512,
+      "sha256": "b6de949813faa0f5660753d2b2aa8b4fdf5c02708c1336f80471be35a637d20d",
+      "edited": false
+    },
+    {
+      "tensor": "blk.30.ssm_out.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "148eee2e954883253ecb2776d04cbf8ac6f5d1d5e491572bd304a0c36198f735",
+      "edited": false
+    },
+    {
+      "tensor": "blk.31.attn_k.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 3604480,
+      "sha256": "849e8d6ba199250fa9a0dfe6b256dafa95f20b0da0780833b1802acdac6637b2",
+      "edited": false
+    },
+    {
+      "tensor": "blk.31.attn_k_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 1024,
+      "sha256": "d30e733911b6b801916f6f1a897a3d1642495ca4fd4db95849c32b03042c8f69",
+      "edited": false
+    },
+    {
+      "tensor": "blk.31.attn_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "24021fd301f231bd3df90038f1627c4f7068c95ea0edc1bf462e894816a31a88",
+      "edited": false
+    },
+    {
+      "tensor": "blk.31.attn_output.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "4328b81cabcacf98103afb6bdf18601a1f14827dfb4ca21f45bf8ce77ab81fc2",
+      "edited": false
+    },
+    {
+      "tensor": "blk.31.attn_q.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 43253760,
+      "sha256": "3462d42c1526673599484bfd9fc520a79b24a33a1019caed9750082a14e960c6",
+      "edited": false
+    },
+    {
+      "tensor": "blk.31.attn_q_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 1024,
+      "sha256": "090d1adc8484eb44ac31183fcbb8f2d50333cc31ac7c694f5ac4d2ca0a52aa03",
+      "edited": false
+    },
+    {
+      "tensor": "blk.31.attn_v.weight",
+      "type": "Q6_K",
+      "encoded_bytes": 4300800,
+      "sha256": "77528db810cba1e1383ca4b52688f89b8f5548fcab696d05a9e05685ada860c7",
+      "edited": false
+    },
+    {
+      "tensor": "blk.31.ffn_down.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "db0373776cab4a70ceb321c8433bfeb2589a2febe8f6ea37cdb2081b7fd81f34",
+      "edited": false
+    },
+    {
+      "tensor": "blk.31.ffn_gate.weight",
+      "type": "IQ4_XS",
+      "encoded_bytes": 47349760,
+      "sha256": "e8618ca2c5ad2d1d80f168243523ac47e92b8d59d99098617ab2f1d4e6aa65a6",
+      "edited": false
+    },
+    {
+      "tensor": "blk.31.ffn_up.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "f532a38b79f9220f88a7e6454df50910fb462710a7122d008865c2c725bf5175",
+      "edited": false
+    },
+    {
+      "tensor": "blk.31.post_attention_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "ec786f7147df1bfde747ea99b2b003ec6a28b4e950ec89f7ad950d9c951677f4",
+      "edited": false
+    },
+    {
+      "tensor": "blk.32.attn_gate.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "19e2c6be79f55bdf4c2e66c4d785e19fddb2d898169759c40acdaac3f2408fc7",
+      "edited": false
+    },
+    {
+      "tensor": "blk.32.attn_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "b8f3dc95f05a5f43b112390e31ece8ab227a6f5af983e66519be334bcbd7a901",
+      "edited": false
+    },
+    {
+      "tensor": "blk.32.attn_qkv.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 36044800,
+      "sha256": "6aee572c22eaae15b0f0efee90bb2b92db5bf18ede47e8ce56a3e7e7c15c2609",
+      "edited": false
+    },
+    {
+      "tensor": "blk.32.ffn_down.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "b8fdb804124fb038d8bf946a08777de5ba33a9f12901a26e6899f970701e172f",
+      "edited": false
+    },
+    {
+      "tensor": "blk.32.ffn_gate.weight",
+      "type": "IQ4_XS",
+      "encoded_bytes": 47349760,
+      "sha256": "01288fe7fc137ce095e7981ad1b91f875f0a9f852984a2e9e9fb753b5797edce",
+      "edited": false
+    },
+    {
+      "tensor": "blk.32.ffn_up.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "cde94b37ac9c2024cced3a22980a0c6f00db01fc2cb89d979b97daf2f1213be3",
+      "edited": false
+    },
+    {
+      "tensor": "blk.32.post_attention_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "5e729c2dd2d9c5ca2fd99057087de57a15f2ae9f4b1a60a54f37254a517a10bb",
+      "edited": false
+    },
+    {
+      "tensor": "blk.32.ssm_a",
+      "type": "F32",
+      "encoded_bytes": 192,
+      "sha256": "9ecb6948eb8bfcbafe87aaf378da08adce19badd1bd8ea54d6673b6eb67d18c3",
+      "edited": false
+    },
+    {
+      "tensor": "blk.32.ssm_alpha.weight",
+      "type": "Q4_K",
+      "encoded_bytes": 138240,
+      "sha256": "302b9ed4913e705e696837c2dae85893b1a34e285c38c263d5d480a8bb1a05f1",
+      "edited": false
+    },
+    {
+      "tensor": "blk.32.ssm_beta.weight",
+      "type": "Q4_K",
+      "encoded_bytes": 138240,
+      "sha256": "0cc30b29fbf59a43402d5ba38a78f728c69386524df331c3593871b229ff6d8e",
+      "edited": false
+    },
+    {
+      "tensor": "blk.32.ssm_conv1d.weight",
+      "type": "F32",
+      "encoded_bytes": 163840,
+      "sha256": "55a073f477fc9d706f15c92c40e2b5af5c3f2dd251e7da642666d9b4367d1746",
+      "edited": false
+    },
+    {
+      "tensor": "blk.32.ssm_dt.bias",
+      "type": "F32",
+      "encoded_bytes": 192,
+      "sha256": "f894cc747261313244fba40a2012d3882355f3d60af408fa69220da23e45551b",
+      "edited": false
+    },
+    {
+      "tensor": "blk.32.ssm_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 512,
+      "sha256": "757077e482f04a2078f2ee8241fefe7bde7670a1c36780fb27123206fd0b8d3d",
+      "edited": false
+    },
+    {
+      "tensor": "blk.32.ssm_out.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "f88ccff575ceb49a060d84d61765aafaaa5cf7b18b34e99f26d4041e74acc327",
+      "edited": false
+    },
+    {
+      "tensor": "blk.33.attn_gate.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "29df60d9c28b541191ed87525f12a2a056bfd0726226287aea23a0d398052917",
+      "edited": false
+    },
+    {
+      "tensor": "blk.33.attn_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "cc0ae04958c3903c7d5d01bc637b54e796b71e7a1de28e5c0dfb0a22c591b256",
+      "edited": false
+    },
+    {
+      "tensor": "blk.33.attn_qkv.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 36044800,
+      "sha256": "42a3bb94b53dba1be6b6f8ca0c39b95d013d8f8b3b394baf7a78b182f6b3e917",
+      "edited": false
+    },
+    {
+      "tensor": "blk.33.ffn_down.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "179fbfa4089c97590fcddc5c3670f18159811089ada0c139ea3da987141a4453",
+      "edited": false
+    },
+    {
+      "tensor": "blk.33.ffn_gate.weight",
+      "type": "IQ4_XS",
+      "encoded_bytes": 47349760,
+      "sha256": "7bc4b6d333086b0fed8d6887b65e93e8ceca33da77721bf0964182b360426d23",
+      "edited": false
+    },
+    {
+      "tensor": "blk.33.ffn_up.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "864c5f842d63f16be6db609a5c51aa87efcae623d335e74f11c820dc77bd5092",
+      "edited": false
+    },
+    {
+      "tensor": "blk.33.post_attention_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "79c86a3bd1baa5f965b59dea3cf6db0dd9763be0e2243afb132f121275ab2e8c",
+      "edited": false
+    },
+    {
+      "tensor": "blk.33.ssm_a",
+      "type": "F32",
+      "encoded_bytes": 192,
+      "sha256": "32d35eec73c74a419a25c01e34ea6fcd65bb979e213375c781e745153f8aa74e",
+      "edited": false
+    },
+    {
+      "tensor": "blk.33.ssm_alpha.weight",
+      "type": "Q4_K",
+      "encoded_bytes": 138240,
+      "sha256": "d71b4a3a83734f5706e1fb8cea28685025557d43ae23b9de6a734284f57beecd",
+      "edited": false
+    },
+    {
+      "tensor": "blk.33.ssm_beta.weight",
+      "type": "Q4_K",
+      "encoded_bytes": 138240,
+      "sha256": "dcce4327355dacb8a36df1b0df2b9796cbf9366cf350dfcbe5988b79b18c5008",
+      "edited": false
+    },
+    {
+      "tensor": "blk.33.ssm_conv1d.weight",
+      "type": "F32",
+      "encoded_bytes": 163840,
+      "sha256": "a8ec78fdaed005a7cbf4c04ce57bbd1e7f8059a32ddfbe72f05f62de23456c74",
+      "edited": false
+    },
+    {
+      "tensor": "blk.33.ssm_dt.bias",
+      "type": "F32",
+      "encoded_bytes": 192,
+      "sha256": "ad6a7980c9d7d33204ee10b913c6f34203a8c2502d6eeb1fe43f3bbd1cd02f61",
+      "edited": false
+    },
+    {
+      "tensor": "blk.33.ssm_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 512,
+      "sha256": "4ff3f47c6f2d8cbbd2b76a1240d358483014c5729f1a0087d70d23a627029855",
+      "edited": false
+    },
+    {
+      "tensor": "blk.33.ssm_out.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "af8057f58851525cab0d31f7eceaa80ae2c3833b1d582f65d50ba7ccd6ee77fa",
+      "edited": false
+    },
+    {
+      "tensor": "blk.34.attn_gate.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "78116c359bd31614bddb7d5adf14293e20dcb15bc9f87537a478f198ec609214",
+      "edited": false
+    },
+    {
+      "tensor": "blk.34.attn_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "bb6bb29c035baa4cdb426c3105be0bb9968f73ef256792fa0c487d249973fe82",
+      "edited": false
+    },
+    {
+      "tensor": "blk.34.attn_qkv.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 36044800,
+      "sha256": "271045eb5895a330d403ab8295fa72c94b994cfd99e1d9675e1bd1956ea860fa",
+      "edited": false
+    },
+    {
+      "tensor": "blk.34.ffn_down.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "7964e78a0b0ce439c455673c55192005e1617d5223e7a9f133549e5789f26348",
+      "edited": false
+    },
+    {
+      "tensor": "blk.34.ffn_gate.weight",
+      "type": "IQ4_XS",
+      "encoded_bytes": 47349760,
+      "sha256": "11d954fdb7872e32cf8871391d0be58f9855f06f9309492cb84e7626e948dd49",
+      "edited": false
+    },
+    {
+      "tensor": "blk.34.ffn_up.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "eb8dd1fa84687f7b1bcc1b08099f7f018886ae8f75a9d414978cab949797332e",
+      "edited": false
+    },
+    {
+      "tensor": "blk.34.post_attention_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "eacb915eff7af31f81ee4ba8d3f3ad34bdd61869507dfab8e93b6777a03b76c5",
+      "edited": false
+    },
+    {
+      "tensor": "blk.34.ssm_a",
+      "type": "F32",
+      "encoded_bytes": 192,
+      "sha256": "b8271eb1b027c32f723b6c66fc0b5c24ee4f9126619ff9aa05f012f982e470bd",
+      "edited": false
+    },
+    {
+      "tensor": "blk.34.ssm_alpha.weight",
+      "type": "Q4_K",
+      "encoded_bytes": 138240,
+      "sha256": "b809a32df9b8dd1c77c554e5fe1c133e5fa067fbd7c4b3772901bf4bf47c72f0",
+      "edited": false
+    },
+    {
+      "tensor": "blk.34.ssm_beta.weight",
+      "type": "Q4_K",
+      "encoded_bytes": 138240,
+      "sha256": "ac0bf1109ecb275c81c389318ab7af083894b2a6367f2b6eec94be3aef364828",
+      "edited": false
+    },
+    {
+      "tensor": "blk.34.ssm_conv1d.weight",
+      "type": "F32",
+      "encoded_bytes": 163840,
+      "sha256": "8c4ebda8e5279d69f2885db1feffa52755e5460a251186ce762d4d6a8575d2a4",
+      "edited": false
+    },
+    {
+      "tensor": "blk.34.ssm_dt.bias",
+      "type": "F32",
+      "encoded_bytes": 192,
+      "sha256": "b287a0bb2a012d8bbed08daacc9db94892b8c3a92f50294582519d23268df619",
+      "edited": false
+    },
+    {
+      "tensor": "blk.34.ssm_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 512,
+      "sha256": "48c2efb358b0b04fe6e0ffa5c76fac63d2f1d727a6d3b81a15d184ba7138fc47",
+      "edited": false
+    },
+    {
+      "tensor": "blk.34.ssm_out.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "52e810d3488426c89bd4cc508820142f07e41d918e11154e2bbe52b78d739da3",
+      "edited": false
+    },
+    {
+      "tensor": "blk.35.attn_k.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 3604480,
+      "sha256": "b0c60532f6c61ef5f74256fdeaf1cd4e6247651bf575afae70a89f44efcdedfa",
+      "edited": false
+    },
+    {
+      "tensor": "blk.35.attn_k_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 1024,
+      "sha256": "7bf3f2eb00a341089667d07913788598f4d2a924aef6dc0b046107679e173b2e",
+      "edited": false
+    },
+    {
+      "tensor": "blk.35.attn_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "9800cd4a2a54d46d3142fc3be20818c0737b37a2609b954fb250408a583f80b5",
+      "edited": false
+    },
+    {
+      "tensor": "blk.35.attn_output.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "f509135b4e1f8154932c52cc9b6dad4a019d6e5953f95d360a943c811ad8a7c0",
+      "edited": false
+    },
+    {
+      "tensor": "blk.35.attn_q.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 43253760,
+      "sha256": "ac8c5ac2b751ecb432931ea99ba09e01d4ab2a32a716b8e3ca19fdfc66cf976b",
+      "edited": false
+    },
+    {
+      "tensor": "blk.35.attn_q_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 1024,
+      "sha256": "b162f8af958a033fb72b0bb9d837c3c62685a333892a9e05d1ce42bcc5ac6df3",
+      "edited": false
+    },
+    {
+      "tensor": "blk.35.attn_v.weight",
+      "type": "Q6_K",
+      "encoded_bytes": 4300800,
+      "sha256": "b8269f96e09a3e3dd270a551486d91a22bfc2dd5ddbe81f6a9f3c44d065c900c",
+      "edited": false
+    },
+    {
+      "tensor": "blk.35.ffn_down.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "fbe5e66235d9b0d78a4edf2a330d4ceeecfc4c025b7a34eaeb75396631432888",
+      "edited": false
+    },
+    {
+      "tensor": "blk.35.ffn_gate.weight",
+      "type": "IQ4_XS",
+      "encoded_bytes": 47349760,
+      "sha256": "e4babf3615e1de2f800fa06a1d8d0af7b513163488ea6540c282dc45cc5ae1a1",
+      "edited": false
+    },
+    {
+      "tensor": "blk.35.ffn_up.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "98358a4540922b877f72561c5237fcc9a1b151039c4b9952c5b491d08f9f6e7e",
+      "edited": false
+    },
+    {
+      "tensor": "blk.35.post_attention_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "d9692bd3ca5407c7fd58d7c18d77d960eee666c092675210aa5bb38f61218ffb",
+      "edited": false
+    },
+    {
+      "tensor": "blk.36.attn_gate.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "aea81559c9a54dfe97c75eb8bb85ad483a8776f3eebca0be2098e95672b468ed",
+      "edited": false
+    },
+    {
+      "tensor": "blk.36.attn_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "329570288a5f028d8c3456a16c9f348445e3110787f0d34a32970edf4d55a9a1",
+      "edited": false
+    },
+    {
+      "tensor": "blk.36.attn_qkv.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 36044800,
+      "sha256": "6d3b8e752859022d89c48e140a8cd9b29f8d662a56c4eff890174189fdb5ed04",
+      "edited": false
+    },
+    {
+      "tensor": "blk.36.ffn_down.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "d6141c30c6ea905f20da93c8a08fd9dae80146c9861ea34e2f87167788a8eee4",
+      "edited": false
+    },
+    {
+      "tensor": "blk.36.ffn_gate.weight",
+      "type": "IQ4_XS",
+      "encoded_bytes": 47349760,
+      "sha256": "7b93096b9434551a2aceacc0828f1413ee0ce79f0888c654c236ef9174720c59",
+      "edited": false
+    },
+    {
+      "tensor": "blk.36.ffn_up.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "5a151b353e8865e4817ab89fc232db53057304b11f2df12be0542d286d8db4fb",
+      "edited": false
+    },
+    {
+      "tensor": "blk.36.post_attention_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "4d76db377b8474b5e7b02a56acad9ce1c3c7b2284796e95379a941d7be6cc095",
+      "edited": false
+    },
+    {
+      "tensor": "blk.36.ssm_a",
+      "type": "F32",
+      "encoded_bytes": 192,
+      "sha256": "73103878b8c1acc97b5628dd415ab02b009e17472438fadd5f58652bd1d4c18f",
+      "edited": false
+    },
+    {
+      "tensor": "blk.36.ssm_alpha.weight",
+      "type": "Q4_K",
+      "encoded_bytes": 138240,
+      "sha256": "9b18d511ab1a96698cf89130c1ac50536cf4881086ad5033033cfe8b78435930",
+      "edited": false
+    },
+    {
+      "tensor": "blk.36.ssm_beta.weight",
+      "type": "Q4_K",
+      "encoded_bytes": 138240,
+      "sha256": "1580860397cd9176d29242f4574c8e18033cf3e240ec917bb941d7301ae0127c",
+      "edited": false
+    },
+    {
+      "tensor": "blk.36.ssm_conv1d.weight",
+      "type": "F32",
+      "encoded_bytes": 163840,
+      "sha256": "997d67c14105956be5e72fc3dcfacff3c5e621e94e662cb75b78338f3b38b796",
+      "edited": false
+    },
+    {
+      "tensor": "blk.36.ssm_dt.bias",
+      "type": "F32",
+      "encoded_bytes": 192,
+      "sha256": "4e66950faf2156a04cc76c28a2bac1e0603340cb3f7b4060a7abd4e9f1275b5f",
+      "edited": false
+    },
+    {
+      "tensor": "blk.36.ssm_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 512,
+      "sha256": "5c8e45187325e700886f22ebd36a6025ad35718b2c4ab58687eef99575ab25e0",
+      "edited": false
+    },
+    {
+      "tensor": "blk.36.ssm_out.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "0c7886a079ab9b3e00dbe7c09b2fc6a901c992748fcf9e61bb0f0f7c5d62c94d",
+      "edited": false
+    },
+    {
+      "tensor": "blk.37.attn_gate.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "8f7c2738823ed20df05714af977f9ff62d091af5c8da7f2c0e07cf836f7da076",
+      "edited": false
+    },
+    {
+      "tensor": "blk.37.attn_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "3b5d1f6e2f6810b0c2ee3b74d6660391251847c679796d8aeabd6881a9bbb24f",
+      "edited": false
+    },
+    {
+      "tensor": "blk.37.attn_qkv.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 36044800,
+      "sha256": "5d43678b6e7b6d5a3f38c835695840b6395b71833029d82fe8c171f194691536",
+      "edited": false
+    },
+    {
+      "tensor": "blk.37.ffn_down.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "5b9e106f15c3ebe6e6bc4bb1f5e069c2c19d470ff033f621517e0c4d6d4796b6",
+      "edited": false
+    },
+    {
+      "tensor": "blk.37.ffn_gate.weight",
+      "type": "IQ4_XS",
+      "encoded_bytes": 47349760,
+      "sha256": "a767ba16f0ec69e421a4249ae879f8c68dae1053e7a7cd7fdd0181e9d2fb8927",
+      "edited": false
+    },
+    {
+      "tensor": "blk.37.ffn_up.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "634758da0971b3ffded6c8fef8fce53984a1f8ea6e0861e2e88fb91bf8ce39fc",
+      "edited": false
+    },
+    {
+      "tensor": "blk.37.post_attention_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "d305dfc92d7387beba4fa7e661e51541ff784438b44d5b873fb23ecc72984b70",
+      "edited": false
+    },
+    {
+      "tensor": "blk.37.ssm_a",
+      "type": "F32",
+      "encoded_bytes": 192,
+      "sha256": "32e7e60510616624e665b5f821cb5413e31f198657409c36b3cf5b627231b6e9",
+      "edited": false
+    },
+    {
+      "tensor": "blk.37.ssm_alpha.weight",
+      "type": "Q4_K",
+      "encoded_bytes": 138240,
+      "sha256": "8ca821d5a253dcbddf922c9a83c198434d320079e7226f7ea7c60af93a5381ad",
+      "edited": false
+    },
+    {
+      "tensor": "blk.37.ssm_beta.weight",
+      "type": "Q4_K",
+      "encoded_bytes": 138240,
+      "sha256": "d3ded881127844cfdd6673493f34945e3fbcf157e20fa6ecff8d27a17a528393",
+      "edited": false
+    },
+    {
+      "tensor": "blk.37.ssm_conv1d.weight",
+      "type": "F32",
+      "encoded_bytes": 163840,
+      "sha256": "7ce994d6ca75abf2add4394498e9ad0aef1e93a6cf462ad4dc45b67c247ed3e7",
+      "edited": false
+    },
+    {
+      "tensor": "blk.37.ssm_dt.bias",
+      "type": "F32",
+      "encoded_bytes": 192,
+      "sha256": "71b6939e8b68c21d6a6db3f2506b6bab3b77dbe9781ad132644b21ea83ae1b07",
+      "edited": false
+    },
+    {
+      "tensor": "blk.37.ssm_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 512,
+      "sha256": "a84a51f082c360ce89c666be5a4bf42b27429a6247c24c9dce2561822df1cc9d",
+      "edited": false
+    },
+    {
+      "tensor": "blk.37.ssm_out.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "47465d3e8b756c6ed0bb704658d56d35f76a8d90dd65b6846a86e7693a3846ba",
+      "edited": false
+    },
+    {
+      "tensor": "blk.38.attn_gate.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "cfcf95ca5129d85b3ee6f455dd61da341f7c8d41feefb701a19d80ab1c22a414",
+      "edited": false
+    },
+    {
+      "tensor": "blk.38.attn_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "e5afef7bf26e2d7278d5764b42a3bcc365f572cd81369063a5fdd216ae5cef4d",
+      "edited": false
+    },
+    {
+      "tensor": "blk.38.attn_qkv.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 36044800,
+      "sha256": "56c226d2c69813e4a55468c06173696310d55435679d2445bb9f6b9ba004bcca",
+      "edited": false
+    },
+    {
+      "tensor": "blk.38.ffn_down.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "971c6163f9497f1d8b092659a5ab367d74b65e3f3117fa4fb1f3649f670dd1d9",
+      "edited": false
+    },
+    {
+      "tensor": "blk.38.ffn_gate.weight",
+      "type": "IQ4_XS",
+      "encoded_bytes": 47349760,
+      "sha256": "258a130d5befbdf727b8e696a513b587b0e6ec3f980c43db128a079a3dbf522a",
+      "edited": false
+    },
+    {
+      "tensor": "blk.38.ffn_up.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "69089af4e24a6c4f05a5485d9d9507bdfe7e20f5ed271aba1adeafe68d3a3e97",
+      "edited": false
+    },
+    {
+      "tensor": "blk.38.post_attention_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "def7717e0f9e195f9014707a49bb34f709ff05fb4d496c43edeba8db90562094",
+      "edited": false
+    },
+    {
+      "tensor": "blk.38.ssm_a",
+      "type": "F32",
+      "encoded_bytes": 192,
+      "sha256": "3c88aaaf198e6e6789bf072a9222e1b7c2380ff2e78974a3433b5214f9926c65",
+      "edited": false
+    },
+    {
+      "tensor": "blk.38.ssm_alpha.weight",
+      "type": "Q4_K",
+      "encoded_bytes": 138240,
+      "sha256": "a45b1ecf7849e2aa91975016880834c2e106bd710cb3f0aa5da3a7d04bc1c7c4",
+      "edited": false
+    },
+    {
+      "tensor": "blk.38.ssm_beta.weight",
+      "type": "Q4_K",
+      "encoded_bytes": 138240,
+      "sha256": "47cdee78b915203e3fe16a3b8291a8962f5ed113d1b15d40c9d6c9de270f2f00",
+      "edited": false
+    },
+    {
+      "tensor": "blk.38.ssm_conv1d.weight",
+      "type": "F32",
+      "encoded_bytes": 163840,
+      "sha256": "7b3210b534ee1517468270be13893266cbb6a6d9b37a7dfd5523b2241e7ad299",
+      "edited": false
+    },
+    {
+      "tensor": "blk.38.ssm_dt.bias",
+      "type": "F32",
+      "encoded_bytes": 192,
+      "sha256": "2f7effc6961a4f267a4232b39277ef0522e41dcd2a962b0c9bd087dd29f7b1fa",
+      "edited": false
+    },
+    {
+      "tensor": "blk.38.ssm_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 512,
+      "sha256": "4c63c8a5618ecc1f14fb03d2900917d6516d406ed558367364437a5d32cbca5d",
+      "edited": false
+    },
+    {
+      "tensor": "blk.38.ssm_out.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "55655fd1f2f16b6ca48c29d9f3e37abe724deed6e5a59db5d4e0fa7e15d5a326",
+      "edited": false
+    },
+    {
+      "tensor": "blk.39.attn_k.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 3604480,
+      "sha256": "88666762fc41b90f064ed6476d1c402951e849d822e4b8991107073192877a33",
+      "edited": false
+    },
+    {
+      "tensor": "blk.39.attn_k_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 1024,
+      "sha256": "64ad56c1eca10daefd20fd5a2dcff120cd15e2334cf59edfda33f3b80b382761",
+      "edited": false
+    },
+    {
+      "tensor": "blk.39.attn_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "fb491a942b914c19649bf87de8df35680d09b3ec416569ca349ef6b90af2ec39",
+      "edited": false
+    },
+    {
+      "tensor": "blk.39.attn_output.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "79fe980beaaf89540fc2be87eb4e06d94657a6740386458269cfa732de9cd408",
+      "edited": false
+    },
+    {
+      "tensor": "blk.39.attn_q.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 43253760,
+      "sha256": "c4e03c40281d9e6f342d0e6e2ff1439756b097f9e48f932882a95aa910a8d3d1",
+      "edited": false
+    },
+    {
+      "tensor": "blk.39.attn_q_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 1024,
+      "sha256": "223e71b9d9ba0e2591af884159f5b0799a02daf687c6860eea6cf9c06e8763c1",
+      "edited": false
+    },
+    {
+      "tensor": "blk.39.attn_v.weight",
+      "type": "Q6_K",
+      "encoded_bytes": 4300800,
+      "sha256": "35f1a5472d02b6761d5f68d8b5b1f36155b04cb255e227480a48f7571d7a18f4",
+      "edited": false
+    },
+    {
+      "tensor": "blk.39.ffn_down.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "9d564d1dc574911fdb3e608739b8298ced83ea7db14aaeb265df41d61049fa38",
+      "edited": false
+    },
+    {
+      "tensor": "blk.39.ffn_gate.weight",
+      "type": "IQ4_XS",
+      "encoded_bytes": 47349760,
+      "sha256": "03d6db66db6f39e38a1a81ae8d8354096a32d3c246d70ce3d2c531571b28665f",
+      "edited": false
+    },
+    {
+      "tensor": "blk.39.ffn_up.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "d019f691e482ff5a272518436fe6f4d5e19da3dd4a59f2f9f618ae6a9b845134",
+      "edited": false
+    },
+    {
+      "tensor": "blk.39.post_attention_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "51cdde5a4dcef98a974fc6a552d8002aa19581dda0c3c4b8c273d486160f9b7d",
+      "edited": false
+    },
+    {
+      "tensor": "blk.40.attn_gate.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "e3d6e94e64df551c036b7ed25d0289eb215c29a077a8aa15e933a79cb50c9474",
+      "edited": false
+    },
+    {
+      "tensor": "blk.40.attn_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "4e76aec53e75c7fc5f01bfe6ef78277283e3b2ffec391107a4a892f5a0149c8a",
+      "edited": false
+    },
+    {
+      "tensor": "blk.40.attn_qkv.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 36044800,
+      "sha256": "5a06ecd276b83efe2a1644bdb8cf6decd612e9653e132650a6d344b867eb11df",
+      "edited": false
+    },
+    {
+      "tensor": "blk.40.ffn_down.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "128d309c7b6dfe4d39f8b1bbf35bbe6f65e11d8a2521d9fd0678c7d9c66c1ee9",
+      "edited": false
+    },
+    {
+      "tensor": "blk.40.ffn_gate.weight",
+      "type": "IQ4_XS",
+      "encoded_bytes": 47349760,
+      "sha256": "da3740a913ddfd5bfe5e5011d52fb8502f26a5ef07a09ca786201a4dfb970e56",
+      "edited": false
+    },
+    {
+      "tensor": "blk.40.ffn_up.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "a71ca53a358cebf852559c60517be70bf2a88a4c433a15d9d4e65da26c29479e",
+      "edited": false
+    },
+    {
+      "tensor": "blk.40.post_attention_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "d8633c9b8c3f0617bcef834698815b5e08ada8abd08d5609f19e980d659c2312",
+      "edited": false
+    },
+    {
+      "tensor": "blk.40.ssm_a",
+      "type": "F32",
+      "encoded_bytes": 192,
+      "sha256": "e5122656314714849573346b7b450bc24c0c67542b0a5572bccd1c115d1a532f",
+      "edited": false
+    },
+    {
+      "tensor": "blk.40.ssm_alpha.weight",
+      "type": "Q4_K",
+      "encoded_bytes": 138240,
+      "sha256": "e8a4c39568970e36bf4e4a6bfa12c25cd6f8625d49861ff31f121c3bee8c7210",
+      "edited": false
+    },
+    {
+      "tensor": "blk.40.ssm_beta.weight",
+      "type": "Q4_K",
+      "encoded_bytes": 138240,
+      "sha256": "f79c42e86ae878816ba2b7fcda9532f12bcfb292215a5eceea16c8e6b13951d3",
+      "edited": false
+    },
+    {
+      "tensor": "blk.40.ssm_conv1d.weight",
+      "type": "F32",
+      "encoded_bytes": 163840,
+      "sha256": "b229d0173044086d6844262a6c55551a599cff2038fe766cddecfd948cad26fd",
+      "edited": false
+    },
+    {
+      "tensor": "blk.40.ssm_dt.bias",
+      "type": "F32",
+      "encoded_bytes": 192,
+      "sha256": "07f7d4e961d05870a13972f24e2392e0481fcb7ab2679f986ab05da3020ae21f",
+      "edited": false
+    },
+    {
+      "tensor": "blk.40.ssm_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 512,
+      "sha256": "705e6f08f89110cd987ace3e3967332d725987e533e495542e5e5f5c02b88cbf",
+      "edited": false
+    },
+    {
+      "tensor": "blk.40.ssm_out.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "ad09b9bddee1e921865d0fd46e2000339f6458bda2b9b26ca54b021abebb9d40",
+      "edited": false
+    },
+    {
+      "tensor": "blk.41.attn_gate.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "15d896a20b173e6ba258fc6ed4385a278790464d75bce0bbdbd8f6e7f27f19c9",
+      "edited": false
+    },
+    {
+      "tensor": "blk.41.attn_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "15bfc99dc38926151b6f0e7785231e5a93e28992cc411f1f2e012134360b77ba",
+      "edited": false
+    },
+    {
+      "tensor": "blk.41.attn_qkv.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 36044800,
+      "sha256": "5c6a274af0b331c47630652084243b6574337636f3ac3a358d4a758fd2afdf7c",
+      "edited": false
+    },
+    {
+      "tensor": "blk.41.ffn_down.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "150f403bba9db1957e28e48f7f266f2b7172979edc2bc1caf742e33ff42e649e",
+      "edited": false
+    },
+    {
+      "tensor": "blk.41.ffn_gate.weight",
+      "type": "IQ4_XS",
+      "encoded_bytes": 47349760,
+      "sha256": "f1b94320f4e22ed0bb68fcfd5a3584bef16a6e31b3d4b69ad0a99fde76294648",
+      "edited": false
+    },
+    {
+      "tensor": "blk.41.ffn_up.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "57b39e9c0315d853e73f8954149b55349c8b36a02c1eb5485a470ad8fc224b7c",
+      "edited": false
+    },
+    {
+      "tensor": "blk.41.post_attention_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "65b206dd61cb5bbcb711b46e5b6da75f5d7d958a615e0f53f56a2e64f7d2e315",
+      "edited": false
+    },
+    {
+      "tensor": "blk.41.ssm_a",
+      "type": "F32",
+      "encoded_bytes": 192,
+      "sha256": "e754e601e4a8266b361349356ee23571948ab4ce07b41909383585db4a806864",
+      "edited": false
+    },
+    {
+      "tensor": "blk.41.ssm_alpha.weight",
+      "type": "Q4_K",
+      "encoded_bytes": 138240,
+      "sha256": "7f8784a2db31dfaacaf91985f1dfe363d821468f228786a28b36c68a40a4f55f",
+      "edited": false
+    },
+    {
+      "tensor": "blk.41.ssm_beta.weight",
+      "type": "Q4_K",
+      "encoded_bytes": 138240,
+      "sha256": "298f65d1ecb5402b427ffb8620aecf8631ea2a78fa03895d1997dcd11f95474c",
+      "edited": false
+    },
+    {
+      "tensor": "blk.41.ssm_conv1d.weight",
+      "type": "F32",
+      "encoded_bytes": 163840,
+      "sha256": "e8bfcef5db54a83b4a0aa16036a707acd01c9ac8ada1dd4378923a1d3471fa43",
+      "edited": false
+    },
+    {
+      "tensor": "blk.41.ssm_dt.bias",
+      "type": "F32",
+      "encoded_bytes": 192,
+      "sha256": "f8c93f9152a422023273e8a24e5933a8c60889ab88a6ba9407c56ed6fdc7ec34",
+      "edited": false
+    },
+    {
+      "tensor": "blk.41.ssm_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 512,
+      "sha256": "c7670a531f6af02c5eaff3ecb3c1282241f309d7f0a9d196c496ddd88a68a227",
+      "edited": false
+    },
+    {
+      "tensor": "blk.41.ssm_out.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "f1d4b2277d89374d1315c028079f0a2bbbc305cc0adaa664b50590da874efbdf",
+      "edited": false
+    },
+    {
+      "tensor": "blk.42.attn_gate.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "50571df83cc5c46aa71da611b38157db3e3ddf0c0304ce7126385d4fd755469a",
+      "edited": false
+    },
+    {
+      "tensor": "blk.42.attn_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "0a2785edfe28e2b18584f82bd2233737548f1bba4d1fba6a07e0a79055ec3829",
+      "edited": false
+    },
+    {
+      "tensor": "blk.42.attn_qkv.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 36044800,
+      "sha256": "27e2cf674689bba43d5bd2384bc7231cc9c5eda6878b12af1bb8111297ca26ce",
+      "edited": false
+    },
+    {
+      "tensor": "blk.42.ffn_down.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "0e2bbd1bf9a0427e75d8eed60ab3b075912121cd3b736a954b889bfeaeb992b3",
+      "edited": false
+    },
+    {
+      "tensor": "blk.42.ffn_gate.weight",
+      "type": "IQ4_XS",
+      "encoded_bytes": 47349760,
+      "sha256": "019e62ebd7ed2157e839a600838c315f294aa7a146e95e0d754bd3febde0cec9",
+      "edited": false
+    },
+    {
+      "tensor": "blk.42.ffn_up.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "a66fd85ca5337a9170dfe120863550af21df0aa6e200caebcba7d7283d8942f0",
+      "edited": false
+    },
+    {
+      "tensor": "blk.42.post_attention_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "fef6ab45814b630bfa809a64339cb910293653b8d9ce28fb9bbe7365dd3fec3c",
+      "edited": false
+    },
+    {
+      "tensor": "blk.42.ssm_a",
+      "type": "F32",
+      "encoded_bytes": 192,
+      "sha256": "ac3aaaacdb6d33cfe9573a29be08c3d8724175b9b0e305ecbd0a157df29ae821",
+      "edited": false
+    },
+    {
+      "tensor": "blk.42.ssm_alpha.weight",
+      "type": "Q4_K",
+      "encoded_bytes": 138240,
+      "sha256": "96b9f7030234ec91393bb041731f10fd8ca192a92bbb9a3b88bc8db80cfff149",
+      "edited": false
+    },
+    {
+      "tensor": "blk.42.ssm_beta.weight",
+      "type": "Q4_K",
+      "encoded_bytes": 138240,
+      "sha256": "66806830b88142c2cb657ddc0e2057690d66fd4dc3ff938a37b87c029122c104",
+      "edited": false
+    },
+    {
+      "tensor": "blk.42.ssm_conv1d.weight",
+      "type": "F32",
+      "encoded_bytes": 163840,
+      "sha256": "6eb516a90c7b3d6b6300975ff9903d7cca23c28606438a430af93da397df7682",
+      "edited": false
+    },
+    {
+      "tensor": "blk.42.ssm_dt.bias",
+      "type": "F32",
+      "encoded_bytes": 192,
+      "sha256": "c312b0b96e78bd7e7e756da986af23bcc2a1be52098abe81d1f6e02e219bdb52",
+      "edited": false
+    },
+    {
+      "tensor": "blk.42.ssm_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 512,
+      "sha256": "ac41d0f1398f4822a629e234af1cb71c10b958312a8b67fd16248d1465f3f616",
+      "edited": false
+    },
+    {
+      "tensor": "blk.42.ssm_out.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "11fcdf87c0d916fc0b4afef42151dfb9fe299b7310a995f2ab34a35287c51582",
+      "edited": false
+    },
+    {
+      "tensor": "blk.43.attn_k.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 3604480,
+      "sha256": "35a89ca06363c9216f30dfa0411907e81d7f8f34c4684e6c4016d87071e9e499",
+      "edited": false
+    },
+    {
+      "tensor": "blk.43.attn_k_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 1024,
+      "sha256": "0d87dd2c17847473430410d3003addc8c015169d7c1d2d88034ac3d798defff2",
+      "edited": false
+    },
+    {
+      "tensor": "blk.43.attn_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "051fb60cb8a29868a3f10a3259a0e1af2700e16e8d692e755f1a6250a8dc9f23",
+      "edited": false
+    },
+    {
+      "tensor": "blk.43.attn_output.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "cfe4da682b198a2c973d7781e700a728ee20c5761847123d0c7bdfee9fe0bcb0",
+      "edited": false
+    },
+    {
+      "tensor": "blk.43.attn_q.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 43253760,
+      "sha256": "5d17244740d1161478b253abb8ef619c0a4d3f8efba4be833c3f1ea8d35682c0",
+      "edited": false
+    },
+    {
+      "tensor": "blk.43.attn_q_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 1024,
+      "sha256": "0f472dcd78292a598206a28b64eca8056c4919067b9481e3c6d132958e830650",
+      "edited": false
+    },
+    {
+      "tensor": "blk.43.attn_v.weight",
+      "type": "Q6_K",
+      "encoded_bytes": 4300800,
+      "sha256": "857ae4adf192219b2e952a5809a845e3f9606727cc27405683e894118994b1e4",
+      "edited": false
+    },
+    {
+      "tensor": "blk.43.ffn_down.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "9eee001672a9e2d3dbc602337a4832304d4d3f8e8b2398bcdea96dd84e236c80",
+      "edited": false
+    },
+    {
+      "tensor": "blk.43.ffn_gate.weight",
+      "type": "IQ4_XS",
+      "encoded_bytes": 47349760,
+      "sha256": "679433673454a5f47ba3f27f787f2515f4451bccc0f982bc71f4b27fcbf7fd64",
+      "edited": false
+    },
+    {
+      "tensor": "blk.43.ffn_up.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "e036aaaf152a46f45822e984f350c668f69475cf82689d0aa5893d73f7959c31",
+      "edited": false
+    },
+    {
+      "tensor": "blk.43.post_attention_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "4bf5bbec805c827c8892a8044c12893ac299ae858226160ce486648eafd6f952",
+      "edited": false
+    },
+    {
+      "tensor": "blk.44.attn_gate.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "595ec58569fe86113a1e1216596232f749dc04e073158e18414a418e86a9e372",
+      "edited": false
+    },
+    {
+      "tensor": "blk.44.attn_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "daf5b1d92cb5f254a5e0b21dfbdd348550985dce0d0f7ba6ec5b82de546e4cd2",
+      "edited": false
+    },
+    {
+      "tensor": "blk.44.attn_qkv.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 36044800,
+      "sha256": "2fda7c9ab2855728a2a9b42a8aa92bbd6a33106ac392d66e184a52696c5c6599",
+      "edited": false
+    },
+    {
+      "tensor": "blk.44.ffn_down.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "f88c8083d9a583dffe5d27be18a5ec18370ee422d5deadb35929fde1cac6f8fe",
+      "edited": false
+    },
+    {
+      "tensor": "blk.44.ffn_gate.weight",
+      "type": "IQ4_XS",
+      "encoded_bytes": 47349760,
+      "sha256": "27b222cd7783251c4f64542b6cc3bdd69dee5b76f6af84b188ed95862bb75e8b",
+      "edited": false
+    },
+    {
+      "tensor": "blk.44.ffn_up.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "ff976dd5fe64cf13c39e41cb6b292a4b2f74f3559caba1ddc3802f0f29027880",
+      "edited": false
+    },
+    {
+      "tensor": "blk.44.post_attention_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "c7198f4297bfc40df42c559ce22373a8c60afd27877b040bc205320576e92f89",
+      "edited": false
+    },
+    {
+      "tensor": "blk.44.ssm_a",
+      "type": "F32",
+      "encoded_bytes": 192,
+      "sha256": "553fbfa7cada17da40f68b59be71d35fc207dce7f59d053a0f4ab15c91172c7b",
+      "edited": false
+    },
+    {
+      "tensor": "blk.44.ssm_alpha.weight",
+      "type": "Q4_K",
+      "encoded_bytes": 138240,
+      "sha256": "8db9ce30a39fce1d32f0219d2d5710cbe82873d88bbefdd9f0cd3a863635bb78",
+      "edited": false
+    },
+    {
+      "tensor": "blk.44.ssm_beta.weight",
+      "type": "Q4_K",
+      "encoded_bytes": 138240,
+      "sha256": "9b427666f21b65155f214542d0b62b7b25c67d234b13ab6dcef47f1b7439ba21",
+      "edited": false
+    },
+    {
+      "tensor": "blk.44.ssm_conv1d.weight",
+      "type": "F32",
+      "encoded_bytes": 163840,
+      "sha256": "8b79dee0be9d3b4e3841608f743bea71c3d70ff950e6cb79ba7332be255e6f25",
+      "edited": false
+    },
+    {
+      "tensor": "blk.44.ssm_dt.bias",
+      "type": "F32",
+      "encoded_bytes": 192,
+      "sha256": "64ac950210298b59e02e1ed013c3b6b26885ebb99fc8985d79bb5aaa7407a2f1",
+      "edited": false
+    },
+    {
+      "tensor": "blk.44.ssm_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 512,
+      "sha256": "eb05891c80d44363c226d01c054deb504e23c51b302071287e3986afaa4422ec",
+      "edited": false
+    },
+    {
+      "tensor": "blk.44.ssm_out.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "f7f9694e622811b659f4f1ceba6554f55886e91ee4211c671f0e19f82bcd1143",
+      "edited": false
+    },
+    {
+      "tensor": "blk.45.attn_gate.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "c4f768fee82a0e0bf44f052e87bc29afe0017a986eefafcf85713b23c0fb66a6",
+      "edited": false
+    },
+    {
+      "tensor": "blk.45.attn_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "3125fc435c17d96896b56b2987dd0511667a2f4432af765175ec3850b3c33767",
+      "edited": false
+    },
+    {
+      "tensor": "blk.45.attn_qkv.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 36044800,
+      "sha256": "78489305883acaaff5517c8449e42abfcaa80b4adf631fd2d36d1bd4d8491a4a",
+      "edited": false
+    },
+    {
+      "tensor": "blk.45.ffn_down.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "3b0125e8eead9a4944adefb295286fc78fb43460575189f6ee965f2fe428d981",
+      "edited": false
+    },
+    {
+      "tensor": "blk.45.ffn_gate.weight",
+      "type": "IQ4_XS",
+      "encoded_bytes": 47349760,
+      "sha256": "16022395a8956de7be71801ccad5dfcefdc5ce26e58a493ffeb8acaad5fd6ff9",
+      "edited": false
+    },
+    {
+      "tensor": "blk.45.ffn_up.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "623d8dd7f2643c245de50e7396d8591db9c2c4b3be3359e91383fd71b6ea7fb3",
+      "edited": false
+    },
+    {
+      "tensor": "blk.45.post_attention_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "e1bb3afe239d992413e2c3570930d719138d84c44cb0f940072c401c52a26fc5",
+      "edited": false
+    },
+    {
+      "tensor": "blk.45.ssm_a",
+      "type": "F32",
+      "encoded_bytes": 192,
+      "sha256": "6fb187337d4e17fcce82b9faae61324ca78ea9b8a37cce01e29150a18039dd54",
+      "edited": false
+    },
+    {
+      "tensor": "blk.45.ssm_alpha.weight",
+      "type": "Q4_K",
+      "encoded_bytes": 138240,
+      "sha256": "271eaede67674b27f92923f9272895e989b957752fc732d09e5d265d1f39b41c",
+      "edited": false
+    },
+    {
+      "tensor": "blk.45.ssm_beta.weight",
+      "type": "Q4_K",
+      "encoded_bytes": 138240,
+      "sha256": "dd23cdbfdfe52cc31e238c9aa5abebf5bdcb319c151122e054afdb08ec889bc1",
+      "edited": false
+    },
+    {
+      "tensor": "blk.45.ssm_conv1d.weight",
+      "type": "F32",
+      "encoded_bytes": 163840,
+      "sha256": "73be6a2a5ce1eb12613544d07040cf96d160e7b7c14667d57b99665a12978ec7",
+      "edited": false
+    },
+    {
+      "tensor": "blk.45.ssm_dt.bias",
+      "type": "F32",
+      "encoded_bytes": 192,
+      "sha256": "73f62692f08ca8928b5c91f87225961c90d047e090dd91ca24b8aefeb1e6cb39",
+      "edited": false
+    },
+    {
+      "tensor": "blk.45.ssm_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 512,
+      "sha256": "6d95323776bba1314f04e5308130f8174a3904156c1bbb52419e830d858170dd",
+      "edited": false
+    },
+    {
+      "tensor": "blk.45.ssm_out.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "d11882f3b52a4e09c5a6ddf4985d4789587138037ce4a7e8330848a1e1c380ed",
+      "edited": false
+    },
+    {
+      "tensor": "blk.46.attn_gate.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "90108f7c14cdf37438fc3336b77ba580d5317ee42d7d43cf57d6df5d7d78e087",
+      "edited": false
+    },
+    {
+      "tensor": "blk.46.attn_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "5eabd4cdca4705437f4ccc1afd8e633f4503acccd169ef167f7a269ad93c863d",
+      "edited": false
+    },
+    {
+      "tensor": "blk.46.attn_qkv.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 36044800,
+      "sha256": "88135a20ac993026f57e26e0cabd0f8d11fd4fd6160fc1efd9a76a0725e8e21e",
+      "edited": false
+    },
+    {
+      "tensor": "blk.46.ffn_down.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "ed33ae04cd6673764b8b1bfb32682967a9c9d850872fc37be8d0f0547dac274b",
+      "edited": false
+    },
+    {
+      "tensor": "blk.46.ffn_gate.weight",
+      "type": "IQ4_XS",
+      "encoded_bytes": 47349760,
+      "sha256": "6175def9d75bda89971c61c10d860ca71ebb9209e40ddb41e73a1f1cdedb90c4",
+      "edited": false
+    },
+    {
+      "tensor": "blk.46.ffn_up.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "4c5366c071ea3f8987e9e2ee7d94b8966eec45d25d2085dad9154705971d5fb2",
+      "edited": false
+    },
+    {
+      "tensor": "blk.46.post_attention_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "2fe6cdad90a49eed043271390972cb6f7d8a6f0ee205814ad41afdd929c7a42e",
+      "edited": false
+    },
+    {
+      "tensor": "blk.46.ssm_a",
+      "type": "F32",
+      "encoded_bytes": 192,
+      "sha256": "3c6ed7718bf15f1ff84444db86778ee512f278b0f8a9b0dcf491b4d4507ce02b",
+      "edited": false
+    },
+    {
+      "tensor": "blk.46.ssm_alpha.weight",
+      "type": "Q4_K",
+      "encoded_bytes": 138240,
+      "sha256": "dff8b0556c3aa47beefd136429ef788dc0be184dbaa8376604d0e2c6f290ff4c",
+      "edited": false
+    },
+    {
+      "tensor": "blk.46.ssm_beta.weight",
+      "type": "Q4_K",
+      "encoded_bytes": 138240,
+      "sha256": "fab0fa7cc868aba9ad921d20edf9dc41306348a4de27ea58d68b2313ab8804c9",
+      "edited": false
+    },
+    {
+      "tensor": "blk.46.ssm_conv1d.weight",
+      "type": "F32",
+      "encoded_bytes": 163840,
+      "sha256": "c15a421fc43dba14a067471ab8c027a4a06c02627eafe5c457fade6d25b1b840",
+      "edited": false
+    },
+    {
+      "tensor": "blk.46.ssm_dt.bias",
+      "type": "F32",
+      "encoded_bytes": 192,
+      "sha256": "a3c8c8fb8a86d3f28a566fb942ce855c48022570bf3d197f9246fe51cc929d46",
+      "edited": false
+    },
+    {
+      "tensor": "blk.46.ssm_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 512,
+      "sha256": "c1b5c5f4fe45f833d3f5127488d234308ade18bffa5404de352028c8290b29c6",
+      "edited": false
+    },
+    {
+      "tensor": "blk.46.ssm_out.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "22aca9ab1ffd62165387ed6d841b649abcb234aabe40fb6eee587900ee8c3ce6",
+      "edited": false
+    },
+    {
+      "tensor": "blk.47.attn_k.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 3604480,
+      "sha256": "123567ae9834ac53f1da2c0f4f50ca7d60be43c1d1651dba10f8edd4998108cb",
+      "edited": false
+    },
+    {
+      "tensor": "blk.47.attn_k_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 1024,
+      "sha256": "950fd682a43e551a8d4f1432861b4b6e49b670f254fdd3ef1a57f594b0574e76",
+      "edited": false
+    },
+    {
+      "tensor": "blk.47.attn_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "739660fc100663f073be4edcff044561aafbc7008b81123efcfd7bfc567ae2b0",
+      "edited": false
+    },
+    {
+      "tensor": "blk.47.attn_output.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "ba6af6b146f40ff16b54975630657cdef2370746f17f7eb3bc61764c74e5d010",
+      "edited": false
+    },
+    {
+      "tensor": "blk.47.attn_q.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 43253760,
+      "sha256": "45ec07d762264acdaaea6f02113408f519ce03b2f07dca02edc26376f1346900",
+      "edited": false
+    },
+    {
+      "tensor": "blk.47.attn_q_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 1024,
+      "sha256": "361809e57e06ccb7101597dfcfa785718d11b1646a03189c1940bad4fc3b53c2",
+      "edited": false
+    },
+    {
+      "tensor": "blk.47.attn_v.weight",
+      "type": "Q6_K",
+      "encoded_bytes": 4300800,
+      "sha256": "323a40f768b286e726799f6b9db823340cd1af759a33e76ed632c4618efce14c",
+      "edited": false
+    },
+    {
+      "tensor": "blk.47.ffn_down.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "bf7c9af1f1c847e02525c2ac04ab31980744426f0820a8bf8d8e6ad340093f79",
+      "edited": false
+    },
+    {
+      "tensor": "blk.47.ffn_gate.weight",
+      "type": "IQ4_XS",
+      "encoded_bytes": 47349760,
+      "sha256": "d55a0c95c67cb47a7e632ad609beb808a083832cbf39c873931ae937cad70593",
+      "edited": false
+    },
+    {
+      "tensor": "blk.47.ffn_up.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "1f82b42344f821ef55b934fecd7c27fbd3df7e37fa57eacc92ee0a9ca3f8ff94",
+      "edited": false
+    },
+    {
+      "tensor": "blk.47.post_attention_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "665ebc3c999aa100e24e62dce02c3be5a764ef6ab552f6ea5444c26acd46151d",
+      "edited": false
+    },
+    {
+      "tensor": "blk.48.attn_gate.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "d5f0050f0836dc09d248e46233352771e3543189397138689f6bc4af3fe0b5c4",
+      "edited": false
+    },
+    {
+      "tensor": "blk.48.attn_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "841ee101a4707d15df90c870411d59265b098d1db05ee7a483bfafc2c91da5f0",
+      "edited": false
+    },
+    {
+      "tensor": "blk.48.attn_qkv.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 36044800,
+      "sha256": "20d0084925838d2802faab7f0ecfbf8f15817c501319eea830f225f2ad4ebcfc",
+      "edited": false
+    },
+    {
+      "tensor": "blk.48.ffn_down.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "bf45b8dd8f059c4c757473d974424904dfa1530b763bb0d67c74a8d85fa3149c",
+      "edited": false
+    },
+    {
+      "tensor": "blk.48.ffn_gate.weight",
+      "type": "IQ4_XS",
+      "encoded_bytes": 47349760,
+      "sha256": "cad72a0d8c13dd53025d74cad26e9f6e5963ccfd007b70a0c3410f9db5d4c740",
+      "edited": false
+    },
+    {
+      "tensor": "blk.48.ffn_up.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "07b60b053831b8996d60ca574888ab78bc5b914e38d2123f3de6fb4e2a75412d",
+      "edited": false
+    },
+    {
+      "tensor": "blk.48.post_attention_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "43a13914ea9ab731930a65d935e0357508a6232b50aeb7a0b73045fc08c0a206",
+      "edited": false
+    },
+    {
+      "tensor": "blk.48.ssm_a",
+      "type": "F32",
+      "encoded_bytes": 192,
+      "sha256": "7025dad17bc498734ebe1677adcccce97a4e9220c45340065bc5839f5fb64e6f",
+      "edited": false
+    },
+    {
+      "tensor": "blk.48.ssm_alpha.weight",
+      "type": "Q4_K",
+      "encoded_bytes": 138240,
+      "sha256": "881d21071fc52d19bc2369bd5cb12248d58f3c7cf2c6808a31c1a42b7025a366",
+      "edited": false
+    },
+    {
+      "tensor": "blk.48.ssm_beta.weight",
+      "type": "Q4_K",
+      "encoded_bytes": 138240,
+      "sha256": "8f8f1bf9373289271f570338b9de9fb56938a217375fa9383a0dc9be49ee8b78",
+      "edited": false
+    },
+    {
+      "tensor": "blk.48.ssm_conv1d.weight",
+      "type": "F32",
+      "encoded_bytes": 163840,
+      "sha256": "73db957d8e7177f195f2f5c5ae97fe13adf83087036b5430234772a0c247f868",
+      "edited": false
+    },
+    {
+      "tensor": "blk.48.ssm_dt.bias",
+      "type": "F32",
+      "encoded_bytes": 192,
+      "sha256": "8cf25094f11bd9962bfc832ba774773393ea42fca03ab5c63d6b63aab87542f3",
+      "edited": false
+    },
+    {
+      "tensor": "blk.48.ssm_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 512,
+      "sha256": "f10e123465f485674e2090bec319e155ea2409892dd2bbdbd0df79a5317460e3",
+      "edited": false
+    },
+    {
+      "tensor": "blk.48.ssm_out.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "dfd3cc75642d8af96acafcdab96da9977ec7a3c2b467e710eeb0122961757160",
+      "edited": false
+    },
+    {
+      "tensor": "blk.49.attn_gate.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "b6ab3f6c2092b30802efc5d49576a423042766661386cf73749aac3aa4c9b909",
+      "edited": false
+    },
+    {
+      "tensor": "blk.49.attn_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "cd852aa6530a5ef3295c4edc73e011b4269a268d4c1b299820a9b5a0c8d3cb0c",
+      "edited": false
+    },
+    {
+      "tensor": "blk.49.attn_qkv.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 36044800,
+      "sha256": "583efb063e4ab77c1df66b5c342829c68ada955e8a85b949a4688df0aa441c1a",
+      "edited": false
+    },
+    {
+      "tensor": "blk.49.ffn_down.weight",
+      "type": "F32",
+      "encoded_bytes": 356515840,
+      "sha256": "8cd87b12bc22a68a2eb9298fcc5680048451e5b9e49d91da0ea59b2909f4948f",
+      "edited": true
+    },
+    {
+      "tensor": "blk.49.ffn_gate.weight",
+      "type": "IQ4_XS",
+      "encoded_bytes": 47349760,
+      "sha256": "34ded9178925d826d85e83481443b02d99188eeff79246b06c1ef755be9191bc",
+      "edited": false
+    },
+    {
+      "tensor": "blk.49.ffn_up.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "e6251129bd0b982c909fc879ad200971ef368b0562c2f4b9d64e10ce6789c88a",
+      "edited": false
+    },
+    {
+      "tensor": "blk.49.post_attention_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "4a6b7caa6a047a796de002d99003b10982989d892956fa7f5a4442e5c644b43a",
+      "edited": false
+    },
+    {
+      "tensor": "blk.49.ssm_a",
+      "type": "F32",
+      "encoded_bytes": 192,
+      "sha256": "6ca073c54ebc47f573f14bd7a4673d78fdd3ae5972d22608cc049c8a22b90b89",
+      "edited": false
+    },
+    {
+      "tensor": "blk.49.ssm_alpha.weight",
+      "type": "Q4_K",
+      "encoded_bytes": 138240,
+      "sha256": "ecfb164a6b7f5ec2226b5e13b211af97bba515f483690e5d41af8790f3acd27d",
+      "edited": false
+    },
+    {
+      "tensor": "blk.49.ssm_beta.weight",
+      "type": "Q4_K",
+      "encoded_bytes": 138240,
+      "sha256": "b8b52b52bd2f7258ff54b7f2efa5292e27e085d8077d0e0be60937f8dc40d0c4",
+      "edited": false
+    },
+    {
+      "tensor": "blk.49.ssm_conv1d.weight",
+      "type": "F32",
+      "encoded_bytes": 163840,
+      "sha256": "0fbbe6a4019c3770478fa4d31e569edf5549a8d5d23950c6f29a11410b2cc5e2",
+      "edited": false
+    },
+    {
+      "tensor": "blk.49.ssm_dt.bias",
+      "type": "F32",
+      "encoded_bytes": 192,
+      "sha256": "4d08cc47297a2f9c70bef758ba89ac0b4e5a02450c048b2fa45194b8de4f2699",
+      "edited": false
+    },
+    {
+      "tensor": "blk.49.ssm_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 512,
+      "sha256": "34d6ed78d9c37bf3d7ab94b4c2edd728fab51b80502703f86e4d77aaddd043cc",
+      "edited": false
+    },
+    {
+      "tensor": "blk.49.ssm_out.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "0449142419539da209920035dd8008b682c5fa31eca85bb0cd9c20d988fb8bbf",
+      "edited": false
+    },
+    {
+      "tensor": "blk.50.attn_gate.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "fa396b71c235f5a344f09aa82efc225e47cb66c559d8f47c2599f8b2ca90a5b7",
+      "edited": false
+    },
+    {
+      "tensor": "blk.50.attn_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "53a066fd789b391df7cc353627dcf0ac6421a2648187ad1b8eef4ba50819da4f",
+      "edited": false
+    },
+    {
+      "tensor": "blk.50.attn_qkv.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 36044800,
+      "sha256": "e8ffa67185264b8cc992cc22d017d2003725e0dea68aeb550dc23016ba0d1ef0",
+      "edited": false
+    },
+    {
+      "tensor": "blk.50.ffn_down.weight",
+      "type": "F32",
+      "encoded_bytes": 356515840,
+      "sha256": "7ce2d978a9b843da0cc90c83c23dd0d021586474a9b9a50bfd7d0cbfac044c80",
+      "edited": true
+    },
+    {
+      "tensor": "blk.50.ffn_gate.weight",
+      "type": "IQ4_XS",
+      "encoded_bytes": 47349760,
+      "sha256": "e96ec30ebd32679729fd1f2379e52643acd3e0461da2b7c73d848c09d84ce90b",
+      "edited": false
+    },
+    {
+      "tensor": "blk.50.ffn_up.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "52a0faf407800451ab72121e37aee0163db8a00953193cb0a893855d51d20edd",
+      "edited": false
+    },
+    {
+      "tensor": "blk.50.post_attention_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "e3c58a3bda1a202d3f6429d3ba78156db3c32b45169a1dd4bd8eab08294894c4",
+      "edited": false
+    },
+    {
+      "tensor": "blk.50.ssm_a",
+      "type": "F32",
+      "encoded_bytes": 192,
+      "sha256": "a3cebceb30d9d40ec2e4ff72408b70a9fcea6c8d40dfec895d7fa8e813763738",
+      "edited": false
+    },
+    {
+      "tensor": "blk.50.ssm_alpha.weight",
+      "type": "Q4_K",
+      "encoded_bytes": 138240,
+      "sha256": "9e40bf9c7af257b844c408af1a7b857d8566c546019cd9b25a97aa8bcbe78c39",
+      "edited": false
+    },
+    {
+      "tensor": "blk.50.ssm_beta.weight",
+      "type": "Q4_K",
+      "encoded_bytes": 138240,
+      "sha256": "5f45d5645eacc60f9185b04c0fc95309277ba2a6429cb110498646faa76c0fb2",
+      "edited": false
+    },
+    {
+      "tensor": "blk.50.ssm_conv1d.weight",
+      "type": "F32",
+      "encoded_bytes": 163840,
+      "sha256": "117a1ace7fd54aca5935e38d25c9def7607562ef6a958c2e8d524176d9591af4",
+      "edited": false
+    },
+    {
+      "tensor": "blk.50.ssm_dt.bias",
+      "type": "F32",
+      "encoded_bytes": 192,
+      "sha256": "446ff7e01da77c65c1b7f9b04353c4e1464cb8202dc6676e4784dbbd4cba622e",
+      "edited": false
+    },
+    {
+      "tensor": "blk.50.ssm_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 512,
+      "sha256": "99c5df80424c5fe5626f4e01ba799baac9cc7c3198f78521641ecc32345f10da",
+      "edited": false
+    },
+    {
+      "tensor": "blk.50.ssm_out.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "3cc43d5a85dacd0d849be7c0adddae74717afb838adce6187ea9f86969a29b9a",
+      "edited": false
+    },
+    {
+      "tensor": "blk.51.attn_k.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 3604480,
+      "sha256": "c9b6d6abfeb558fbe12bc69b6702ad4824c615eb5fdf02da4f90aff86314b00a",
+      "edited": false
+    },
+    {
+      "tensor": "blk.51.attn_k_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 1024,
+      "sha256": "3297a1ee1e68d6e16f264b30778a9a2f3ff4e78662ff7b6333a03a25200140cb",
+      "edited": false
+    },
+    {
+      "tensor": "blk.51.attn_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "97a43416877a95a8c71417b1b1ba4e859895aaf7f8c8b7764ea44aafcc5c3c0d",
+      "edited": false
+    },
+    {
+      "tensor": "blk.51.attn_output.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "681e6e7843b9c9dfb91b13f5dbd380c59e3f16269f92c08aab046327898bed86",
+      "edited": false
+    },
+    {
+      "tensor": "blk.51.attn_q.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 43253760,
+      "sha256": "7110c38d03787bd64eb7f59bbb08ab71f74a284d20bf48bfa98272a83605d80a",
+      "edited": false
+    },
+    {
+      "tensor": "blk.51.attn_q_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 1024,
+      "sha256": "30449035b58371d8e715fcb47565e5bd2fb45e669d3fd5fb30887688f7429cdd",
+      "edited": false
+    },
+    {
+      "tensor": "blk.51.attn_v.weight",
+      "type": "Q6_K",
+      "encoded_bytes": 4300800,
+      "sha256": "cba5bd250292a4e6f84fadd3bc81da04a9bc249c328f0cbb7c3170eee8d7eaae",
+      "edited": false
+    },
+    {
+      "tensor": "blk.51.ffn_down.weight",
+      "type": "F32",
+      "encoded_bytes": 356515840,
+      "sha256": "472c9a689d77b41d11a11b6058d041d868e7ce1d5a8871ac0a2944209453493f",
+      "edited": true
+    },
+    {
+      "tensor": "blk.51.ffn_gate.weight",
+      "type": "IQ4_XS",
+      "encoded_bytes": 47349760,
+      "sha256": "dbf9421d4abd38c4c81ac5c36d3942a82f1f6674826482a129dbc7264d02ff5f",
+      "edited": false
+    },
+    {
+      "tensor": "blk.51.ffn_up.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "6548f1f50a22ff1d72b6c1c3ee97d7edca23a1722910bd036d461b285d3eef40",
+      "edited": false
+    },
+    {
+      "tensor": "blk.51.post_attention_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "9df071d19ab66ac7a510b25a1480eb05704056c2aa90d121fe7816228418bc0f",
+      "edited": false
+    },
+    {
+      "tensor": "blk.52.attn_gate.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "1db8679f1399a811b80bb04ac417cbe63229e4a38bbe800dd89f471750940e1d",
+      "edited": false
+    },
+    {
+      "tensor": "blk.52.attn_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "c596002af41778b23d42b689b5a6659f9b896b733d6adf5c9920a22174ee35f0",
+      "edited": false
+    },
+    {
+      "tensor": "blk.52.attn_qkv.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 36044800,
+      "sha256": "f20915fe8536370978f50e669eb1ed74a17c81c1ebc2303ae97c77dd7e0b00b7",
+      "edited": false
+    },
+    {
+      "tensor": "blk.52.ffn_down.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "a55dce3d13c23228b749da85e539501d8f89ed1ac8c5c494b2b04d8b29b6b3f0",
+      "edited": false
+    },
+    {
+      "tensor": "blk.52.ffn_gate.weight",
+      "type": "IQ4_XS",
+      "encoded_bytes": 47349760,
+      "sha256": "58e7cdf6c1b24d5a987f76f09d7f1a0efc06fce1341a15e5f2e8de1f1e1b0c8b",
+      "edited": false
+    },
+    {
+      "tensor": "blk.52.ffn_up.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "8b47a51a4c2ce26c682480b0431a5d3924c6762b5490f1c68947c4693c5de0aa",
+      "edited": false
+    },
+    {
+      "tensor": "blk.52.post_attention_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "5e51d647296da4c8a0bdcbd37fbaa4cdc6153f0099d9d9efbd495120a0bbc36c",
+      "edited": false
+    },
+    {
+      "tensor": "blk.52.ssm_a",
+      "type": "F32",
+      "encoded_bytes": 192,
+      "sha256": "a1a244a8d5f8c003c50dcf626ec122147e7701c01f1a84698a63e0b81b47b09e",
+      "edited": false
+    },
+    {
+      "tensor": "blk.52.ssm_alpha.weight",
+      "type": "Q4_K",
+      "encoded_bytes": 138240,
+      "sha256": "22ad8af3b13c8ccf99eec32069f1fddfb0a679a641e9757326fbeb7377377867",
+      "edited": false
+    },
+    {
+      "tensor": "blk.52.ssm_beta.weight",
+      "type": "Q4_K",
+      "encoded_bytes": 138240,
+      "sha256": "a36f626bf6068377e1c0441885e88a6087179a45e55b3b8f7e0d64c585eefbf6",
+      "edited": false
+    },
+    {
+      "tensor": "blk.52.ssm_conv1d.weight",
+      "type": "F32",
+      "encoded_bytes": 163840,
+      "sha256": "e817787d2fac1af894acf75079adb457164ee7b6bc72856452e119ec42cdae44",
+      "edited": false
+    },
+    {
+      "tensor": "blk.52.ssm_dt.bias",
+      "type": "F32",
+      "encoded_bytes": 192,
+      "sha256": "b5204dd6eb33a57ce61ad65b8bf7962d4d28a8f7f93b33c196e8a46737c27b96",
+      "edited": false
+    },
+    {
+      "tensor": "blk.52.ssm_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 512,
+      "sha256": "151818738f67ee69d17cf8c080c1cd74b2507de450018df6c8aa36046e13c28c",
+      "edited": false
+    },
+    {
+      "tensor": "blk.52.ssm_out.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "e95820d00d9e0ba0f084dc092ad53b6107005ed2838d39de6c555fdf7fa31d34",
+      "edited": false
+    },
+    {
+      "tensor": "blk.53.attn_gate.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "3fcb87229a6b587ce457b6a454c027827a8442213ecaf78f09511f77f518cba7",
+      "edited": false
+    },
+    {
+      "tensor": "blk.53.attn_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "b492130d815c2f16a2e230f4aa947f9467f54599dfe4dd33923515c61bbd6314",
+      "edited": false
+    },
+    {
+      "tensor": "blk.53.attn_qkv.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 36044800,
+      "sha256": "f728bd3a0104cc631e6a384860b03da0de136c72b2d5559359fdabc9fe41880f",
+      "edited": false
+    },
+    {
+      "tensor": "blk.53.ffn_down.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "b018b92bb3cdfbcaabec5fbb4513fd754638fecad69b49dbed6b4dd472e1ac3d",
+      "edited": false
+    },
+    {
+      "tensor": "blk.53.ffn_gate.weight",
+      "type": "IQ4_XS",
+      "encoded_bytes": 47349760,
+      "sha256": "63a877ffb9faf8330533004d797ff95cb1fb5a2517624b0e5ce55e08c73a6ae6",
+      "edited": false
+    },
+    {
+      "tensor": "blk.53.ffn_up.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "791d71e79ed07c4c104c0f22840cdb5bedee0a4379423451f095314848b13bfd",
+      "edited": false
+    },
+    {
+      "tensor": "blk.53.post_attention_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "af749e65ddd1fd0431dcd638ef31a3552bda8e76017b5c6f47aa7a5a490ddf70",
+      "edited": false
+    },
+    {
+      "tensor": "blk.53.ssm_a",
+      "type": "F32",
+      "encoded_bytes": 192,
+      "sha256": "6545042217f916992581b263860647f0744c693d7d2665f0a10915dc83239a5a",
+      "edited": false
+    },
+    {
+      "tensor": "blk.53.ssm_alpha.weight",
+      "type": "Q4_K",
+      "encoded_bytes": 138240,
+      "sha256": "0e70a21590ca89f335cf6010d1289021657ea6a8a914180dd8eb8b215f02b59b",
+      "edited": false
+    },
+    {
+      "tensor": "blk.53.ssm_beta.weight",
+      "type": "Q4_K",
+      "encoded_bytes": 138240,
+      "sha256": "83974cdb37c265531ba779fcee6ec20fec3c1d613802ef27214a242b635b55f0",
+      "edited": false
+    },
+    {
+      "tensor": "blk.53.ssm_conv1d.weight",
+      "type": "F32",
+      "encoded_bytes": 163840,
+      "sha256": "436c3f4897a5b0b2c1a2beb38cf9d06df179aeaf7753066087a02d8cc316ad32",
+      "edited": false
+    },
+    {
+      "tensor": "blk.53.ssm_dt.bias",
+      "type": "F32",
+      "encoded_bytes": 192,
+      "sha256": "65278ce84d0d2490437d97e14e256511cb562d2bd5a7aec81d385ffa4c359aca",
+      "edited": false
+    },
+    {
+      "tensor": "blk.53.ssm_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 512,
+      "sha256": "039ac6c1f658759fabd51ae3a28da42c2f7152ea6c73a9b0c6083e21588c1932",
+      "edited": false
+    },
+    {
+      "tensor": "blk.53.ssm_out.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "e5755fcc9ad997b94a2bfb27e88e5e4eae832e3ecc1964c6bbc25110446464f5",
+      "edited": false
+    },
+    {
+      "tensor": "blk.54.attn_gate.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "fe554ff2130da1bc917b892a2d99036b1c86da2e101242f6520821ab69fb8871",
+      "edited": false
+    },
+    {
+      "tensor": "blk.54.attn_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "cd9a39f2a7e8316b3b0ba05064ceec2dba2ecce995da2ef74c5ae0e55ecdec4f",
+      "edited": false
+    },
+    {
+      "tensor": "blk.54.attn_qkv.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 36044800,
+      "sha256": "1b568887523740c46a44a09ef5a42d9b077aa854a695aa69111146e3297124b1",
+      "edited": false
+    },
+    {
+      "tensor": "blk.54.ffn_down.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "664fce576cf907a1f8124a36d207d054ec44b6aebdd309657d54e99c6e688464",
+      "edited": false
+    },
+    {
+      "tensor": "blk.54.ffn_gate.weight",
+      "type": "IQ4_XS",
+      "encoded_bytes": 47349760,
+      "sha256": "f62b4307a1a4a23c2c653e2dfcca7923e3c45fb187ec9ffd5018bdf5b92aca64",
+      "edited": false
+    },
+    {
+      "tensor": "blk.54.ffn_up.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "9cc63d69ace3958c3f2b5138667a781a153ffd89437d69e684f2715ff6af8c9e",
+      "edited": false
+    },
+    {
+      "tensor": "blk.54.post_attention_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "ad38a5520bd72025248aa713320bb35ef6e44eef74146fef27140e585cb46c96",
+      "edited": false
+    },
+    {
+      "tensor": "blk.54.ssm_a",
+      "type": "F32",
+      "encoded_bytes": 192,
+      "sha256": "0c39a2803f51112b5003337e8831013d883d8a1f0ab9f95ca3bc20d2a498cbdb",
+      "edited": false
+    },
+    {
+      "tensor": "blk.54.ssm_alpha.weight",
+      "type": "Q4_K",
+      "encoded_bytes": 138240,
+      "sha256": "7c585409cb461a28600805516de65b55e79107df25f53dfcd012c672ebb581a9",
+      "edited": false
+    },
+    {
+      "tensor": "blk.54.ssm_beta.weight",
+      "type": "Q4_K",
+      "encoded_bytes": 138240,
+      "sha256": "da613ba8ae60c18fc176b70457fc4f9f219b11b518cd159d650e83f2a5b7c6bd",
+      "edited": false
+    },
+    {
+      "tensor": "blk.54.ssm_conv1d.weight",
+      "type": "F32",
+      "encoded_bytes": 163840,
+      "sha256": "0eaf60c3bd6a9e480a7af0ac2f5f86b337a20b2246e0e3b25ac7a9d923ff9a67",
+      "edited": false
+    },
+    {
+      "tensor": "blk.54.ssm_dt.bias",
+      "type": "F32",
+      "encoded_bytes": 192,
+      "sha256": "c7d8e137a10822a99edf161d543b8e1de280aaf129fa86845f1bfacbe3adab94",
+      "edited": false
+    },
+    {
+      "tensor": "blk.54.ssm_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 512,
+      "sha256": "14fa574029f0eaec2574766f0fc3eeba0feb22f6d90fdc0df929cf0dda1b3fc7",
+      "edited": false
+    },
+    {
+      "tensor": "blk.54.ssm_out.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "1fe8fc0caed14f07ec5ca85c0ce38b22210148aff16b218f03e417fc85668679",
+      "edited": false
+    },
+    {
+      "tensor": "blk.55.attn_k.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 3604480,
+      "sha256": "5b1ecc2c7ddfafedd61823c7f20f557cc9b75d18a1d4ee2e524fc083a5f9ef62",
+      "edited": false
+    },
+    {
+      "tensor": "blk.55.attn_k_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 1024,
+      "sha256": "7f1505f776d6973c248991f93a25daeeb60d82c1b945c0cd9663987b02ab5d37",
+      "edited": false
+    },
+    {
+      "tensor": "blk.55.attn_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "72c6575ea20c6dc47463c15ed226bdd34142c4bac51b89e002ceb8c703a9c7b8",
+      "edited": false
+    },
+    {
+      "tensor": "blk.55.attn_output.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "42701331b4ea5301fa5731b890e3ed26314c57bda65fd2848abdab29a71f0728",
+      "edited": false
+    },
+    {
+      "tensor": "blk.55.attn_q.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 43253760,
+      "sha256": "ae16ab0bf6e6771dfaaa1ab9ff18ebbf615a6bf0f5e671a58850df66968ce892",
+      "edited": false
+    },
+    {
+      "tensor": "blk.55.attn_q_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 1024,
+      "sha256": "286031d01ebae22184399ba032ae169bdae952824c224ced016e30c68d5904f4",
+      "edited": false
+    },
+    {
+      "tensor": "blk.55.attn_v.weight",
+      "type": "Q6_K",
+      "encoded_bytes": 4300800,
+      "sha256": "54f84fb41619878de10ddfab8bef6a97dfab87eb9cf951c2a4638adfe918d54e",
+      "edited": false
+    },
+    {
+      "tensor": "blk.55.ffn_down.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "cee77f359087d89c616b28cb2475224634c9d9a856839f77fcb7e18c476d9c33",
+      "edited": false
+    },
+    {
+      "tensor": "blk.55.ffn_gate.weight",
+      "type": "IQ4_XS",
+      "encoded_bytes": 47349760,
+      "sha256": "547397f1009fe766ab5c59978d91a2703e9c77ab84ed7a13929d9251d894276b",
+      "edited": false
+    },
+    {
+      "tensor": "blk.55.ffn_up.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "dae16e6e60801f2570f8292e6f0d2fc404d80d37bff9129c9dfce74be65276ae",
+      "edited": false
+    },
+    {
+      "tensor": "blk.55.post_attention_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "ca4ed8288f8941ea4468cf4288f242dfd49f2b4aedf71a1c4afc816a3a3a04b9",
+      "edited": false
+    },
+    {
+      "tensor": "blk.56.attn_gate.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "c0d2b60e8c89296b4af01e9e4b8274adf597eba8a98c8fe7ab1f36c5d16d9b2c",
+      "edited": false
+    },
+    {
+      "tensor": "blk.56.attn_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "a493b50a51934e71b264739677092fde88a95b1e702e0a5cd3b1888561e34b69",
+      "edited": false
+    },
+    {
+      "tensor": "blk.56.attn_qkv.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 36044800,
+      "sha256": "8a223d071555083c9ff607e87efe44d66e5727ad8cca3c7402504b635fd685a3",
+      "edited": false
+    },
+    {
+      "tensor": "blk.56.ffn_down.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "f1916b96a417d7977d02c8c46f17e9f7fd6646348727ef10dfd67955b9df9825",
+      "edited": false
+    },
+    {
+      "tensor": "blk.56.ffn_gate.weight",
+      "type": "IQ4_XS",
+      "encoded_bytes": 47349760,
+      "sha256": "f1a3a0f575653a2e3ea8f6ca190f237018318b7784a81006304abcd3d957d2bd",
+      "edited": false
+    },
+    {
+      "tensor": "blk.56.ffn_up.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "fa39f07ae3719f613df6caaccd112b6d1c46c5632828b0fae321bcb1c7f3757b",
+      "edited": false
+    },
+    {
+      "tensor": "blk.56.post_attention_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "d12314b509ccd59b63e2469df6bbcb39b8ac7ae2a7d42c45199f2c7ef51173c1",
+      "edited": false
+    },
+    {
+      "tensor": "blk.56.ssm_a",
+      "type": "F32",
+      "encoded_bytes": 192,
+      "sha256": "ea5390cef2cccb376cf42fe3f19e2c8739f71dbf7c169a344374a5180d3cde40",
+      "edited": false
+    },
+    {
+      "tensor": "blk.56.ssm_alpha.weight",
+      "type": "Q4_K",
+      "encoded_bytes": 138240,
+      "sha256": "b4acdb6c4de024e29c699ffafdf171fa3a997f0811bca36a086e8e9fcb341db3",
+      "edited": false
+    },
+    {
+      "tensor": "blk.56.ssm_beta.weight",
+      "type": "Q4_K",
+      "encoded_bytes": 138240,
+      "sha256": "57119f52ac3414eb164c4c238a3c2536124ea241ebc7b39f451f7f3e99f246d1",
+      "edited": false
+    },
+    {
+      "tensor": "blk.56.ssm_conv1d.weight",
+      "type": "F32",
+      "encoded_bytes": 163840,
+      "sha256": "c8022db0d0583230c63529cf5a6bd3244f73dc243797c1cf231833272105e0e9",
+      "edited": false
+    },
+    {
+      "tensor": "blk.56.ssm_dt.bias",
+      "type": "F32",
+      "encoded_bytes": 192,
+      "sha256": "16f9a40408591b602348a017c2f1c8e6beb8fb7ba4a014923fa174d6e430fc8d",
+      "edited": false
+    },
+    {
+      "tensor": "blk.56.ssm_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 512,
+      "sha256": "a7e9d81801cee992dc8cfebba30647c940f90606ad7dee8eeafe598b0e748347",
+      "edited": false
+    },
+    {
+      "tensor": "blk.56.ssm_out.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "3db9ca4996d60ac084a884293571466280140360d669f16adbef956532d315b7",
+      "edited": false
+    },
+    {
+      "tensor": "blk.57.attn_gate.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "7f67a7ab22a97221d02df484f3fae5229421c7b0ea05a5e47562da53eca0de2d",
+      "edited": false
+    },
+    {
+      "tensor": "blk.57.attn_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "1344fc8728c52b30a45c44eb830a5148dc00284e7711dfdf01e86ffc6fcdf66e",
+      "edited": false
+    },
+    {
+      "tensor": "blk.57.attn_qkv.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 36044800,
+      "sha256": "77738b5d1f7a7e2ef125e6c93b8b1ae9b070b24f4513c9762245dc03170b9354",
+      "edited": false
+    },
+    {
+      "tensor": "blk.57.ffn_down.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "f35f8f153f56edc8d709aa95349b461d1af135617d442f09831cc62ef4c58569",
+      "edited": false
+    },
+    {
+      "tensor": "blk.57.ffn_gate.weight",
+      "type": "IQ4_XS",
+      "encoded_bytes": 47349760,
+      "sha256": "fc16822f7e80efe06355017e3d23e75e1c2b482490038afe791e1e353d47f0d2",
+      "edited": false
+    },
+    {
+      "tensor": "blk.57.ffn_up.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "7ca0de6ae0bc032d2ef1de6c286031abeae83ae43fe6fedba407c1c7ec85e409",
+      "edited": false
+    },
+    {
+      "tensor": "blk.57.post_attention_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "a1d4ac83ffd6d25e578f276e7d41bbeb25847eaba9278ab018d5b02ac9a6b3d8",
+      "edited": false
+    },
+    {
+      "tensor": "blk.57.ssm_a",
+      "type": "F32",
+      "encoded_bytes": 192,
+      "sha256": "95a43ed4875dcb09fce1c2897efad7df62fe9316e0be1f3ffc947f02b381346f",
+      "edited": false
+    },
+    {
+      "tensor": "blk.57.ssm_alpha.weight",
+      "type": "Q4_K",
+      "encoded_bytes": 138240,
+      "sha256": "38bbb90c8ec3b3c87651f05ed3e6104fb55ac9e8f80b75817c7c0832c25f6899",
+      "edited": false
+    },
+    {
+      "tensor": "blk.57.ssm_beta.weight",
+      "type": "Q4_K",
+      "encoded_bytes": 138240,
+      "sha256": "cf5b28648b17a5ae037065bb8a46f5b57f7bb8ba80325941606b4611f239b261",
+      "edited": false
+    },
+    {
+      "tensor": "blk.57.ssm_conv1d.weight",
+      "type": "F32",
+      "encoded_bytes": 163840,
+      "sha256": "a2ac3d127bbe36b1cd9a772a740731df5f428458fe579c5a0c6a1bfc22e1d0b7",
+      "edited": false
+    },
+    {
+      "tensor": "blk.57.ssm_dt.bias",
+      "type": "F32",
+      "encoded_bytes": 192,
+      "sha256": "2dc2834ef2ceddafc82967a4376629c752f9fc0afb7642e4249b4191125e7822",
+      "edited": false
+    },
+    {
+      "tensor": "blk.57.ssm_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 512,
+      "sha256": "fe7e2f286f3ddfdf38a4aae8036697c2c69e9f32f88f98c71da9a3181c3222e9",
+      "edited": false
+    },
+    {
+      "tensor": "blk.57.ssm_out.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "153058f875df4e0df0e771fc825d970d4c7553c8e7e106eee935072bdf08796a",
+      "edited": false
+    },
+    {
+      "tensor": "blk.58.attn_gate.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "627f0d29f3cd7f0533b76e4835f7c5dc236ae2c9866d9e91f05760c4a3be7d93",
+      "edited": false
+    },
+    {
+      "tensor": "blk.58.attn_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "667f7bbbbcdadf52b125ae9cd6aeed94740b73a0c6340302e7ea92645fc306d5",
+      "edited": false
+    },
+    {
+      "tensor": "blk.58.attn_qkv.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 36044800,
+      "sha256": "3b53135cc284401ced1bb7aed8fc54b4faa93583c0b4b28446924570c3526cf2",
+      "edited": false
+    },
+    {
+      "tensor": "blk.58.ffn_down.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "a47887f400a47ab11afdd24a28daa0a5aa8a6650db8a467f9e8f40a36b843265",
+      "edited": false
+    },
+    {
+      "tensor": "blk.58.ffn_gate.weight",
+      "type": "IQ4_XS",
+      "encoded_bytes": 47349760,
+      "sha256": "3a4a6b3041e301aa64ea40e3c120483e04865eeecd512dfd41c7add257b81255",
+      "edited": false
+    },
+    {
+      "tensor": "blk.58.ffn_up.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "1fc0cc327463aa4c51b0a1e535807f3e838bb229d70dc23fb8be22571d369daa",
+      "edited": false
+    },
+    {
+      "tensor": "blk.58.post_attention_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "48dde1b36bed2541bceb63b56e0a3028e9503345eeee30c34f8b0a55fb36cc50",
+      "edited": false
+    },
+    {
+      "tensor": "blk.58.ssm_a",
+      "type": "F32",
+      "encoded_bytes": 192,
+      "sha256": "33216c332f0238ad21d09da5eb2fc2452c0f23a3e103785b1263383ee605797e",
+      "edited": false
+    },
+    {
+      "tensor": "blk.58.ssm_alpha.weight",
+      "type": "Q4_K",
+      "encoded_bytes": 138240,
+      "sha256": "d3e1eb5495c56133e1726ecaa162555e7a2f02a95d8a7d7de31f50ea1c98b9ba",
+      "edited": false
+    },
+    {
+      "tensor": "blk.58.ssm_beta.weight",
+      "type": "Q4_K",
+      "encoded_bytes": 138240,
+      "sha256": "a6c192feffc1b0d31577dc211bc436b0cfd1bfd225f1c3a3afcd6e2314728a3b",
+      "edited": false
+    },
+    {
+      "tensor": "blk.58.ssm_conv1d.weight",
+      "type": "F32",
+      "encoded_bytes": 163840,
+      "sha256": "b265577076006240902fbd91ea5682c2cfaf35603d3765f3bc288b05d0764fa5",
+      "edited": false
+    },
+    {
+      "tensor": "blk.58.ssm_dt.bias",
+      "type": "F32",
+      "encoded_bytes": 192,
+      "sha256": "43e2529a40be170b39de829bfe0e48a1778039662fc6b87b808ff3c826caba7a",
+      "edited": false
+    },
+    {
+      "tensor": "blk.58.ssm_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 512,
+      "sha256": "2032d8473e50ce521f8593936984ebca67b2f364028ab4488d8fa203b38c25af",
+      "edited": false
+    },
+    {
+      "tensor": "blk.58.ssm_out.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "2a3f74d0c41e267d00e32af2068008e96fe71ec5ad0dd817ac93c409b5047a62",
+      "edited": false
+    },
+    {
+      "tensor": "blk.59.attn_k.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 3604480,
+      "sha256": "8b97e1cbeb505cc5c32c4c41ed74167ab4b6d94052cf77dd24efd4d09d99a70e",
+      "edited": false
+    },
+    {
+      "tensor": "blk.59.attn_k_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 1024,
+      "sha256": "3d7aba199858b58e42ef96b32d177dc1834efaacffb9fb2aeab9e8e30c972246",
+      "edited": false
+    },
+    {
+      "tensor": "blk.59.attn_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "9c85ad0f84f892cb0745bf17d809c054e99b63d8427ce9c97e4435e733d52c92",
+      "edited": false
+    },
+    {
+      "tensor": "blk.59.attn_output.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "26695587d6e0d9823fac893fd184c43c3b683ef62bd229465ce79ce71d1077f6",
+      "edited": false
+    },
+    {
+      "tensor": "blk.59.attn_q.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 43253760,
+      "sha256": "bdf98ab2d820beac87cbd438686e0856239090380ebf057ecaf8132ccbed14b7",
+      "edited": false
+    },
+    {
+      "tensor": "blk.59.attn_q_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 1024,
+      "sha256": "48600edd91c2f6adb5134322ca5f736ec0bc419806db50221ac92f94360ce27f",
+      "edited": false
+    },
+    {
+      "tensor": "blk.59.attn_v.weight",
+      "type": "Q6_K",
+      "encoded_bytes": 4300800,
+      "sha256": "317936b1d6deb9ef223f88af298d8a3bbe18a6a42f742ac5a43ed4bdfc66579a",
+      "edited": false
+    },
+    {
+      "tensor": "blk.59.ffn_down.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "9d361517cdeaeeb4d83d3a4fa3a411f264cffb56aca0ac1da5a13d277a036b83",
+      "edited": false
+    },
+    {
+      "tensor": "blk.59.ffn_gate.weight",
+      "type": "IQ4_XS",
+      "encoded_bytes": 47349760,
+      "sha256": "96d0e7d253a4ec1ef5d247fff3f88f6f561f63c0fb21474aaa01174fe4194dad",
+      "edited": false
+    },
+    {
+      "tensor": "blk.59.ffn_up.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "40bd4de4f3dc9baaf094485d58ab1a8c70bfc267f18bed0848f068cc8d46906d",
+      "edited": false
+    },
+    {
+      "tensor": "blk.59.post_attention_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "fac5ab66007a3ae5320b17b90d0af5de5131703120b40fee79bfd95486843ba6",
+      "edited": false
+    },
+    {
+      "tensor": "blk.60.attn_gate.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "a36a2ce42e1dd041900acd694606ea5cf6233de900f73e00f20c590d7d504a4e",
+      "edited": false
+    },
+    {
+      "tensor": "blk.60.attn_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "54874de01336203d005afb7c4c8fa49482cd242b8afc4f7c973be46013def3be",
+      "edited": false
+    },
+    {
+      "tensor": "blk.60.attn_qkv.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 36044800,
+      "sha256": "1475b54c710c07775927864441c397c3619b0ce74ee15c297a0c67d19a9299e7",
+      "edited": false
+    },
+    {
+      "tensor": "blk.60.ffn_down.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "7aa90ece9c8f300cc53ac26742726499a76164b1c8dd1f9239293f8ee6c18fd6",
+      "edited": false
+    },
+    {
+      "tensor": "blk.60.ffn_gate.weight",
+      "type": "IQ4_XS",
+      "encoded_bytes": 47349760,
+      "sha256": "87904756172c87417306f9695a86b1b451f59ed6067d4f06e3b98fec3e66e533",
+      "edited": false
+    },
+    {
+      "tensor": "blk.60.ffn_up.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "97355eb66b2890d4dc16dc9675b2823ed8135cef6052babda3367b5364147c12",
+      "edited": false
+    },
+    {
+      "tensor": "blk.60.post_attention_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "c0c4faa6bdc04c955c11dd1276eaaf84dc9496d9142da5947d7a7946f753730c",
+      "edited": false
+    },
+    {
+      "tensor": "blk.60.ssm_a",
+      "type": "F32",
+      "encoded_bytes": 192,
+      "sha256": "d2c052002b6aeebe780c159785dc56901e9a8f9702230cccb72d6c4e3c353699",
+      "edited": false
+    },
+    {
+      "tensor": "blk.60.ssm_alpha.weight",
+      "type": "Q4_K",
+      "encoded_bytes": 138240,
+      "sha256": "4577aaa584edd567ff40d7dd613c9cda5e2c31e093b565ea5a7b011760168a38",
+      "edited": false
+    },
+    {
+      "tensor": "blk.60.ssm_beta.weight",
+      "type": "Q4_K",
+      "encoded_bytes": 138240,
+      "sha256": "0e6d63bbb3163111fbdc9bf2686e9f8a6129f0419adcdb2a491764305a0db9bb",
+      "edited": false
+    },
+    {
+      "tensor": "blk.60.ssm_conv1d.weight",
+      "type": "F32",
+      "encoded_bytes": 163840,
+      "sha256": "ef450e68f7ea29fe02a091d71ae9a4f098cc3fbe596d9d80a44913c6ab406e58",
+      "edited": false
+    },
+    {
+      "tensor": "blk.60.ssm_dt.bias",
+      "type": "F32",
+      "encoded_bytes": 192,
+      "sha256": "74ba2b66dd47a60dab77a580ad7ea17b756071c9255b8714a86e38c73f0b0da1",
+      "edited": false
+    },
+    {
+      "tensor": "blk.60.ssm_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 512,
+      "sha256": "bea90e2369227f8b29878629fe3eeb5d1be42f62002c9a12f9584c4bc94f10f3",
+      "edited": false
+    },
+    {
+      "tensor": "blk.60.ssm_out.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "0bca5c75ee7ea322084b6ca0595e952e6b9a53789b47f7d47ed7093067be9227",
+      "edited": false
+    },
+    {
+      "tensor": "blk.61.attn_gate.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "94feb24ede6792ce85321edf24bd8ec4239581d03b892cfa0e265aad1d0b6b68",
+      "edited": false
+    },
+    {
+      "tensor": "blk.61.attn_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "62f1c04d8db32de39c58c326bab318435e15aaa3104e822219cdb5be6ee7aba7",
+      "edited": false
+    },
+    {
+      "tensor": "blk.61.attn_qkv.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 36044800,
+      "sha256": "662effd9f022bcc2b990d21d6c75d3729260af45f88eb30b611b0dc6fec3808b",
+      "edited": false
+    },
+    {
+      "tensor": "blk.61.ffn_down.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "94684dd89e33570a0ac8b70022e5e2f68d80101ad810205939124f73c512faa3",
+      "edited": false
+    },
+    {
+      "tensor": "blk.61.ffn_gate.weight",
+      "type": "IQ4_XS",
+      "encoded_bytes": 47349760,
+      "sha256": "29d7882e4edfc030f1d87cf51df7ba59e7e280c1f70ba68607e6ad4b1718dcf3",
+      "edited": false
+    },
+    {
+      "tensor": "blk.61.ffn_up.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "0ca9795ce2989a8ad1f794cbfdd127f56f5727ca02c867620b553cb9f91a27a2",
+      "edited": false
+    },
+    {
+      "tensor": "blk.61.post_attention_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "ad379a88bf9a53d715aa19726df31dd97f24ebd47777849fab5586addc1b7302",
+      "edited": false
+    },
+    {
+      "tensor": "blk.61.ssm_a",
+      "type": "F32",
+      "encoded_bytes": 192,
+      "sha256": "c112fe81db05dfdd040fa21c505ce5039fe0e61041944292e690b060454a12b5",
+      "edited": false
+    },
+    {
+      "tensor": "blk.61.ssm_alpha.weight",
+      "type": "Q4_K",
+      "encoded_bytes": 138240,
+      "sha256": "9e2347ecad4e411da0b5a8bc39a063a4a414ae24d4475a4e94854ad5be430702",
+      "edited": false
+    },
+    {
+      "tensor": "blk.61.ssm_beta.weight",
+      "type": "Q4_K",
+      "encoded_bytes": 138240,
+      "sha256": "eee4458f742f97f5072f10a10eccbcce424d0309980fdde3e67d1c4321a27a73",
+      "edited": false
+    },
+    {
+      "tensor": "blk.61.ssm_conv1d.weight",
+      "type": "F32",
+      "encoded_bytes": 163840,
+      "sha256": "92ceaa28f45eea54040d8b787099229e73bc2620d0e16bc91ef2493c6d73ce27",
+      "edited": false
+    },
+    {
+      "tensor": "blk.61.ssm_dt.bias",
+      "type": "F32",
+      "encoded_bytes": 192,
+      "sha256": "1040f61b0e8985ec97fd6b1a3b713f11102093f9671ff39086245cc7f8af95e7",
+      "edited": false
+    },
+    {
+      "tensor": "blk.61.ssm_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 512,
+      "sha256": "3f169623f54fc7c15d14201a79f9b9c34344749db3771961678cc820fd3313fa",
+      "edited": false
+    },
+    {
+      "tensor": "blk.61.ssm_out.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "89e9e4cdbfc77cfcb61edae409b7736aa921f6c6d97baa3f54fdb4b4660364bd",
+      "edited": false
+    },
+    {
+      "tensor": "blk.62.attn_gate.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "56929da2a04f328a42a9fe8b06fd18394fd9526b8c317522f1377fb2e95a713e",
+      "edited": false
+    },
+    {
+      "tensor": "blk.62.attn_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "0b19d339b6c04fdee1ac36451b0373188d67a0d75b30961a3e41993b6041af74",
+      "edited": false
+    },
+    {
+      "tensor": "blk.62.attn_qkv.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 36044800,
+      "sha256": "6e0824ef774b2eadd7e48dc92b5c68928446590b607472223d2a9df580c543a1",
+      "edited": false
+    },
+    {
+      "tensor": "blk.62.ffn_down.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "151b87d61432eb9f698cd1259073ee0001a80f85797a1dca1384e97bd005846a",
+      "edited": false
+    },
+    {
+      "tensor": "blk.62.ffn_gate.weight",
+      "type": "IQ4_XS",
+      "encoded_bytes": 47349760,
+      "sha256": "bcbe05bc373e7bc116f7eee6cf29a466cea0a954d759eca2d0325c1490377707",
+      "edited": false
+    },
+    {
+      "tensor": "blk.62.ffn_up.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "c9ef5360cd3e3224953649657bb47e3db7112dab249f10489069d65846a26865",
+      "edited": false
+    },
+    {
+      "tensor": "blk.62.post_attention_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "b914f6b060b4f454df3dc35049ef24fd1d3ccc29605b002995a0604afb01d37b",
+      "edited": false
+    },
+    {
+      "tensor": "blk.62.ssm_a",
+      "type": "F32",
+      "encoded_bytes": 192,
+      "sha256": "84573116326d9d788c61c3e940e02c6aa7d266eba639e934c18741d41f7c4b23",
+      "edited": false
+    },
+    {
+      "tensor": "blk.62.ssm_alpha.weight",
+      "type": "Q4_K",
+      "encoded_bytes": 138240,
+      "sha256": "d0868b1412889ff676a392aad8fa529f466c04d593bed4f94454ab01bb885b1b",
+      "edited": false
+    },
+    {
+      "tensor": "blk.62.ssm_beta.weight",
+      "type": "Q4_K",
+      "encoded_bytes": 138240,
+      "sha256": "65190564d10e02c8cc1de50da4922d3bf999547f74b7e15bf4bdd877a5e9717a",
+      "edited": false
+    },
+    {
+      "tensor": "blk.62.ssm_conv1d.weight",
+      "type": "F32",
+      "encoded_bytes": 163840,
+      "sha256": "1541836d38e5e01ff6ea745a43aacba72eaaaa50d1a38f5545aa2e2991c1b55f",
+      "edited": false
+    },
+    {
+      "tensor": "blk.62.ssm_dt.bias",
+      "type": "F32",
+      "encoded_bytes": 192,
+      "sha256": "7ccaa896a5bc1bceb6bb7052ed68f7199352c0af059356bc69d372300ee8a7b7",
+      "edited": false
+    },
+    {
+      "tensor": "blk.62.ssm_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 512,
+      "sha256": "e0d98987760867713536f1c1b393b3204dbda5b12138e617bc782115d3e20cc7",
+      "edited": false
+    },
+    {
+      "tensor": "blk.62.ssm_out.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "0af2393723f6635b708752f77a1ceb3f95c97a89ae3ab97c457116be411cc4e1",
+      "edited": false
+    },
+    {
+      "tensor": "blk.63.attn_k.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 3604480,
+      "sha256": "7104bb0c7e7d9f320786fab2cbe83c3defc7d3157c4a07202b05a6ecfd651149",
+      "edited": false
+    },
+    {
+      "tensor": "blk.63.attn_k_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 1024,
+      "sha256": "608caf3455763b4e6b88c7ea35f063261b19d9930da89776da3562471d0c76d8",
+      "edited": false
+    },
+    {
+      "tensor": "blk.63.attn_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "b7a3d04e9c3d8f0f02b1adacbbce621fdad2cda3b53afcaa4d53eec2e9e3e111",
+      "edited": false
+    },
+    {
+      "tensor": "blk.63.attn_output.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "51121b749d3d87f97d7e566950b2245fd3ff137c9d0a60b72e199d0115b2b12b",
+      "edited": false
+    },
+    {
+      "tensor": "blk.63.attn_q.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 43253760,
+      "sha256": "4338890b72e9c048d9ea1f8c3f433087f35afac3dbcaef836ad1938b3623dbb6",
+      "edited": false
+    },
+    {
+      "tensor": "blk.63.attn_q_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 1024,
+      "sha256": "4d82f12e9d3e60003032eee0c0a413b85588b9253ba3bfe43456eed32a91960c",
+      "edited": false
+    },
+    {
+      "tensor": "blk.63.attn_v.weight",
+      "type": "Q6_K",
+      "encoded_bytes": 4300800,
+      "sha256": "84d915583fc635debc48a55c559325dfaed5d86a8734194670932af7316b77ce",
+      "edited": false
+    },
+    {
+      "tensor": "blk.63.ffn_down.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "716c2218beb983c60c0c0d230a651bf42e50efe551770d3ea9d45add564492d7",
+      "edited": false
+    },
+    {
+      "tensor": "blk.63.ffn_gate.weight",
+      "type": "IQ4_XS",
+      "encoded_bytes": 47349760,
+      "sha256": "f06c94cebd0f7460fc7cab51b093305610e94744eaa469a52f9d2808deb1abe4",
+      "edited": false
+    },
+    {
+      "tensor": "blk.63.ffn_up.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "addfcc00dd729704683bb482fb6e1d99ea78c2333b9a40c58c79d26898b5a45d",
+      "edited": false
+    },
+    {
+      "tensor": "blk.63.post_attention_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "818177b53c6fc3f0b6ed1c5b25f24e583c3f90ea4c79db65f83c0b24110d7f96",
+      "edited": false
+    },
+    {
+      "tensor": "blk.64.attn_k.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 3604480,
+      "sha256": "c69114093ed131f9f5d039b03fdcc6a65340c8bf1e29f2b611acb3a55e21d2c9",
+      "edited": false
+    },
+    {
+      "tensor": "blk.64.attn_k_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 1024,
+      "sha256": "40f088929b36af4dbbf195eed2bd242d23d54cd4d87e6fd4c10c630f3401524f",
+      "edited": false
+    },
+    {
+      "tensor": "blk.64.attn_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "a31c7d7bc4a546dcd4a46adce3e9bd10c64d62a01df195fc137c3f0649646e0a",
+      "edited": false
+    },
+    {
+      "tensor": "blk.64.attn_output.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 21626880,
+      "sha256": "73b93ed954c420282b53fbbff9f52b8d170ccd67947181932332b1f6b44f123c",
+      "edited": false
+    },
+    {
+      "tensor": "blk.64.attn_q.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 43253760,
+      "sha256": "52fc2937ef64c9c24a4a0a18bc457e19debd97e05143e9e063c83fe90af583bd",
+      "edited": false
+    },
+    {
+      "tensor": "blk.64.attn_q_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 1024,
+      "sha256": "b7e830789db2e5a625c7e8656aa65de21de6ef6e2c3b545e31317dc0754bf203",
+      "edited": false
+    },
+    {
+      "tensor": "blk.64.attn_v.weight",
+      "type": "Q6_K",
+      "encoded_bytes": 4300800,
+      "sha256": "e925316727c506dc1b66c7ec62b65352d68f50cabb35a8f9978faab1ab52122a",
+      "edited": false
+    },
+    {
+      "tensor": "blk.64.ffn_down.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "7f99c5764ff9ee8eae3bf5dd06c7ff329bb6f951d1973cf0bd54dec328cf836a",
+      "edited": false
+    },
+    {
+      "tensor": "blk.64.ffn_gate.weight",
+      "type": "IQ4_XS",
+      "encoded_bytes": 47349760,
+      "sha256": "7b1c4f8171fdd29ec50c1ec9960caf0ed31f9081a0a2767c70d2df61459cf5f8",
+      "edited": false
+    },
+    {
+      "tensor": "blk.64.ffn_up.weight",
+      "type": "Q5_K",
+      "encoded_bytes": 61276160,
+      "sha256": "2d9636abe58bd84b9fa38468811837b3b9f2a455503428c05d9f38c3b66ec5ec",
+      "edited": false
+    },
+    {
+      "tensor": "blk.64.nextn.eh_proj.weight",
+      "type": "Q6_K",
+      "encoded_bytes": 43008000,
+      "sha256": "5e72ecfbdff8f87139874ff85031dc18bc275fcd1639a3b124690c73ca3b9e07",
+      "edited": false
+    },
+    {
+      "tensor": "blk.64.nextn.enorm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "d96abe72c938e866b5a8bdaa8aa9f8590577f55bef6281c2e9fce892db518d97",
+      "edited": false
+    },
+    {
+      "tensor": "blk.64.nextn.hnorm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "a8fe7f54cf73ff4c44308ccd3fffaba344cd58fcebacb35678157a80ea08b9f4",
+      "edited": false
+    },
+    {
+      "tensor": "blk.64.nextn.shared_head_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "afdf2c4845dcce4470aeaf40e1726690b606eb642c5a4145a0e3f2598b0734d0",
+      "edited": false
+    },
+    {
+      "tensor": "blk.64.post_attention_norm.weight",
+      "type": "F32",
+      "encoded_bytes": 20480,
+      "sha256": "68ae291cc91ed32430e94b6bdc3d75c4b5264387307a59fd25f93dc58b718c1a",
+      "edited": false
+    }
+  ]
+}
