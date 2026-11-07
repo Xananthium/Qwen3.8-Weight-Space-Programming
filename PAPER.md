@@ -2,6 +2,13 @@
 
 **Xananthium · November 2026 · AI-assisted experimental report**
 
+**V2 follow-up:** This paper preserves the original three-layer study. The
+[6 November report](followup_20261106/REPORT.md) adds 14 new weight variants,
+language and thinking examples, the layer-18 pilot, and its subsequent selection
+for production. [Download Calmer V2](https://huggingface.co/Xananthium/Calmer-V2-Qwen3.8-27B-4bit).
+Its measurements and artifact-specific validation remain separate from the
+historical results below.
+
 ## Abstract
 
 We study fixed, data-fitted weight edits to a mixed-precision 27B GGUF checkpoint, motivated by repetitive reasoning continuations. Four constructed productive/repetitive GSM pairs identify residual contrast directions and sparse input writers. The selected intervention subtracts rank-one updates from three MLP down-projections, with 64 supported input columns per matrix and no runtime prompt-dependent selection. Fourteen laboratory conditions and five actual-serving conditions reveal non-monotone effects of layer repetition, edit dose, task, and seed. In a fixed 32-question HLE characterization, selected half dose changes strict correctness from 3/32 to 4/32 through three gains and two losses, repairs none of ten prespecified completed misses, and increases tokens by 12.8%. Constructed repetitive continuations improve from one to two completed correct answers with 75.0% fewer combined tokens, while GSM and state retention regress. Analysis of 503 saved generations separates exact thinking/final token counts, censoring, lexical markers, and case-focused proof reviews. The release is an experimental tradeoff, not a validated general upgrade; historical scores belong to the measured packed-weight/FP32-correction runtime.

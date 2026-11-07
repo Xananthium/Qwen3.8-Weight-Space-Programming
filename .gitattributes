@@ -5,3 +5,7 @@ runtime/overrides/** linguist-vendored
 evidence/source_notices/** linguist-vendored
 evidence/*.csv linguist-generated
 language_analysis/public/** linguist-generated
+# Preserve generated SVG/CSV bytes and verbatim smoke logs covered by V2 hashes.
+followup_20261106/figures/*.svg linguist-generated -whitespace
+followup_20261106/metrics/*.csv linguist-generated whitespace=cr-at-eol
+release/v2/native_smoke*.txt -whitespace

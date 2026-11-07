@@ -1,0 +1,8 @@
+{
+  "status": "User-selected Calmer V2 hands-on pilot; active after authorized reboot.",
+  "verified_utc": "2026-11-06T23:45:48.275647+00:00",
+  "profile_manifest_sha256": "9e14e0e25af3c81eb412ed042dbce773d9f2160121c4ab0362d373f1c8f42430",
+  "startup_and_smoke_passed": true,
+  "benchmark_confirmation": false,
+  "limits": "Startup binding checks and a small readiness response are not warm/second-seed/GSM24 benchmark confirmation. Operational selection does not revise experimental grades."
+}

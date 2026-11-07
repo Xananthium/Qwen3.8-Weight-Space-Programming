@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "standard_library_only": true,
+  "batches": 46,
+  "response_records": 248,
+  "observed_generated_tokens": 933411,
+  "selected_literal_spans": 7,
+  "local_links_checked": 31,
+  "host_and_raw_field_screens_passed": true,
+  "manifest_hashes_checked": false,
+  "authorized_source_inputs_checked": 0,
+  "scope_limit": "Public checks authenticate the reduced package; source access is required for raw slice verification. Manual content review, not these checks alone, establishes the excerpt publication scope."
+}

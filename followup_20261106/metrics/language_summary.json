@@ -1,0 +1,146 @@
+[
+  {
+    "run": "000_calmer",
+    "panel": "fast5_seed06",
+    "n": 5,
+    "thinking_words": 11155,
+    "wait_occurrences": 31,
+    "wait_per_1000_thinking_words": 2.7790228597041686,
+    "total_tokens": 23831
+  },
+  {
+    "run": "001_original",
+    "panel": "fast5_seed06",
+    "n": 5,
+    "thinking_words": 13499,
+    "wait_occurrences": 54,
+    "wait_per_1000_thinking_words": 4.000296318245796,
+    "total_tokens": 28481
+  },
+  {
+    "run": "002_l62_01pct",
+    "panel": "fast5_seed06",
+    "n": 5,
+    "thinking_words": 10221,
+    "wait_occurrences": 34,
+    "wait_per_1000_thinking_words": 3.326484688386655,
+    "total_tokens": 20501
+  },
+  {
+    "run": "003_l62_03pct",
+    "panel": "fast5_seed06",
+    "n": 5,
+    "thinking_words": 7245,
+    "wait_occurrences": 26,
+    "wait_per_1000_thinking_words": 3.588681849551415,
+    "total_tokens": 16042
+  },
+  {
+    "run": "004_attention55_005pct",
+    "panel": "fast5_seed06",
+    "n": 5,
+    "thinking_words": 15077,
+    "wait_occurrences": 58,
+    "wait_per_1000_thinking_words": 3.846919148371692,
+    "total_tokens": 32616
+  },
+  {
+    "run": "005_mlp53_005pct",
+    "panel": "fast5_seed06",
+    "n": 5,
+    "thinking_words": 11342,
+    "wait_occurrences": 29,
+    "wait_per_1000_thinking_words": 2.5568682771997886,
+    "total_tokens": 26223
+  },
+  {
+    "run": "006_neuron18_zero",
+    "panel": "fast5_seed06",
+    "n": 5,
+    "thinking_words": 10852,
+    "wait_occurrences": 40,
+    "wait_per_1000_thinking_words": 3.6859565057132326,
+    "total_tokens": 23463
+  },
+  {
+    "run": "007_mlp53_random_u",
+    "panel": "fast5_seed06",
+    "n": 5,
+    "thinking_words": 10148,
+    "wait_occurrences": 34,
+    "wait_per_1000_thinking_words": 3.3504138746551044,
+    "total_tokens": 21530
+  },
+  {
+    "run": "008b_calmer_reproducibility",
+    "panel": "fast5_seed06",
+    "n": 5,
+    "thinking_words": 8883,
+    "wait_occurrences": 32,
+    "wait_per_1000_thinking_words": 3.6023865811099856,
+    "total_tokens": 20072
+  },
+  {
+    "run": "009_l62_02pct",
+    "panel": "fast5_seed06",
+    "n": 5,
+    "thinking_words": 13090,
+    "wait_occurrences": 48,
+    "wait_per_1000_thinking_words": 3.6669213139801373,
+    "total_tokens": 26311
+  },
+  {
+    "run": "010_l61_01pct",
+    "panel": "fast5_seed06",
+    "n": 5,
+    "thinking_words": 15633,
+    "wait_occurrences": 45,
+    "wait_per_1000_thinking_words": 2.8785261945883707,
+    "total_tokens": 33784
+  },
+  {
+    "run": "012_l62_03pct_eosprotected",
+    "panel": "fast5_seed06",
+    "n": 5,
+    "thinking_words": 13381,
+    "wait_occurrences": 47,
+    "wait_per_1000_thinking_words": 3.512443016217024,
+    "total_tokens": 30833
+  },
+  {
+    "run": "012a_l62_eosclosingprotected",
+    "panel": "fast5_seed06",
+    "n": 5,
+    "thinking_words": 11691,
+    "wait_occurrences": 42,
+    "wait_per_1000_thinking_words": 3.59250705671029,
+    "total_tokens": 25017
+  },
+  {
+    "run": "012b_l62_adaptive_selector",
+    "panel": "fast5_seed06",
+    "n": 5,
+    "thinking_words": 8319,
+    "wait_occurrences": 18,
+    "wait_per_1000_thinking_words": 2.163721601153985,
+    "total_tokens": 21496
+  },
+  {
+    "run": "013_mlp18_005pct",
+    "panel": "fast5_seed06",
+    "n": 5,
+    "thinking_words": 8053,
+    "wait_occurrences": 30,
+    "wait_per_1000_thinking_words": 3.7253197566124427,
+    "total_tokens": 18481
+  },
+  {
+    "run": "014_attention63_005pct",
+    "panel": "fast5_seed06",
+    "n": 5,
+    "thinking_words": 9653,
+    "wait_occurrences": 33,
+    "wait_per_1000_thinking_words": 3.418626333782244,
+    "total_tokens": 20962
+  }
+]

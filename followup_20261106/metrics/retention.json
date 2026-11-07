@@ -1,0 +1,138 @@
+[
+  {
+    "run": "000_calmer",
+    "strict_correct": 5,
+    "n": 6,
+    "reviewed_content_correct": 6,
+    "tokens": 3291,
+    "cutoffs": 0
+  },
+  {
+    "run": "001_original",
+    "strict_correct": 3,
+    "n": 6,
+    "reviewed_content_correct": 4,
+    "tokens": 11059,
+    "cutoffs": 1
+  },
+  {
+    "run": "002_l62_01pct",
+    "strict_correct": 5,
+    "n": 6,
+    "reviewed_content_correct": 6,
+    "tokens": 3585,
+    "cutoffs": 0
+  },
+  {
+    "run": "003_l62_03pct",
+    "strict_correct": 4,
+    "n": 6,
+    "reviewed_content_correct": 4,
+    "tokens": 3349,
+    "cutoffs": 0
+  },
+  {
+    "run": "004_attention55_005pct",
+    "strict_correct": 5,
+    "n": 6,
+    "reviewed_content_correct": 6,
+    "tokens": 3200,
+    "cutoffs": 0
+  },
+  {
+    "run": "005_mlp53_005pct",
+    "strict_correct": 6,
+    "n": 6,
+    "reviewed_content_correct": 6,
+    "tokens": 3597,
+    "cutoffs": 0
+  },
+  {
+    "run": "006_neuron18_zero",
+    "strict_correct": 6,
+    "n": 6,
+    "reviewed_content_correct": 6,
+    "tokens": 3452,
+    "cutoffs": 0
+  },
+  {
+    "run": "007_mlp53_random_u",
+    "strict_correct": 5,
+    "n": 6,
+    "reviewed_content_correct": 6,
+    "tokens": 3663,
+    "cutoffs": 0
+  },
+  {
+    "run": "008_calmer_expanded",
+    "strict_correct": 5,
+    "n": 6,
+    "reviewed_content_correct": 6,
+    "tokens": 3291,
+    "cutoffs": 0
+  },
+  {
+    "run": "008a_combo53_attention55",
+    "strict_correct": 6,
+    "n": 6,
+    "reviewed_content_correct": 6,
+    "tokens": 3152,
+    "cutoffs": 0
+  },
+  {
+    "run": "009_l62_02pct",
+    "strict_correct": 5,
+    "n": 6,
+    "reviewed_content_correct": 6,
+    "tokens": 3933,
+    "cutoffs": 0
+  },
+  {
+    "run": "010_l61_01pct",
+    "strict_correct": 6,
+    "n": 6,
+    "reviewed_content_correct": 6,
+    "tokens": 3423,
+    "cutoffs": 0
+  },
+  {
+    "run": "012_l62_03pct_eosprotected",
+    "strict_correct": 4,
+    "n": 6,
+    "reviewed_content_correct": 6,
+    "tokens": 3574,
+    "cutoffs": 0
+  },
+  {
+    "run": "012a_l62_eosclosingprotected",
+    "strict_correct": 5,
+    "n": 6,
+    "reviewed_content_correct": 6,
+    "tokens": 3582,
+    "cutoffs": 0
+  },
+  {
+    "run": "012b_l62_adaptive_selector",
+    "strict_correct": 6,
+    "n": 6,
+    "reviewed_content_correct": 6,
+    "tokens": 3686,
+    "cutoffs": 0
+  },
+  {
+    "run": "013_mlp18_005pct",
+    "strict_correct": 5,
+    "n": 6,
+    "reviewed_content_correct": 6,
+    "tokens": 4694,
+    "cutoffs": 0
+  },
+  {
+    "run": "014_attention63_005pct",
+    "strict_correct": 3,
+    "n": 6,
+    "reviewed_content_correct": 5,
+    "tokens": 10626,
+    "cutoffs": 1
+  }
+]

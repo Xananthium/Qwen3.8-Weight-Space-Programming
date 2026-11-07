@@ -1,0 +1,24 @@
+{
+  "source_gguf_sha256": "ba36dc3c2b2ff5e0aa5d71092a8894546996a6a119ae391803dda07cdc08516d",
+  "output_gguf_sha256": "8c046db3518f3711f797a832153362f413aa29e9ab8aef675f88a0842291c1a1",
+  "source_field_count": 57,
+  "output_field_count": 66,
+  "preserved_source_field_count_excluding_name_and_GGUF": 53,
+  "new_keys": [
+    "weight_edit.alpha",
+    "weight_edit.base_repo",
+    "weight_edit.base_revision",
+    "weight_edit.base_sha256",
+    "weight_edit.delta_sha256",
+    "weight_edit.execution_note",
+    "weight_edit.formula",
+    "weight_edit.layers",
+    "weight_edit.version"
+  ],
+  "general_name_changed_intentionally": true,
+  "license_fields_present_in_source": [
+    "general.license.name",
+    "general.license.link"
+  ],
+  "all_other_source_metadata_values_equal": true
+}

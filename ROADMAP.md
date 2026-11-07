@@ -2,6 +2,21 @@
 
 These are invitations to contribute, not promised results or a release schedule. Propose a small, discriminating test before committing to a large sweep.
 
+## V2 follow-up priorities
+
+The [layer-18 pilot](followup_20261106/REPORT.md) is available for use. Its next
+scientific checks are the interrupted warm-start/second-seed replication and
+the unrun V2 GSM24 panel. Keep request order, cache state, prompts, sampling and
+caps recorded: the follow-up found different trajectories from the same weights
+and request seed under different serving histories.
+
+Further contributions can compare V2's merged and sidecar representations,
+test selectable reasoning levels with matched sampling, or add original tasks
+that distinguish useful self-correction from redundant checking. Preserve the
+medium/1.3 reference and report explanation errors alongside final-answer grades.
+
+## Shared research questions
+
 | Question | A useful next experiment | Resources |
 |---|---|---|
 | Does the selected edit reproduce across seeds? | Freeze an original, checkable panel; compare control and selected edit across matched seeds; report the full distribution and all cutoffs. | GPU |

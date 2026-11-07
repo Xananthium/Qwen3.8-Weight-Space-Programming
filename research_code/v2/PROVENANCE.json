@@ -1,0 +1,37 @@
+{
+  "schema": "calmer-v2-public-method-provenance-v1",
+  "date": "2026-11-06",
+  "public_sha256": {
+    "fit_mlp18.py": "2a772ff687b11d1a116e590b6970cf9daa996f39a5a5d88b348f92243404bfb7",
+    "authored_pairs.json": "6f3e1c07faaceb9d37842a25b0c98c22ed8dce01d3f9847425d285e1b344bdff",
+    "README.md": "f7caaa7442d0c56ac5c6b1b53de3fa2dbf51707ba468dcf1b5f3bb772ea5b1a0",
+    "verify_public.py": "335e433035affbc4b9add755e61486a2e4a363773363d0c2ca347957de421713"
+  },
+  "private_source_sha256": {
+    "followup_20261106/protected_mlp/analyze_fit.py": "5f26db4ba221fd06e5e6ea29e2487424d9e40b1a297014ab55b15b4c9ece517a",
+    "followup_20261106/protected_mlp/build_candidates.py": "63b9eebb9efb2821cce6d8dadd4d55e985ca7001ca40f10a0e0b5b2e6189bee7",
+    "followup_20261106/probes/original_progress_pairs.json": "f6b141be63d95f0312f9d0ed1d67b03c118fb6fa20f6941ab9b424acb4c16105",
+    "followup_20261106/probes/build_original_progress_pairs.py": "7b86f584d80863f7876997336805532dbd0a1bf7ff85665ba8049033ccf925c9",
+    "followup_20261106/lab/worker_ops.py": "a1551e227771898c8286eacffefcc1279952411b689bec803587b86cb79afd38"
+  },
+  "transformations": [
+    "fit_mlp18.py ports sparse_fit, output_direction, layer18 support32 dose0.005 assembly from source analyze_fit.py and build_candidates.py; replaces fixed private paths and all-layer scan with explicit CLI inputs and shape/finite guards.",
+    "authored_pairs.json extracts only id, domain, original problem, two exact capture prefixes, and shared authored final result from original_progress_pairs.json. It omits full-prefix provenance, diagnostic offsets, private capture job records, and generated data.",
+    "verify_public.py is new standard-library packaging check; it does not validate model behavior."
+  ],
+  "private_input_limitations": [
+    "Frozen capture NPZs, model weights, and capture/serving glue are not public in this directory.",
+    "Captures require the V1 three-layer edit at alpha 1.5 and the exact model/template/hook boundary.",
+    "The six authored pairs are discovery fit inputs, not held-out validation."
+  ],
+  "frozen_artifacts": {
+    "v1_base_three_layer_npz_sha256": "ebb80ab4f906b7c7fbc61e95dd285b1e27b82b35e3e68982e575ccbfe80f8b51",
+    "v2_selected_four_layer_npz_sha256": "c12820b9bc65e691853a1073c8647fed47cb5521ef3fbcd19817d684006debba"
+  },
+  "cpu_reconstruction_check": {
+    "result": "exact NPZ SHA-256 match to selected four-layer candidate using original private captures and base edit",
+    "executed": true,
+    "model_calls": false,
+    "gpu_calls": false
+  }
+}

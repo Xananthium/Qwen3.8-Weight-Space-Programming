@@ -1,0 +1,9 @@
+<think>
+The user asks "What is 2 + 2?" and wants the answer as the number only. 2 + 2 = 4.
+</think>
+
+4
+
+> EOF by user
+
+

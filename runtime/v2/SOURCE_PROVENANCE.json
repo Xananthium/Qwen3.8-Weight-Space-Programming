@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "selected_profile_manifest_sha256": "9e14e0e25af3c81eb412ed042dbce773d9f2160121c4ab0362d373f1c8f42430",
+  "selected_candidate_sha256": "c12820b9bc65e691853a1073c8647fed47cb5521ef3fbcd19817d684006debba",
+  "selected_core_sha256": "1cccd1f6f7fbb44939ae52d0aec006ae05d9fc4c7fc26b1bf513f341d09a4737",
+  "selected_integration_sha256": "7bf76d83194b3d9d5e2fc6ed7685ed72b4c4dd493c1e82a3fa789f2bf6c29ca9",
+  "plugin_repository": "https://github.com/vllm-project/vllm-gguf-plugin",
+  "plugin_commit": "e62877c30519305f3c82dc0d616cf62b5ed67133",
+  "llama_repository": "https://github.com/ggml-org/llama.cpp.git",
+  "llama_commit": "002a12ad25503a93501b2e188c360029830a241a",
+  "tested_CUDA_extension_sha256": "e3cefbcc99a4008b96d52daeaddae770dad20b28f27432e18a4fdc894a912548",
+  "tested_CUDA_extension_distributed": false,
+  "tested_build_note": "SM86 incremental build combines nvcc13.3 upstream translation units and six final objects from nvcc13.0.88, CUDA runtime13.0. Binary embeds private build paths and is deliberately excluded. A clean source rebuild is not claimed byte-identical or benchmark-equivalent.",
+  "copied_runtime_source": "Frozen selected static plugin core/integration, frozen GGUF Python package and seven vLLM overrides; PR141 CUDA bridge and explicitly pinned llama.cpp source closure. No environment dumps, systemd files or compilation caches."
+}

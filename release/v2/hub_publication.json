@@ -1,0 +1,50 @@
+{
+  "repo_id": "Xananthium/Calmer-V2-Qwen3.8-27B-4bit",
+  "url": "https://huggingface.co/Xananthium/Calmer-V2-Qwen3.8-27B-4bit",
+  "revision": "4fdf70af443808781c92c19eab676a030e8e836a",
+  "verified_utc": "2026-11-07T01:13:25.924347+00:00",
+  "public": true,
+  "expected_file_count": 284,
+  "remote_file_count": 285,
+  "all_expected_sizes_match": true,
+  "all_lfs_sha256_match": true,
+  "all_non_lfs_git_blob_ids_match": true,
+  "non_lfs_git_blobs_checked": 279,
+  "download_verified_files": [
+    "README.md",
+    "calmer_delta.npz",
+    "release_manifest.json",
+    "SHA256SUMS",
+    "runtime/edit_manifest.json",
+    "runtime/README.txt",
+    "release/native_smoke.json",
+    "export_tools/export_calmer_v2_gguf.py"
+  ],
+  "large_files": [
+    {
+      "path": "Calmer-V2-Qwen3.8-27B-Q4_K_P-F32Edits.gguf",
+      "bytes": 19104353280,
+      "sha256": "8c046db3518f3711f797a832153362f413aa29e9ab8aef675f88a0842291c1a1"
+    },
+    {
+      "path": "calmer_delta.npz",
+      "bytes": 362698,
+      "sha256": "c12820b9bc65e691853a1073c8647fed47cb5521ef3fbcd19817d684006debba"
+    },
+    {
+      "path": "hf-config/tokenizer.json",
+      "bytes": 12809320,
+      "sha256": "0997f410c57a1f4e53b09e4be8f4a172d90edd9564368fb0847030937229b9f3"
+    },
+    {
+      "path": "mmproj-Qwen3.8-27B-BF16.gguf",
+      "bytes": 931146624,
+      "sha256": "5681b690bcb8eb10cd28d62d078cb4e01521a3ea4880a3fc7d54de72de2dd142"
+    },
+    {
+      "path": "runtime/calmer_delta.npz",
+      "bytes": 362698,
+      "sha256": "c12820b9bc65e691853a1073c8647fed47cb5521ef3fbcd19817d684006debba"
+    }
+  ]
+}

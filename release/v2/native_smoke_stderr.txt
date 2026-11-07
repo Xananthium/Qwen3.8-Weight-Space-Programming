@@ -1,0 +1,62 @@
+warning: no usable GPU found, --gpu-layers option will be ignored
+warning: one possible reason is that llama.cpp was compiled without GPU support
+warning: consult docs/build.md for compilation instructions
+0.00.007.417 I llama_completion: llama backend init
+0.00.007.421 I llama_completion: load the model and apply lora adapter, if any
+0.01.084.115 W model has unused tensor blk.64.attn_norm.weight (size = 20480 bytes) -- ignoring
+0.01.084.122 W model has unused tensor blk.64.post_attention_norm.weight (size = 20480 bytes) -- ignoring
+0.01.084.131 W model has unused tensor blk.64.attn_q.weight (size = 43253760 bytes) -- ignoring
+0.01.084.143 W model has unused tensor blk.64.attn_k.weight (size = 3604480 bytes) -- ignoring
+0.01.084.146 W model has unused tensor blk.64.attn_v.weight (size = 4300800 bytes) -- ignoring
+0.01.084.158 W model has unused tensor blk.64.attn_output.weight (size = 21626880 bytes) -- ignoring
+0.01.084.162 W model has unused tensor blk.64.attn_q_norm.weight (size = 1024 bytes) -- ignoring
+0.01.084.165 W model has unused tensor blk.64.attn_k_norm.weight (size = 1024 bytes) -- ignoring
+0.01.084.169 W model has unused tensor blk.64.ffn_gate.weight (size = 47349760 bytes) -- ignoring
+0.01.084.172 W model has unused tensor blk.64.ffn_down.weight (size = 61276160 bytes) -- ignoring
+0.01.084.175 W model has unused tensor blk.64.ffn_up.weight (size = 61276160 bytes) -- ignoring
+0.01.084.180 W model has unused tensor blk.64.nextn.eh_proj.weight (size = 43008000 bytes) -- ignoring
+0.01.084.184 W model has unused tensor blk.64.nextn.enorm.weight (size = 20480 bytes) -- ignoring
+0.01.084.188 W model has unused tensor blk.64.nextn.hnorm.weight (size = 20480 bytes) -- ignoring
+0.01.084.198 W model has unused tensor blk.64.nextn.shared_head_norm.weight (size = 20480 bytes) -- ignoring
+0.01.992.194 I cmn          init: llama threadpool init, n_threads = 2
+0.03.865.532 I llama_completion: chat template is available, enabling conversation mode (disable it with -no-cnv)
+0.03.865.536 W *** User-specified prompt will pre-start conversation, did you mean to set --system-prompt (-sys) instead?
+0.03.867.876 I llama_completion: chat template example:
+<|im_start|>system
+You are a helpful assistant<|im_end|>
+<|im_start|>user
+Hello<|im_end|>
+<|im_start|>assistant
+Hi there<|im_end|>
+<|im_start|>user
+How are you?<|im_end|>
+<|im_start|>assistant
+
+0.03.867.877 I 
+0.03.867.920 I system_info: n_threads = 2 (n_threads_batch = 2) / 20 | CPU : SSE3 = 1 | SSSE3 = 1 | AVX = 1 | AVX2 = 1 | F16C = 1 | FMA = 1 | BMI2 = 1 | AVX512 = 1 | AVX512_VNNI = 1 | LLAMAFILE = 1 | OPENMP = 1 | REPACK = 1 | 
+0.03.867.920 I 
+0.03.868.046 I llama_completion: interactive mode on.
+0.03.868.048 I sampler seed: 20261105
+0.03.868.055 I sampler params: 
+	repeat_last_n = 64, repeat_penalty = 1.000, frequency_penalty = 0.000, presence_penalty = 0.000
+	dry_multiplier = 0.000, dry_base = 1.750, dry_allowed_length = 2, dry_penalty_last_n = 64
+	top_k = 20, top_p = 0.950, min_p = 0.000, xtc_probability = 0.000, xtc_threshold = 0.100, typical_p = 1.000, top_n_sigma = -1.000, temp = 1.300
+	mirostat = 0, mirostat_lr = 0.100, mirostat_ent = 5.000, adaptive_target = -1.000, adaptive_decay = 0.900
+0.03.868.059 I sampler chain: logits -> ?penalties -> ?dry -> ?top-n-sigma -> top-k -> ?typical -> top-p -> ?min-p -> ?xtc -> temp-ext -> dist 
+0.03.868.060 I generate: n_ctx = 2048, n_batch = 2048, n_predict = 128, n_keep = 0
+0.03.868.060 I 
+0.03.868.060 I == Running in interactive mode. ==
+0.03.868.060 I  - Press Ctrl+C to interject at any time.
+0.03.868.061 I  - Press Return to return control to the AI.
+ - To return control without starting a new line, end your input with '/'.
+ - If you want to submit another line, end your input with '\'.
+0.03.868.061 I  - Not using system message. To change it, set a different value via -sys PROMPT
+0.03.868.061 I 
+1.07.060.884 I common_perf_print:    sampling time =      28.14 ms
+1.07.060.885 I common_perf_print:    samplers time =      14.55 ms /    68 tokens
+1.07.060.886 I common_perf_print:        load time =    3099.14 ms
+1.07.060.887 I common_perf_print: prompt eval time =   20402.10 ms /    31 tokens (  658.13 ms per token,     1.52 tokens per second)
+1.07.060.889 I common_perf_print:        eval time =   42761.64 ms /    36 runs   ( 1187.82 ms per token,     0.84 tokens per second)
+1.07.060.889 I common_perf_print:       total time =   63195.36 ms /    67 tokens
+1.07.060.890 I common_perf_print: unaccounted time =       3.47 ms /   0.0 %      (total - sampling - prompt eval - eval) / (total)
+1.07.060.891 I common_perf_print:    graphs reused =         35

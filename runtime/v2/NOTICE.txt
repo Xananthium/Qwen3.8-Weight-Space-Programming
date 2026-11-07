@@ -1,0 +1,36 @@
+This directory packages the fixed edit used by Calmer-V2-Qwen3.8-27B-4bit.
+New static-patch integration and portable packaging code: Apache-2.0.
+
+Third-party source attribution:
+
+vLLM contributors: https://github.com/vllm-project/vllm
+Tested version 0.32.0, commit 5df63a720. Apache-2.0.
+The seven files under overlay/overrides retain their original copyright/SPDX
+notices. Local adaptations cover GDN bounds, packed embedding logical widths,
+TQ/DFlash page handling and attention masks. Their exact selected bytes and
+installed-source baseline hashes are listed in overlay/manifest.json.
+
+vLLM GGUF plugin contributors:
+https://github.com/vllm-project/vllm-gguf-plugin
+CUDA source baseline e62877c30519305f3c82dc0d616cf62b5ed67133, with the supplied
+compatibility patch and frozen Python runtime source. Apache-2.0.
+Source inventory and provenance identify the distributed snapshot; the whole
+vendored Python tree is not asserted to be a pristine upstream checkout.
+
+llama.cpp / ggml contributors, including Georgi Gerganov:
+https://github.com/ggml-org/llama.cpp
+Pinned commit 002a12ad25503a93501b2e188c360029830a241a. MIT.
+Only the explicitly listed kernel source/header closure is distributed.
+
+Flash Linear Attention, Songlin Yang and Yu Zhang: MIT-derived code retained
+in the vLLM overrides, with original notices and MIT license supplied.
+https://github.com/fla-org/flash-linear-attention
+
+Mamba, Tri Dao and Albert Gu: vLLM adaptations retain original notices.
+Referenced source v2.2.4 uses Apache-2.0:
+https://github.com/state-spaces/mamba/tree/v2.2.4
+
+Full applicable texts are in LICENSE and LICENSES/. Dependencies are not
+relicensed by this package. Base-model, metadata, projector and draft licenses
+are supplied with their respective model artifacts; no new upstream model
+provenance is established by the advertised model name.

@@ -1,0 +1,61 @@
+{
+  "scope": "Isolated compiled observations only; repeated development records, not unique questions. Initial busy/eager runs and replay captures excluded.",
+  "counts": {
+    "isolated_server_launch_attempts": 20,
+    "distinct_profile_manifests_attempted": 16,
+    "completed_generation_batches": 45,
+    "interrupted_generation_batches": 1,
+    "saved_response_records_including_interrupted": 248,
+    "responses_with_natural_stop_or_token_cap": 247,
+    "observed_generated_tokens_including_interrupted": 933411,
+    "additional_weight_variants": 14
+  },
+  "attempt_ids": [
+    "000_calmer",
+    "001_original",
+    "002_l62_01pct",
+    "003_l62_03pct",
+    "004_attention55_005pct",
+    "005_mlp53_005pct",
+    "006_neuron18_zero",
+    "007_mlp53_random_u",
+    "008_calmer_expanded",
+    "008a_combo53_attention55",
+    "008b_calmer_reproducibility",
+    "009_l62_02pct",
+    "010_l61_01pct",
+    "011_attention55_cap32768",
+    "012_l62_03pct_eosprotected",
+    "012a_l62_eosclosingprotected",
+    "012b_l62_adaptive_selector",
+    "013_mlp18_005pct",
+    "014_attention63_005pct",
+    "016_mlp18_warm16"
+  ],
+  "profile_manifest_sha256": [
+    "1707f0945ecb0118102f54f7b6d02ab2509227b0d4024a53298ee1fb798d5640",
+    "3b26f3a90e6c299ea2cf122e579d49e523d5d250f879f07db6c5e50897684908",
+    "6fa14add6e4bc67b55cc8af3b1e543e0d68c89b2cc67719f61b7b9cfd0d6ef02",
+    "7c975add173143b5b6737d6e31c936466571e6aa5f60bd9db7eb8c58dbe44dcd",
+    "7d5884daa672909632c099c73afc877227cfb8c88acca062d6a2e51908d34854",
+    "841e3fb7737304bce3c35965d996bd529dde8216e9e489d5e5ce3d2595fb6bed",
+    "84d4ab2135cff98d2cab17e548c465e74be17df1b51a6f2a9c977a0673459f47",
+    "8d6cd117b1f03e538e8bb5db77ada1c70cbcb5baed59402fba6005f9a6e77ab0",
+    "99b75080e63ba2de9aa31ae896a71dc3544612b81fd1c680cab2145aec4e1042",
+    "9e14e0e25af3c81eb412ed042dbce773d9f2160121c4ab0362d373f1c8f42430",
+    "b7cae20bfb59165fc3472c7fe071591c89649fae8ff7ea66c37a92d0fffaffe3",
+    "c344df34e222f0535d9527985fe26dc44ae918be5dabc5e80294781f368eba0e",
+    "cd5e3305791416a8f4d72e8d80a4dcb73bfbb143b321d03e84e4b1a66a47d359",
+    "d1fb82e7006cc671f5bb33f6762731a66f7623e8ec9c943ad116879318e38888",
+    "d7cc9aa9954c3bd65c328563fa9af5cf644b5ca83acb093ed0751bd380fb7f75",
+    "ec40e047e6bc6eed7c31c6ea6d40a549d99fd5e565a610b16a9ad2aa07bbb9c2"
+  ],
+  "missing_confirmation": {
+    "warm_seed06": "startup infrastructure failure before any answer",
+    "seed08_candidate": "not run",
+    "GSM24_candidate": "not run"
+  },
+  "operator_interruption": "One expanded batch incomplete; topology stopped naturally at 10,631, hats saved 14,199 tokens without finish reason. Neither produced a final answer.",
+  "startup_failure": "016 failed before readiness; no answer-quality evidence.",
+  "deferred": "017 did not launch during the experiment."
+}

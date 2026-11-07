@@ -1,0 +1,72 @@
+{
+  "v1_npz_sha256": "ebb80ab4f906b7c7fbc61e95dd285b1e27b82b35e3e68982e575ccbfe80f8b51",
+  "v2_tested_npz_sha256": "c12820b9bc65e691853a1073c8647fed47cb5521ef3fbcd19817d684006debba",
+  "v1_layers": [
+    49,
+    50,
+    51
+  ],
+  "v2_layers": [
+    18,
+    49,
+    50,
+    51
+  ],
+  "all_six_preexisting_arrays_byte_identical": true,
+  "rows": [
+    {
+      "key": "u_49",
+      "shape": [
+        5120
+      ],
+      "dtype": "float32",
+      "sha256": "fa29629e97cd184d055b9dbab3fb05e633871c61c065676ac4cb6f3c03dbb5e9",
+      "byte_identical": true
+    },
+    {
+      "key": "coeff_49",
+      "shape": [
+        17408
+      ],
+      "dtype": "float32",
+      "sha256": "b87883b5ef0b9be967d5bda227727d4e7e757f1a1620016808b1ac2ebf60f637",
+      "byte_identical": true
+    },
+    {
+      "key": "u_50",
+      "shape": [
+        5120
+      ],
+      "dtype": "float32",
+      "sha256": "fb162201abf6929b6ba1fffc01a4d12b4659dd5b3e689becf139bc2e7d9163e2",
+      "byte_identical": true
+    },
+    {
+      "key": "coeff_50",
+      "shape": [
+        17408
+      ],
+      "dtype": "float32",
+      "sha256": "9fe01aa46be0ac32006fe98ca5f8e453c1c27ac9f31e0848dd1af13bb433a62f",
+      "byte_identical": true
+    },
+    {
+      "key": "u_51",
+      "shape": [
+        5120
+      ],
+      "dtype": "float32",
+      "sha256": "278737a1e09c316adda35f95d1757d3801e84f44757950fc2f37592426c605ac",
+      "byte_identical": true
+    },
+    {
+      "key": "coeff_51",
+      "shape": [
+        17408
+      ],
+      "dtype": "float32",
+      "sha256": "21c02bdbf3df61bd4843c2a362c6eb520100c9af89f81385c78b45cb57bb7f30",
+      "byte_identical": true
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+<|im_start|>user
+What is 2 + 2? Answer with the number only.<|im_end|>
+<|im_start|>assistant
+<think>

@@ -1,0 +1,32 @@
+{
+  "scope": "Native merged-GGUF CPU load and decode smoke only; no HLE/GSM or tested-sidecar equivalence measurement",
+  "model_file": "Calmer-V2-Qwen3.8-27B-Q4_K_P-F32Edits.gguf",
+  "model_sha256": "8c046db3518f3711f797a832153362f413aa29e9ab8aef675f88a0842291c1a1",
+  "engine": "llama-completion",
+  "public_redaction": {
+    "private_source_json_sha256": "aa5e29d5bc916bc7e382a7bbf5b91c53b19f69d8bb5facda3c660a6a38f6a666",
+    "changed_fields": ["engine"],
+    "reason": "Replace local executable path with portable command name; private export-root record remains byte-identical."
+  },
+  "llama_cpp_commit": "b21e4de74567f5eef213765c9476a843c2e43f0d",
+  "gpu_layers": 0,
+  "cpu_threads": 2,
+  "niceness": 15,
+  "context": 2048,
+  "seed": 20261105,
+  "max_tokens": 128,
+  "temperature": 1.3,
+  "top_p": 0.95,
+  "top_k": 20,
+  "repetition_penalty": 1,
+  "prompt_file": "native_smoke_prompt.txt",
+  "exit_code": 0,
+  "output_thinking_closed": true,
+  "final_answer_before_interactive_eof_marker": "4",
+  "simple_arithmetic_correct": true,
+  "stdout_file": "native_smoke_stdout.txt",
+  "stdout_sha256": "d06ab716090e8a790285f11a4cbfa70ed336f060334f53b53e15a3ee023238a6",
+  "stderr_file": "native_smoke_stderr.txt",
+  "stderr_sha256": "c02e10967b0e3c9da912fc84161f9f6f3e1a63450a56da3396a2b84d28196bfc",
+  "note": "llama-completion entered interactive mode after generating the final 4; its later '> EOF by user' line is a CLI marker, not part of the model answer."
+}

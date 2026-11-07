@@ -1,0 +1,83 @@
+{
+  "candidate": {
+    "sha256": "c12820b9bc65e691853a1073c8647fed47cb5521ef3fbcd19817d684006debba",
+    "added_layer": 18,
+    "support_size": 32,
+    "selected_columns": [
+      381,
+      1761,
+      2454,
+      2463,
+      2465,
+      2824,
+      3245,
+      3420,
+      3620,
+      3791,
+      4029,
+      4692,
+      5265,
+      5844,
+      6588,
+      7722,
+      8015,
+      8155,
+      8955,
+      9166,
+      9253,
+      9992,
+      10407,
+      10543,
+      11169,
+      12038,
+      13155,
+      13530,
+      14399,
+      16278,
+      16690,
+      17376
+    ],
+    "global_alpha_required": 1.5,
+    "target_productive_p95_ratio": 0.005,
+    "productive_ratio": {
+      "median": 0.0018030682747707263,
+      "p95": 0.0050000000633864455,
+      "max": 0.01076989849896416,
+      "per_pair_p95": [
+        0.0043283142298610015,
+        0.004319348909480313,
+        0.0054087159472833695,
+        0.004292237492474787,
+        0.0046148578851010775,
+        0.005167314912291361
+      ]
+    },
+    "circular_ratio": {
+      "median": 0.00948965703615393,
+      "p95": 0.023857395624479968,
+      "max": 0.038411815156172646,
+      "per_pair_p95": [
+        0.02842065036848888,
+        0.02185886137529856,
+        0.025525781052015896,
+        0.02208209539986941,
+        0.021862400915680265,
+        0.021839598454050993
+      ]
+    },
+    "base_arrays_byte_identical": true,
+    "base_layers_retained": [
+      49,
+      50,
+      51
+    ],
+    "added_output_direction_norm": 0.9999999689808112,
+    "protected_subspace_projection_applied": false,
+    "gram_condition": 19.947508129709302
+  },
+  "fit_examples": "Six authored pairs; 12 endpoints; 32 tail tokens each, captured under Calmer. No HLE traces or keys used for fitting.",
+  "objective": "mean((X_c a-1)^2)+8*mean((X_p a)^2)+0.1*norm(a_standardized)^2; no intercept",
+  "output_direction": "Equal-weight mean of normalized circular-minus-productive residual contrasts; no output-space protected-subspace projection.",
+  "protection_limit": "Productive-token covariance penalty only; not a validated causal reasoning subspace or a guarantee of retention.",
+  "selection_limit": "Layer/support selected on the same six pairs; leave-one-pair-out diagnostics are exploratory, not an independent accuracy test."
+}

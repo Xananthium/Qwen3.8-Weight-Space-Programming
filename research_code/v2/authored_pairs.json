@@ -1,0 +1,78 @@
+{
+  "schema": "calmer-v2-authored-fit-pairs-v1",
+  "authored_date": "2026-11-06",
+  "purpose": "Six matched original authored productive repair / circular recheck prefixes for fit discovery; not blind or natural-loop examples.",
+  "records": [
+    {
+      "pair_id": "authored_progress_stock_01",
+      "domain": "arithmetic_bookkeeping",
+      "problem": "A cupboard holds 46 mugs. A delivery adds 17 mugs, a sale removes 28 mugs, and a return adds 9 mugs. These events occur in that order. How many mugs are in the cupboard afterward?",
+      "productive_capture_prefix": "Working line: 46 + 17 = 73; removing 28 gives 45, and adding 9 gives 54 mugs.\nCheck: Wait, let me verify the same quantities in the same order. The delivery adds one ten and seven units. Adding seven units to 46 gives 53, and the remaining ten gives 63, so the first total is 63 rather than 73. Removing 28 from 63 gives 35. The return then adds 9 to 35, giving 44. The mistaken delivery total had carried an extra ten into both later totals. The corrected sequence is 63, then 35, then 44. So the correction changes 73 to 63 at delivery and 54 to 44 after the return.",
+      "circular_capture_prefix": "Working line: 46 + 17 = 63; removing 28 gives 35, and adding 9 gives 44 mugs.\nCheck: Wait, let me verify the same quantities in the same order. The delivery adds 17 to the original 46, giving 63 mugs. Removing the sale quantity of 28 leaves 35 mugs. Adding the return quantity of 9 gives 44 mugs. I will verify those quantities once more in the stated order. The delivery total is 63, the total after the sale is 35, and the total after the return is 44. The sequence is 63, then 35, then 44, with the same final count. So the check gives 63 at delivery and 44 after the return, as it did on the previous check.",
+      "shared_final_result": {
+        "mugs": 44
+      }
+    },
+    {
+      "pair_id": "authored_progress_editor_02",
+      "domain": "position_and_editor_state",
+      "problem": "An editor contains TRACK, with the cursor after K. Moving left crosses one character. Delete removes the character immediately right of the cursor. Inserting a letter advances the cursor past it. Backspace removes the character immediately left of the cursor. Do these operations: move left three; Delete once; insert E; move left one; Backspace once. Give the final text and the number of characters left of the cursor.",
+      "productive_capture_prefix": "Working line: the intermediate state after inserting E is TRE|CK. Moving left gives TR|ECK. I wrote the final text as TRCK with cursor position 2.\nCheck: Let me check the cursor convention carefully. At TR|ECK, the character immediately left is R, whereas E is immediately right. Backspace removes the left character, so removing E was the wrong operation. Removing R leaves T|ECK. This also moves the cursor one position left, from 2 to 1. I can account for the remaining characters directly: T stays before the cursor, and E, C, K stay after it. Therefore the last operation changes TR|ECK to T|ECK, removing R instead of E and moving the cursor left.",
+      "circular_capture_prefix": "Working line: the intermediate state after inserting E is TRE|CK. Moving left gives TR|ECK. I wrote the final text as TECK with cursor position 1.\nCheck: Let me check the cursor convention carefully. At TR|ECK, the character immediately left is R, whereas E is immediately right. Backspace removes R and leaves T|ECK, with cursor position 1. Let me check the resulting cursor position once again. The T is before the cursor, and E, C, K are after it. Counting the characters before the cursor gives one. Reading across the cursor gives TECK. The text remains TECK and the cursor remains at position 1. Therefore the last operation changes TR|ECK to T|ECK, as before; reading T|ECK again still places one character before the cursor.",
+      "shared_final_result": {
+        "text": "TECK",
+        "cursor": 1
+      }
+    },
+    {
+      "pair_id": "authored_progress_sum_invariant_03",
+      "domain": "logic_and_invariants",
+      "problem": "Four cards show 2, 5, 8, and 11. A move selects one card and increases its number by 6. Make exactly two moves; the same card may be selected twice. Can the final sum of the four cards be 36? Explain a constraint that settles the question.",
+      "productive_capture_prefix": "Working line: the original sum is 26. I argued that parity rules out 36 because each move adds an even number.\nCheck: Wait, I should examine the constraint itself. Both 26 and 36 are even, so preserved parity does not rule out the proposed target. The number of moves supplies a stronger constraint. Each move raises the total by exactly 6, regardless of which card is selected. Two moves therefore raise 26 by exactly 12, giving 38. Selecting the same card twice changes the distribution across cards but still adds 12 to the sum. The final sum must be 38, which excludes 36. Thus even parity permits 36, but the exact increase of 12 forces 38; the fixed move count supplies the missing restriction.",
+      "circular_capture_prefix": "Working line: the original sum is 26. Each of the two moves adds 6, so the final sum is 38 and cannot be 36.\nCheck: Wait, I should examine the constraint itself. A move raises the total by exactly 6, regardless of which card is selected. Two moves raise the sum by exactly 12, giving 38. I will check whether selecting the same card changes that calculation. One addition of 6 followed by another addition of 6 still adds 12. The original total 26 therefore becomes 38. Checking the sum again gives 26 plus 12, or 38, rather than the proposed 36. Thus the exact increase of 12 forces 38; checking the fixed move count again gives two moves, each adding 6, totaling 12.",
+      "shared_final_result": {
+        "possible": false,
+        "forced_sum": 38
+      }
+    },
+    {
+      "pair_id": "authored_progress_order_04",
+      "domain": "simple_relational_reasoning",
+      "problem": "Four labeled tiles, A, B, C, and D, occupy four distinct positions in a row from left to right. A is somewhere left of B, C is somewhere right of B, and D is somewhere left of A. Which tile occupies the third position from the left?",
+      "productive_capture_prefix": "Working line: A is left of B and B is left of C. I placed them as A, B, C, D and selected C in the third position.\nCheck: Let me verify each ordering condition. The proposed row puts D to the right of A, but the condition requires D to the left of A. Combining that condition with A before B gives D before A before B. Since C is after B, all four tiles are ordered D, A, B, C. In this row D satisfies its condition and A and C satisfy theirs. Counting from the left puts B third. Restoring D before A shifts A to second and B to third; D cannot remain after C in this row.",
+      "circular_capture_prefix": "Working line: D is left of A, A is left of B, and B is left of C. I placed them as D, A, B, C and selected B in the third position.\nCheck: Let me verify each ordering condition. D is before A in the row D, A, B, C. A is before B in that row, and C is after B. The row satisfies all three conditions. I will read the positions again from left to right. D is first, A is second, B is third, and C is fourth. Counting the positions again leaves B in position three. Reading D before A before B before C again puts A second and B third, with D first and C fourth.",
+      "shared_final_result": {
+        "order": [
+          "D",
+          "A",
+          "B",
+          "C"
+        ],
+        "third": "B"
+      }
+    },
+    {
+      "pair_id": "authored_progress_clock_05",
+      "domain": "arithmetic_time_bookkeeping",
+      "problem": "A delivery cart starts at 09:47. It travels for 38 minutes, waits for 17 minutes, then travels for another 26 minutes. These intervals are consecutive and there are no other delays. At what clock time does the final trip end?",
+      "productive_capture_prefix": "Working line: I added the first 38 minutes to 09:47 and wrote 10:15. Adding 17 and then 26 gave 10:58.\nCheck: Wait, let me recompute the hour crossing. The minutes 47 plus 38 total 85. That is one hour and 25 minutes, so the first arrival is 10:25 rather than 10:15. Adding the wait of 17 minutes gives 10:42. Adding the last 26 minutes makes the minute total 68, carrying one hour and leaving 8 minutes. The final time is 11:08. The earlier first-arrival calculation lost ten minutes, and the later times inherited that loss. Restoring ten missing minutes to 10:58 produces 11:08; the corrected first arrival 10:25 is the source of that change.",
+      "circular_capture_prefix": "Working line: I added the first 38 minutes to 09:47 and wrote 10:25. Adding 17 and then 26 gave 11:08.\nCheck: Wait, let me recompute the hour crossing. The minutes 47 plus 38 total 85, so the first arrival is 10:25. Adding the wait of 17 minutes gives 10:42. Adding the final 26 minutes gives 11:08. Let me check that hour crossing again. At 10:42, another 26 minutes makes 68 minutes, which is one hour and 8 minutes. That gives 11:08. Repeating the three times gives 10:25, then 10:42, then 11:08. Checking 10:25, then 10:42, then 11:08 once again produces 11:08; the first arrival 10:25 and the final time 11:08 remain the same.",
+      "shared_final_result": {
+        "time": "11:08",
+        "minutes_after_midnight": 668
+      }
+    },
+    {
+      "pair_id": "authored_progress_toggle_06",
+      "domain": "symbolic_state_and_invariants",
+      "problem": "Three lamps labeled A, B, and C start off. Toggling a lamp reverses its state: off becomes on, and on becomes off. Perform the toggles A, B, A, C, B, in that order. Which lamps are on at the end?",
+      "productive_capture_prefix": "Working line: after A, B, A I wrote that A and B were on. After C and B I therefore kept A and C on.\nCheck: Let me check how repeated toggles compose. A appears twice, and two toggles return it to its starting state rather than leaving it on. B also appears twice and returns to off. C appears once and changes from off to on. Step by step, the on sets are A, then A and B, then B, then B and C, then C. The third toggle removes A instead of preserving it. Only C is left on. The second A changes on to off, so it removes A from the final on set; C remains the only member.",
+      "circular_capture_prefix": "Working line: after A, B, A I wrote that B alone was on. After C and B I therefore kept C alone on.\nCheck: Let me check how repeated toggles compose. A appears twice and is off, B appears twice and is off, and C appears once and is on. I will count those toggles once more. There are two A toggles, two B toggles, and one C toggle. Two toggles leave A off and two leave B off. The single C toggle leaves C on. Counting the same toggles again leaves the same on set, consisting of C alone. A is off and B is off and C is on; checking those states again leaves C as the only member.",
+      "shared_final_result": {
+        "on": [
+          "C"
+        ]
+      }
+    }
+  ]
+}

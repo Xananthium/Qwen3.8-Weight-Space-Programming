@@ -30,3 +30,9 @@ jobs:
         run: python tools/verify_selected_excerpts.py
       - name: Check synthetic graders, stream handling and laboratory routes
         run: python -B research_code/validate_cpu.py --conditions evidence/laboratory_conditions.json
+      - name: Verify V2 model identities and artifact-specific validation records
+        run: python tools/check_v2_release.py
+      - name: Verify V2 public metrics, selected excerpts and publication inventory
+        run: python followup_20261106/verify_publication.py
+      - name: Verify V2 fitting source and authored probe package
+        run: python research_code/v2/verify_public.py
